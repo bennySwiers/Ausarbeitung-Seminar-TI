@@ -1,0 +1,108 @@
+\documentclass[12pt,a4paper,DIV11]{article}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage{babel}
+\usepackage{ae}
+\usepackage{textcomp} 
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{geometry}
+%
+\usepackage{fancyref}
+\usepackage{fancyhdr} 
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{listings}
+\usepackage{acronym}
+%
+% PDF settings
+\usepackage[pdftex]{graphicx}
+\usepackage[pdfstartview=FitH,pdftitle={<Titel>},pdfauthor={<Name>}, colorlinks=false, linktocpage]{hyperref}
+\usepackage{svg}
+
+%
+% Header and Footer Style
+
+\geometry{left=35mm, right=25mm, top=25mm, bottom=30mm}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{\slshape\nouppercase{\rightmark}}
+\fancyfoot{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%  save the current one
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+  \do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+  \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+  \do\Y\do\Z}
+%
+% No identation
+\setlength\headheight{12pt}
+\setlength\parindent{0pt} 
+%
+% Custom commands
+\newcommand\zb{z.\,B.\ }
+\renewcommand\dh{d.\,h.\ }
+\newcommand\parbig{\par\bigskip}
+\newcommand\parmed{\par\medskip}
+\newcommand{\mailto}[1]{\href{mailto:#1}{#1}}
+%
+% C# Code Listing Style
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkgreen}{rgb}{0,0.5,0}
+\definecolor{darkred}{rgb}{0.5,0,0}
+\lstset{language=[Sharp]C, basicstyle=\ttfamily\small\upshape, commentstyle=\color{darkgreen}\sffamily, keywordstyle=\color{darkblue}\rmfamily\bfseries, breaklines=true,tabsize=2,xleftmargin=3mm, xrightmargin=3mm,numbers=none,frame=single,stringstyle=\color{darkred},
+showstringspaces=false}
+%
+% Titel + Author 
+\title{\includegraphics[width=0.6\textwidth]{pictures/logo}\\
+{\normalsize Seminararbeit zum Thema:}\\[6ex]
+\huge Sensorlose Indoor-Lokalisierung}
+\author{\\Artemij Voskobojnikov, Benjamin Swiers \\
+{\normalsize Matrikelnummer: 4557770, ?? }\\
+{\normalsize Modul: Seminar Technische Informatik}\\
+{\normalsize Dozent: ??}\\
+{\normalsize Semester: Sommersemester 2015}\\
+}
+
+\date{Berlin, den 17. Juni 2015}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\pagenumbering{alph}
+\maketitle
+\thispagestyle{empty}
+
+\vfill{}
+
+\vfill{}
+
+\end{titlepage}
+\clearpage\pagenumbering{Roman}
+\include{declaration}
+\include{abkuerzungsverzeichnis}
+\include{abbildungsverzeichnis}
+\include{0_summary}
+\newpage
+\pagestyle{empty}
+\tableofcontents
+\pagestyle{plain}
+\clearpage\pagenumbering{arabic}
+\setcounter{page}{1}
+\include{1_introduction}           
+\include{2_main}
+
+\bibliographystyle{alpha}
+
+\end{document}
