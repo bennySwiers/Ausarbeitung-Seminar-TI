@@ -21,10 +21,11 @@ Im weiteren Verlauf wird jedes \textit{passive System} näher untersucht. Es wir
 
 
 \section{Sensorlose Indoor-Lokalisierung}
-\subsection{Radio Frequency Identification}
+\subsection{Radiosignale}
+\subsubsection{Radio Frequency Identification}
 Unter \textit{Radio Frequence Identification} (\textbf{RFID}) versteht man eine kontaktlose Identifikation mittels Funkübertragung. Oftmals kann man hierfür bereits vorhandene Wi-Fi-Netzwerke verwenden.\footnote{Vgl. Kivimäki T., Vuorela T., Peltola P. \& Vanhala J., S.  16} \\
 Ein solches DfL-System (\textbf{Device-free Localization}) nutzt die Tatsache aus, dass die Präsenz eines menschlichen Körpers die Radiosignale beeinflussen.\footnote{Vgl. ebd.} Die verwendete Frequenz der Knotenpunkte liegt hierbei bei $2.4$Ghz, weil dies die Resonanzfrequenz von Wasser ist und der Mensch bekanntermaßen aus $70\%$ aus Wasser besteht.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 11}. Ein weiterer Pluspunkt ist auch, dass die Frequenz von $2.4$ Ghz bei \textit{IEEE Standards} wie $802.11b$ und $802.11g$ verwendet wird.\footnote{Vgl. Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M., S. 3}\\
-Das \textit{DfP-System} (\textit{Device-free Passive}) auf Grundlage von \textit{RFID}, welches im Folgenden vorgestellt wird, misst die Änderungen von der erhaltenen \textit{Received Signal Strength Indication} (\textbf{RSSI}). Der Anwendungsbereich des vorgestellten Systems ist die Haussicherheit. Das System soll als Alarmanlage agieren und Eindringlinge lokalisieren bzw. detektieren können.\footnote{Vgl. Mah M., S. 2} Ein solches System besteht aus zwei Komponenten, den \textit{Access Points} (\textbf{AP})\footnote{Zugriffsknoten} und den \textit{Monitoring Points} (\textbf{MP})\footnote(Z. Dt. Kontrollknoten). Einen guten Überblick bietet die folgende Abbildung:\\
+Das \textit{DfP-System} (\textit{Device-free Passive}) auf Grundlage von \textit{RFID}, welches im Folgenden vorgestellt wird, misst die Änderungen von der erhaltenen \textit{Received Signal Strength Indication} (\textbf{RSSI}). Der Anwendungsbereich des vorgestellten Systems ist die Haussicherheit. Das System soll als Alarmanlage agieren und Eindringlinge lokalisieren bzw. detektieren können.\footnote{Vgl. Mah M., S. 2} Ein solches System besteht aus zwei Komponenten, den \textit{Access Points} (\textbf{AP})\footnote{Z. Dt. Zugriffsknoten} und den \textit{Monitoring Points} (\textbf{MP})\footnote{(Z. Dt. Kontrollknoten)}. Einen guten Überblick bietet die folgende Abbildung:\\
 
 \begin{figure}[H]
 	\centering
@@ -59,7 +60,20 @@ Sobald ein Eindringling von einem \textbf{MP} detektiert wird, werden zusätzlic
 
 Dieses \textit{DfP-System} schnitt in den Tests zufriedenstellend ab, jedoch muss man auch auf mögliche Schwachstellen eingehen. Viele Parameter, die in den Algorithmen für die Detektion von Eindringlingen gebraucht werden haben direkten Einfluss auf die Sensibilität des Systems. Will man die Wahrscheinlichkeit eine Detektion zu verzeichnen erhöhen, wird gleichzeitig die Anzahl der \textit{False Positives} erhöht. Das Finden von Parametern, welche die Wahrscheinlichkeit von Detektionen erhöhen und gleichzeitig die Anzahl der \textit{False Positives} minimieren, ist ein Optimierungsproblem.\footnote{Vgl. ebd. S. 9}
 
-\subsection{Ultra Wideband}
+\subsubsection{Ultra-wideband}
+
+\textit{Ultra-wideband}\footnote{Z. Dt. Ultrabreitband} (\textbf{UWB}) ist eine weitere Methode Objekte zu lokalisieren. Bei \textbf{UWB} werden sehr große Frequenzbereiche zur Nahbereichskommunikation verwendet. Dabei werden vier Arten von UWB-Imaging\footnote{Z. Dt. Darstellung} unterschieden:\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 12}
+\begin{itemize}
+ 	\item \textbf{Ground Penetrating Radar}: Detektion vergrabener Objekte 
+ 	\item \textbf{Wall Imaging}: Detektion von Objekten innerhalb dichter Wände
+ 	\item \textbf{Through-wall Imaging}: Detektion von Objekten oder Personen auf der anderen Seite einer Wand
+ 	\item \textbf{Medical Imaging}: Verwendung für medizinische Zwecke
+ \end{itemize} 
+
+Das erste System, was eine Überwachung durch Wände ermöglichte, verwendete Signale mit einer Frequenz zwischen $902$ und $928$ MHz. Dieses System war in der Lage sich bewegende Objekte mit bis zu $1.5$ $m/s$ zu detektieren. Wurde eine Bewegung detektiert, so wurde vom Empfänger ein akkustisches Signal ausgelöst. Der Nachteil dieses Systems war jedoch, dass das Signal Wände mit Spiegeln oder allgemein nasse Wände nur schlecht penetrieren konnte. Systeme, die hingegen auf \textbf{UWB} basieren, verwenden Frequenzen von $3.1$ bis $10.6$ GHz, die eine Penetration von Wänden ermöglichen.\footnote{Vgl. ebd.} \\
+\textbf{UWB}-Systeme beheben viele der Probleme, die bei \textit{Narrowband}-Systemen\footnote{Z. Dt. Schmalband} entstehen können, gleichzeitig gibt es, wie bei jedem System, aber auch Kehrseiten. Zwar wurden Experimente mit \textbf{UWB}-Lokalisierungssystemen durchgeführt, es gibt jedoch keine einheitlichen Methoden zur Detektion von Objekten und zur Verarbeitung der Signale. Ebenso muss in der Mehrheit der existierenden Systeme eine Lerndatenbank gepflegt werden, die erstellt werden muss bevor die eigentliche Lokalisierung vonstattengehen kann.\footnote{Vgl. Kilic Y., Wymeersch H., Meijerink A., Bentum M. \& Scanlon W., S. 1}\\
+Abschließend kann man sagen, dass Systeme, die auf Radiosignalen basieren ihren Zweck erfüllen, es jedoch kein universelles System gibt und man je nach Einsatzgebiet ein passendes Verfahren auszuwählen hat.
+
 
 \subsection{Infrarot-Sensoren (besser an die Abbildung halten) vielleicht also Air Pressure}
 \subsubsection{Bla}
@@ -84,10 +98,11 @@ Dieses \textit{DfP-System} schnitt in den Tests zufriedenstellend ab, jedoch mus
 \end{itemize}
 \subsection*{Sonstige Quellen}
 \begin{itemize}[leftmargin=*]
-\item[] \textbf{Ehrlich, I.}: Indoor Localization, Online unter URL: \url{http://ifgi.uni-muenster.de/~muellerj/lbs06/proceedings/3-IndoorLocalization.pdf}
-\item[] \textbf{Deak G., Curran K. \& Condell J.} A survey of active and passive indoor localisation systems, Online unter URL : \url{http://scisweb.ulster.ac.uk/~kevin/comcomsurvey.pdf}
-\item[] \textbf{Kivimäki T., Vuorela T., Peltola P. \& Vanhala J.}: Indoor Localization, Online unter URL: \url{http://www.sersc.org/journals/IJSH/vol8_no1_2014/9.pdf}
-\item[] \textbf{Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M.}: Device-Free Localization Technique for Indoor Detection and Tracking of Human Body, Online unter URL: \url{http://ac.els-cdn.com/S187704281402878X/1-s2.0-S187704281402878X-main.pdf?_tid=7bc6ad0e-12a4-11e5-95f4-00000aab0f02&acdnat=1434293516_4a2274a0ebfb932cf57c3f4f652c668f}
+\item[] \textbf{Ehrlich, I.}: Indoor Localization (2006), Online unter URL: \url{http://ifgi.uni-muenster.de/~muellerj/lbs06/proceedings/3-IndoorLocalization.pdf}
+\item[] \textbf{Deak G., Curran K. \& Condell J.} A survey of active and passive indoor localisation systems (2012), Online unter URL : \url{http://scisweb.ulster.ac.uk/~kevin/comcomsurvey.pdf}
+\item[] \textbf{Kivimäki T., Vuorela T., Peltola P. \& Vanhala J.}: A Review on Device-Free Passive Indoor Positioning Methods (2014), Online unter URL: \url{http://www.sersc.org/journals/IJSH/vol8_no1_2014/9.pdf}
+\item[] \textbf{Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M.}: Device-Free Localization Technique for Indoor Detection and Tracking of Human Body (2013), Online unter URL: \url{http://ac.els-cdn.com/S187704281402878X/1-s2.0-S187704281402878X-main.pdf?_tid=7bc6ad0e-12a4-11e5-95f4-00000aab0f02&acdnat=1434293516_4a2274a0ebfb932cf57c3f4f652c668f}
 \item[] \textbf{M. Mah}: Device-Free Passive Localization (2007), Online unter URL: \url{https://www.cs.umd.edu/sites/default/files/scholarly_papers/MatthewMah_1.pdf}
+\item[] \textbf{Kilic Y., Wymeersch H., Meijerink A., Bentum M. \& Scanlon W.}: Online unter URL: \url{http://arxiv.org/pdf/1303.4092.pdf}
 \end{itemize}
 \end{figure}
