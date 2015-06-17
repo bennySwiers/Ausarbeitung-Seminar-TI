@@ -1,0 +1,11 @@
+- Drucksensoren (du)
+- Infrarot (du)
+- Computer Vision (du)
+- Schluss (du)
+
+
+
+
+
+* Abbildungenverweise im Text: Abbildungsnummer it angeben
+* Bei verweisen muss hinter dem Namen auch das Jahr! 

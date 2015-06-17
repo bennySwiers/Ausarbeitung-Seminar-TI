@@ -75,15 +75,32 @@ Das erste System, was eine Überwachung durch Wände ermöglichte, verwendete Si
 Abschließend kann man sagen, dass Systeme, die auf Radiosignalen basieren ihren Zweck erfüllen, es jedoch kein universelles System gibt und man je nach Einsatzgebiet ein passendes Verfahren auszuwählen hat.
 
 
-\subsection{Infrarot-Sensoren (besser an die Abbildung halten) vielleicht also Air Pressure}
-\subsubsection{Bla}
-\subsubsection{BlaBla}
+\subsection{Passive Infrarot-Lokalisierung}
+Die passive Infrarot-Lokalisierung (\textbf{PIL}) basiert auf der Körperwärmestrahlung einer Person bzw. eines Objektes. Der thermische Unterschied eines Objektes im Vergleich zu seiner Umgebung kann dabei zur Lokalisierung und Bewegungsverfolgung (Tracking) ausgenutzt werden. Die untere Abbildung zeigt die unterschiedliche Wärmestrahlung einer Person und gegenüber seiner Umgebung.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{pictures/pil1}
+	\caption{Wärmestrahlung einer Person (Technische Universität Dortmund (2015))}
+\end{figure}
+
+Die Detektion der Wärmestrahlung wird durch sogenannte Thermopiles\footnote{Z.Dt. Thermosäulen}  realisiert.\footnote{Vgl. Technische Universität Dortmund 2015} Dabei handelt es sich um elektronische Bauelemente, welche thermische Energie in elektrische Energie umwandeln.\footnote{Vgl. Kemper 2010, S. 33} Um eine Person zu lokalisieren bzw. zu tracken, werden mehrere dieser Sensoren im Raum positioniert, um die thermischen Unterschiede zu messen. Auf Grundlage der so ermittelten Daten können anschließend mit Hilfe spezieller Algorithmen die Sichtwinkel auf die entsprechende Person berechnet werden. Durch Triangulation kann durch diese Winkel die Position eines Objektes bestimmt werden.\footnote{Vgl. Technische Universität Dortmund 2015} Die untere Abbildung skizziert dieses Verfahren.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{pictures/triangulation}
+	\caption{Lokalisierung durch Triangulation (Technische Universität Dortmund (2015))}
+\end{figure}
+
+Der Vorteil dieser Methode liegt nicht nur in der Tatsache, dass ein zu lokalisierendes Objekt keine zusätzliche Hardware mitführen muss. Durch den Verzicht bildgebender Sensoren wird zusätzlich ein Schutz der Privatsphäre gewährleistet.\footnote{Vgl. Kemper 2010, S. 149} Weiterhin ist diese Art der Lokalisierung gegenüber anderen Methoden vergleichsweise kostengünstig.\footnote{Vgl. Kemper 2010, S. 149}\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 7}
+
 \subsection{Drucksensoren}
 \subsubsection{Bla}
 \subsubsection{BlaBla}
 \subsection{Computer-Vision}
-\subsubsection{Bla}
-\subsubsection{BlaBla}
+Auch Computer-Vision kann als \textbf{DfP}-System betrachtet werden, da ein potentieller Nutzer keine zusätzliche Hardware am Körper tragen muss. Das Ziel dieses Systems ist, eine Umgebung zu schaffen, die auf die Position und das Verhalten einer Person reagiert (intelligente Umgebung). \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13}\newline Es ist beispielsweise vorstellbar, dass 
+
+Test
 
 \subsection{Fazit}
 
@@ -98,11 +115,12 @@ Abschließend kann man sagen, dass Systeme, die auf Radiosignalen basieren ihren
 \end{itemize}
 \subsection*{Sonstige Quellen}
 \begin{itemize}[leftmargin=*]
-\item[] \textbf{Ehrlich, I.}: Indoor Localization (2006), Online unter URL: \url{http://ifgi.uni-muenster.de/~muellerj/lbs06/proceedings/3-IndoorLocalization.pdf}
 \item[] \textbf{Deak G., Curran K. \& Condell J.} A survey of active and passive indoor localisation systems (2012), Online unter URL : \url{http://scisweb.ulster.ac.uk/~kevin/comcomsurvey.pdf}
-\item[] \textbf{Kivimäki T., Vuorela T., Peltola P. \& Vanhala J.}: A Review on Device-Free Passive Indoor Positioning Methods (2014), Online unter URL: \url{http://www.sersc.org/journals/IJSH/vol8_no1_2014/9.pdf}
-\item[] \textbf{Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M.}: Device-Free Localization Technique for Indoor Detection and Tracking of Human Body (2013), Online unter URL: \url{http://ac.els-cdn.com/S187704281402878X/1-s2.0-S187704281402878X-main.pdf?_tid=7bc6ad0e-12a4-11e5-95f4-00000aab0f02&acdnat=1434293516_4a2274a0ebfb932cf57c3f4f652c668f}
-\item[] \textbf{M. Mah}: Device-Free Passive Localization (2007), Online unter URL: \url{https://www.cs.umd.edu/sites/default/files/scholarly_papers/MatthewMah_1.pdf}
+\item[] \textbf{Ehrlich, I.}: Indoor Localization (2006), Online unter URL: \url{http://ifgi.uni-muenster.de/~muellerj/lbs06/proceedings/3-IndoorLocalization.pdf}
+\item[] \textbf{Kemper J.}: Passive Infrarot-Lokalisierung (2010), Fakultät für Elektrotechnik und Informationstechnik, Technischen Universität Dortmund, Dortmund
 \item[] \textbf{Kilic Y., Wymeersch H., Meijerink A., Bentum M. \& Scanlon W.}: Online unter URL: \url{http://arxiv.org/pdf/1303.4092.pdf}
+\item[] \textbf{Kivimäki T., Vuorela T., Peltola P. \& Vanhala J.}: A Review on Device-Free Passive Indoor Positioning Methods (2014), Online unter URL: \url{http://www.sersc.org/journals/IJSH/vol8_no1_2014/9.pdf}
+\item[] \textbf{M. Mah}: Device-Free Passive Localization (2007), Online unter URL: \url{https://www.cs.umd.edu/sites/default/files/scholarly_papers/MatthewMah_1.pdf}
+\item[] \textbf{Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M.}: Device-Free Localization Technique for Indoor Detection and Tracking of Human Body (2013), Online unter URL: \url{http://ac.els-cdn.com/S187704281402878X/1-s2.0-S187704281402878X-main.pdf?_tid=7bc6ad0e-12a4-11e5-95f4-00000aab0f02&acdnat=1434293516_4a2274a0ebfb932cf57c3f4f652c668f}
+\item[] \textbf{Technische Universität Dortmund}: TU Dortmund, Fakultät ETIT, IRF, IT, Forschung, Embedded Systems,  Projekte, PIL, DFG-Projekt: Passive Infrarot-Lokalisierung, Online unter URL: \url{http://www.irf.tu-dortmund.de/cms/de/IT/Forschung/Embedded_Systems/Projekte/PIL/index.html}, Abruf: 2015-06-15
 \end{itemize}
-\end{figure}
