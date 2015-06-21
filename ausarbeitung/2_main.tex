@@ -92,19 +92,39 @@ Die Detektion der Wärmestrahlung wird durch sogenannte Thermopiles\footnote{Z. 
 	\caption{Lokalisierung durch Triangulation (Technische Universität Dortmund (2015))}
 \end{figure}
 
-Der Vorteil dieser Methode liegt nicht nur in der Tatsache, dass ein zu lokalisierendes Objekt keine zusätzliche Hardware mitführen muss. Durch den Verzicht bildgebender Sensoren wird zusätzlich ein Schutz der Privatsphäre gewährleistet.\footnote{Vgl. Kemper 2010, S. 149} Weiterhin ist diese Art der Lokalisierung gegenüber anderen Methoden vergleichsweise kostengünstig.\footnote{Vgl. Kemper 2010, S. 149}\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 7}
+Der Vorteil dieser Methode liegt nicht nur in der Tatsache, dass ein zu lokalisierendes Objekt keine zusätzliche Hardware mitführen muss. Durch den Verzicht bildgebender Sensoren wird zusätzlich ein Schutz der Privatsphäre gewährleistet.\footnote{Vgl. Kemper 2010, S. 149} Weiterhin ist diese Art der Lokalisierung gegenüber anderen Methoden vergleichsweise kostengünstig.\footnote{Vgl. Kemper 2010, S. 149}\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 7}Da sich die Kosten für Bauteile und Sensoren rasant verändern, ist diese Aussage keinesfalls allgemeingültig. 
 
-\subsection{Drucksensoren}
-\subsubsection{Bla}
-\subsubsection{BlaBla}
+\subsection{Differential Air Pressure}
+Eine weitere Möglichkeit der Lokalisierung bietet die Messung der Luftdruckschwankungen, die durch ein sich bewegendes Objekt ausgelöst werden. Wenn eine Person eine Tür öffnet, hat dies eine, durch entsprechende Sensoren messbare, kurzzeitige Veränderung des Luftdrucks innerhalb eines Systems zur Folge.\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13} Dieser Effekt tritt, in abgeschwächter Form, auch beim Passieren eines Engpasses, z.B. eines Türrahmens, auf. Die folgende Abbildung zeigt die Veränderung der Messwerte beim Öffnen/Schließen einer Tür (links) und beim Durchschreiten des Türrahmens (rechts).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{pictures/dap_diagramm}
+	\caption{Detektion von Bewegungen durch Luftdruckänderungen( Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D., S. 7)}
+\end{figure} 
+
+Im Gegensatz zu vielen anderen Lokalisierungsmethoden müssen die Sensoren zur Datenerfassung nicht an vielen Stellen des Raumes angebracht werden. Die meisten modernen Häuser verfügen über eine Klimaanlage, welche die Bewohner des Hauses einerseits mit Frischluft versorgt und andererseits die verbrauchte Luft aus dem Haus leitet.\footnote{Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D., S. 2} Dieses Lüftungssystem wird bei der Differential Air Pressure-Methode genutzt, um die Veränderungen des Luftdrucks an einer zentralen Stelle zu erfassen. In der folgenden Abbildung ist ein Klimaanlagensystem eines Hauses abgebildet. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\textwidth]{pictures/dap_klima}
+	\caption{Detektion von Bewegungen durch Luftdruckänderungen( Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D., S. 7)}
+\end{figure} 
+
+Da die Sensoren in der zentralen Stelle angebracht werden können, kann auf die Installation zusätzlicher Hardware innerhalb des Wohnbereichs verzichtet werden. Der Nachteil diese Methoden liegt in der relativ geringen Genauigkeit bei der Positionsbestimmung. Man kann zwar sagen, in welchem Raum sich eine Person befindet, nicht jedoch an welcher Stelle des Raumes.
+
+\subsection{Physical Contact}
+Die naheliegendste Lösung zur Lokalisierung einer Personen stellt der physische Kontakt einer solchen zu seiner Umgebung dar. 
+\subsection{Projekt: GravitySpace}
 \subsection{Computer-Vision}
 Auch Computer-Vision kann als \textbf{DfP}-System betrachtet werden, da ein potentieller Nutzer keine zusätzliche Hardware am Körper tragen muss. Das Ziel dieses Systems ist, eine Umgebung zu schaffen, die auf die Position und das Verhalten einer Person reagiert (intelligente Umgebung). \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13}\newline Es ist beispielsweise vorstellbar, dass 
 
 Test
 
-\subsection{Fazit}
-
-\subsection{Ausblick}
+\subsection{Fazit und Ausblick}
+In dieser Ausarbeitung wurden verschiedene Methoden zur Lokalisierung und Bewegungsverfolgung von Person innerhalb von Gebäuden vorgestellt. Dabei wurden die Funktionsweisen der jeweiligen Methoden erläutert und deren Vor- und Nachteile aufgezeigt.\newline\newline 
+Zusammenfassend lässt sich sagen, dass jede Methode seinen Einsatzzweck hat und der Vergleich der Technologien untereinander nur bedingt sinnvoll ist. Abhängig vom Einsatzzweck liegt das Augenmerk auf unterschiedlichen Eigenschaften und Anforderungen. Nicht jede Methode kann den entsprechenden Anforderungen gerecht werden. Obwohl die vorgestellten Systeme im Grunde die gleiche Aufgabe erfüllen, so unterscheiden sie sich doch in vielerlei Punkten. Die Genauigkeit, der Installationsaufwand und letztlich auch der Preis stellen hier nur einige dieser Punkte dar. \newline\newline
+Im Laufe der Zeit werden die Bauteile für solche Systeme voraussichtlich immer günstiger, wodurch der finanzielle Aspekt zunehmend vernachlässigbar werden wird. Der technologische Fortschritt wird weiterhin präzisere und kleine Sensoren mit sich bringen, wodurch eine Bewertung der verschiedenen Systeme in einigen Jahren deutlich andere Ergebnisse liefern würde. 
 
 \newpage
 
@@ -117,10 +137,12 @@ Test
 \begin{itemize}[leftmargin=*]
 \item[] \textbf{Deak G., Curran K. \& Condell J.} A survey of active and passive indoor localisation systems (2012), Online unter URL : \url{http://scisweb.ulster.ac.uk/~kevin/comcomsurvey.pdf}
 \item[] \textbf{Ehrlich, I.}: Indoor Localization (2006), Online unter URL: \url{http://ifgi.uni-muenster.de/~muellerj/lbs06/proceedings/3-IndoorLocalization.pdf}
-\item[] \textbf{Kemper J.}: Passive Infrarot-Lokalisierung (2010), Fakultät für Elektrotechnik und Informationstechnik, Technischen Universität Dortmund, Dortmund
+\item[] \textbf{Kemper J.}: Passive Infrarot-Lokalisierung (2010), Fakultät für Elektrotechnik und Informationstechnik, Technischen Universität Dortmund, Dortmund, Online unter URL: \url{https://eldorado.tu-dortmund.de/bitstream/2003/27428/1/PIL.pdf}
 \item[] \textbf{Kilic Y., Wymeersch H., Meijerink A., Bentum M. \& Scanlon W.}: Online unter URL: \url{http://arxiv.org/pdf/1303.4092.pdf}
 \item[] \textbf{Kivimäki T., Vuorela T., Peltola P. \& Vanhala J.}: A Review on Device-Free Passive Indoor Positioning Methods (2014), Online unter URL: \url{http://www.sersc.org/journals/IJSH/vol8_no1_2014/9.pdf}
 \item[] \textbf{M. Mah}: Device-Free Passive Localization (2007), Online unter URL: \url{https://www.cs.umd.edu/sites/default/files/scholarly_papers/MatthewMah_1.pdf}
 \item[] \textbf{Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M.}: Device-Free Localization Technique for Indoor Detection and Tracking of Human Body (2013), Online unter URL: \url{http://ac.els-cdn.com/S187704281402878X/1-s2.0-S187704281402878X-main.pdf?_tid=7bc6ad0e-12a4-11e5-95f4-00000aab0f02&acdnat=1434293516_4a2274a0ebfb932cf57c3f4f652c668f}
+\item[] \textbf{Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D.}: Detecting Human Movement by Differential Air
+Pressure Sensing in HVAC System Ductwork: An Exploration in Infrastructure Mediated Sensing (2008), College of Computing, School of Interactive Computing, \& GVU Center Georgia Institute of Technology, Online unter URL: \url{https://dub.washington.edu/djangosite/media/papers/tmpqiqC-3.pdf}
 \item[] \textbf{Technische Universität Dortmund}: TU Dortmund, Fakultät ETIT, IRF, IT, Forschung, Embedded Systems,  Projekte, PIL, DFG-Projekt: Passive Infrarot-Lokalisierung, Online unter URL: \url{http://www.irf.tu-dortmund.de/cms/de/IT/Forschung/Embedded_Systems/Projekte/PIL/index.html}, Abruf: 2015-06-15
 \end{itemize}

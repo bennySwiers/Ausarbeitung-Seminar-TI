@@ -7,10 +7,9 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Radio Frequency Identification}{2}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}Ultra-wideband}{4}{subsubsection.2.1.2}
 \contentsline {subsection}{\numberline {2.2}Passive Infrarot-Lokalisierung}{5}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Drucksensoren}{6}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Bla}{6}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}BlaBla}{6}{subsubsection.2.3.2}
-\contentsline {subsection}{\numberline {2.4}Computer-Vision}{6}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Fazit}{6}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Ausblick}{6}{subsection.2.6}
-\contentsline {section}{\numberline {3}Quellenverzeichnis}{7}{section.3}
+\contentsline {subsection}{\numberline {2.3}Differential Air Pressure}{6}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Physical Contact}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Projekt: GravitySpace}{7}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Computer-Vision}{7}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Fazit und Ausblick}{8}{subsection.2.7}
+\contentsline {section}{\numberline {3}Quellenverzeichnis}{9}{section.3}
