@@ -3,15 +3,14 @@
 \contentsline {subsection}{\numberline {1.1}Aktive Lokalisierung}{1}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Passive Lokalisierung}{1}{subsection.1.2}
 \contentsline {section}{\numberline {2}Sensorlose Indoor-Lokalisierung}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Radiosignale}{2}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Radio Frequency Identification}{2}{subsubsection.2.1.1}
-\contentsline {subsection}{\numberline {2.2}Experimenteller Aufbau}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.1}Radio Frequency Identification}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Experimenteller Aufbau}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Testergebnisse}{4}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Ultra-wideband}{5}{subsubsection.2.3.1}
-\contentsline {subsection}{\numberline {2.4}Passive Infrarot-Lokalisierung}{6}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Differential Air Pressure}{7}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Physical Contact}{9}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Projekt: GravitySpace}{9}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Computer-Vision}{9}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Fazit und Ausblick}{9}{subsection.2.9}
-\contentsline {section}{\numberline {3}Quellenverzeichnis}{10}{section.3}
+\contentsline {subsection}{\numberline {2.4}Ultra-wideband}{5}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Passive Infrarot-Lokalisierung}{6}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Differential Air Pressure}{8}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Physical Contact}{9}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Projekt: GravitySpace}{9}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Computer-Vision}{9}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Fazit und Ausblick}{9}{subsection.2.10}
+\contentsline {section}{\numberline {3}Quellenverzeichnis}{11}{section.3}
