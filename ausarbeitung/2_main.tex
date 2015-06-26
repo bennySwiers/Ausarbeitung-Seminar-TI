@@ -25,12 +25,12 @@ Im weiteren Verlauf wird jedes \textit{passive System} näher untersucht. Es wir
 \subsubsection{Radio Frequency Identification}
 Unter \textit{Radio Frequence Identification} (\textbf{RFID}) versteht man eine kontaktlose Identifikation mittels Funkübertragung. Oftmals kann man hierfür bereits vorhandene Wi-Fi-Netzwerke verwenden.\footnote{Vgl. Kivimäki T., Vuorela T., Peltola P. \& Vanhala J., S.  16} \\
 Ein solches DfL-System (\textbf{Device-free Localization}) nutzt die Tatsache aus, dass die Präsenz eines menschlichen Körpers die Radiosignale beeinflusst.\footnote{Vgl. ebd.} Die verwendete Frequenz der Knotenpunkte liegt hierbei bei $2.4$Ghz, weil dies die Resonanzfrequenz von Wasser ist und der Mensch bekanntermaßen aus $70\%$ aus Wasser besteht.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 11}. Ein weiterer Pluspunkt ist auch, dass die Frequenz von $2.4$ Ghz bei \textit{IEEE Standards} wie $802.11b$ und $802.11g$ verwendet wird.\footnote{Vgl. Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M., S. 3}\\
-Das \textit{DfP-System} (\textit{Device-free Passive}) auf Grundlage von \textit{RFID}, welches im Folgenden vorgestellt wird, misst die Änderungen von der erhaltenen \textit{Received Signal Strength Indication} (\textbf{RSSI}). Der Anwendungsbereich des vorgestellten Systems ist die Haussicherheit. Das System soll als Alarmanlage agieren und Eindringlinge lokalisieren bzw. detektieren können.\footnote{Vgl. Mah M., S. 2} Ein solches System besteht aus zwei Komponenten, den \textit{Access Points} (\textbf{AP})\footnote{Z. Dt. Zugriffsknoten} und den \textit{Monitoring Points} (\textbf{MP})\footnote{(Z. Dt. Kontrollknoten)}. Einen guten Überblick bietet die folgende Abbildung:\\
+Das \textit{DfP-System} (\textit{Device-free Passive}) auf Grundlage von \textit{RFID}, welches im Folgenden vorgestellt wird, misst die Änderungen von der erhaltenen \textit{Received Signal Strength Indication} (\textbf{RSSI}). Systeme, die von der \textit{RSSI} Gebrauch machen, haben meist eine Genauigkeit von bis zu $18$cm.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 14}. Das in folgendenen Abschnitten vorgestellte System soll als Alarmanlage agieren und Eindringlinge lokalisieren bzw. detektieren können.\footnote{Vgl. Mah M., S. 2} Ein solches System besteht aus zwei Komponenten, den \textit{Access Points} (\textbf{AP})\footnote{Z. Dt. Zugriffsknoten} und den \textit{Monitoring Points} (\textbf{MP})\footnote{(Z. Dt. Kontrollknoten)}. Einen guten Überblick bietet die folgende Abbildung:\\
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{pictures/rfid}
-	\caption{RFID Indoor-Lokalisierung (Matthew Mah, S. 2)}
+	\caption{RFID Indoor-Lokalisierung (Mah M., S. 2)}
 \end{figure}
 
 In der obigen Abbildung erkennt man zwei \textbf{AP}, sowie einen \textbf{MP} und einen \textbf{DfP Server}, der die Berechnungen auf Grundlage der erhaltenen Signale durchführt. Als \textbf{MP} können dabei beliebige Computer verwendet werden.\footnote{Vgl. ebd.} Neben der eigentlichen Detektion (\textit{Monitoring Mode}) unterstützt das System noch zwei weitere Modi, welche nun näher beschrieben werden.\\
@@ -41,9 +41,33 @@ In der obigen Abbildung erkennt man zwei \textbf{AP}, sowie einen \textbf{MP} un
 \item \textbf{DfP Mode}: Der \textit{DfP-Modus} kann mehrere Eindringlinge gleichzeitig orten und verfolgen.
 \end{itemize}
 
-Sobald ein Eindringling von einem \textbf{MP} detektiert wird, werden zusätzlich noch weitere \textit{Monitoring Points} kontaktiert und auf mögliche Detektionen überprüft. Erst danach kommt es zu einem Alarm des Gesamtsystems.\footnote{Vgl. ebd., S. 2 f.} Tests in kontrollierten Umgebungen ergaben zufriedenstellende Ergebnisse mit einer niedrigen Rate von \textit{False Positives}\footnote{Z. Dt. Falschpositiv} und einer hohen \textit{Detektionsrate}. Die beiden beiden folgenden Abbildungen zeigen dies nochmals graphisch auf.
+Sobald ein Eindringling von einem \textbf{MP} detektiert wird, werden zusätzlich noch weitere \textit{Monitoring Points} kontaktiert und auf mögliche Detektionen überprüft. Erst danach kommt es zu einem Alarm des Gesamtsystems.\footnote{Vgl. ebd., S. 2 f.} Der zentrale Alarm kann hierbei auf disjunkten Paaren von \textbf{AP} und \textbf{MP} basieren. Aus diesem Grund ist es notwendig die Detektionen möglichst simultan zu verzeichnen.\footnote{Vgl. ebd.}
 
-\begin{figure}
+\subsection{Experimenteller Aufbau}
+Es wurden vier Experimente in kontrollierter Umgebung durchgeführt. Die eigentliche Leistung des Systems konnte somit besser untersucht werden, da die äußeren Einflüsse dadurch minimiert wurden. Bei jedem einzelnen Experiment wurde eine bestimmte Anordnung von zwei \textbf{AP} und zwei \textbf{MP} verwendet. Jeder \textbf{MP} zeichnete dabei die \textit{RSSI} von jedem \textbf{AP} auf, die alle $100$ ms sendeten.\\
+Ein beispielhafter Aufbau ist in der folgenden Abbildung (links) zu sehen:
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+	\includegraphics[scale=0.6]{pictures/experiment}
+	\caption*{Aufbau}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[scale=0.45]{pictures/versuch}
+  \caption*{Versuchsverlauf}
+\end{minipage}
+\caption{Eines der vier Experimente (Mah M., S. 4)}
+\end{figure}
+
+Jeder \textbf{MP} zeichnete dabei 1800 Sekunden auf. Eine Person durchlief während dieses Zeitraumes den Raum und hielt an vier Positionen für jeweils 60 Sekunden an. Nach Durchqueren verließ die Person den Raum und das Experiment wurde danach wiederholt. Diese vier Positionen sind in der obigen linken Abbildung mittig zu sehen. Auf der rechten Abbildung sind die Detektionen der jeweiligen \textbf{AP} dargestellt. Dabei wurden alle möglichen Paare von \textbf{AP} und \textbf{MP} untersucht.
+
+\subsection{Testergebnisse}
+ Tests in kontrollierten Umgebungen ergaben zufriedenstellende Ergebnisse mit einer niedrigen Rate von \textit{False Positives}\footnote{Z. Dt. Falschpositiv} und einer hohen \textit{Detektionsrate}. Hierbei bedeuten \textit{False Positives} die Detektionen, die fälschlicherweise enstanden sind, es also eigentlich keinerlei Bewegung zu verzeichnen gab. Die \textit{Detektionsrate} gibt die relative Häufigkeit von korrekten Detektionen an. Die beiden beiden folgenden Abbildungen zeigen dies nochmals graphisch auf.
+
+\begin{figure}[H]
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
@@ -58,7 +82,7 @@ Sobald ein Eindringling von einem \textbf{MP} detektiert wird, werden zusätzlic
 \caption{Testergebnisse (Mah M., S. 9)}
 \end{figure}
 
-Dieses \textit{DfP-System} schnitt in den Tests zufriedenstellend ab, jedoch muss man auch auf mögliche Schwachstellen eingehen. Viele Parameter, die in den Algorithmen für die Detektion von Eindringlingen gebraucht werden haben direkten Einfluss auf die Sensibilität des Systems. Will man die Wahrscheinlichkeit eine Detektion zu verzeichnen erhöhen, wird gleichzeitig die Anzahl der \textit{False Positives} erhöht. Das Finden von Parametern, welche die Wahrscheinlichkeit von Detektionen erhöhen und gleichzeitig die Anzahl der \textit{False Positives} minimieren, ist ein Optimierungsproblem.\footnote{Vgl. ebd. S. 9}
+Dieses \textit{DfP-System} schnitt in den Tests zufriedenstellend ab, jedoch muss man auch auf mögliche Schwachstellen eingehen. Viele Parameter, die in den Algorithmen\footnote{Moving Variance Based Detection \& Moving Average Based Detectionn \url{https://www.cs.umd.edu/sites/default/files/scholarly_papers/MatthewMah_1.pdf}} für die Detektion von Eindringlingen gebraucht werden haben direkten Einfluss auf die Sensibilität des Systems. Will man die Wahrscheinlichkeit eine korrekte Detektion zu verzeichnen erhöhen, wird gleichzeitig die Anzahl der \textit{False Positives} erhöht, die beiden Größen stehen also in direkter Korrelation zueinander. Das Finden von Parametern, welche die Wahrscheinlichkeit von Detektionen erhöhen und gleichzeitig die Anzahl der \textit{False Positives} minimieren, ist ein Optimierungsproblem.\footnote{Vgl. ebd. S. 9}
 
 \subsubsection{Ultra-wideband}
 
@@ -141,7 +165,7 @@ Im Laufe der Zeit werden die Bauteile für solche Systeme voraussichtlich immer 
 \item[] \textbf{Kilic Y., Wymeersch H., Meijerink A., Bentum M. \& Scanlon W.}: Online unter URL: \url{http://arxiv.org/pdf/1303.4092.pdf}
 \item[] \textbf{Kivimäki T., Vuorela T., Peltola P. \& Vanhala J.}: A Review on Device-Free Passive Indoor Positioning Methods (2014), Online unter URL: \url{http://www.sersc.org/journals/IJSH/vol8_no1_2014/9.pdf}
 \item[] \textbf{M. Mah}: Device-Free Passive Localization (2007), Online unter URL: \url{https://www.cs.umd.edu/sites/default/files/scholarly_papers/MatthewMah_1.pdf}
-\item[] \textbf{Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M.}: Device-Free Localization Technique for Indoor Detection and Tracking of Human Body (2013), Online unter URL: \url{http://ac.els-cdn.com/S187704281402878X/1-s2.0-S187704281402878X-main.pdf?_tid=7bc6ad0e-12a4-11e5-95f4-00000aab0f02&acdnat=1434293516_4a2274a0ebfb932cf57c3f4f652c668f}
+\item[] \textbf{Pirzada N., Nayan Y., Subhan F., Hassan F., Khan M.}: Device-Free Localization Technique for Indoor Detection and Tracking of Human Body (2013), Online unter URL: \url{http://ac.els-cdn.com/S187704281402878X/1-s2.0-S187704281402878X-main.pdf?_tid=7bc6ad0e-12a4-11e5-95f4-00000aab0f02&acdnat=1434293516_4a2274a0ebfb932cf57c3f4f652c668f}
 \item[] \textbf{Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D.}: Detecting Human Movement by Differential Air
 Pressure Sensing in HVAC System Ductwork: An Exploration in Infrastructure Mediated Sensing (2008), College of Computing, School of Interactive Computing, \& GVU Center Georgia Institute of Technology, Online unter URL: \url{https://dub.washington.edu/djangosite/media/papers/tmpqiqC-3.pdf}
 \item[] \textbf{Technische Universität Dortmund}: TU Dortmund, Fakultät ETIT, IRF, IT, Forschung, Embedded Systems,  Projekte, PIL, DFG-Projekt: Passive Infrarot-Lokalisierung, Online unter URL: \url{http://www.irf.tu-dortmund.de/cms/de/IT/Forschung/Embedded_Systems/Projekte/PIL/index.html}, Abruf: 2015-06-15
