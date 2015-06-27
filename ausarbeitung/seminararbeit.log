@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.19)  27 JUN 2015 13:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.19)  27 JUN 2015 14:53
 entering extended mode
 **seminararbeit.tex
 
@@ -1016,7 +1016,7 @@ No file 1_introduction.tex.
 
 ("C:\Benny\Uni\Master\2. Semester\Seminar - Technische Informatik\Ausarbeitung-
 Seminar-TI\ausarbeitung\2_main.tex"
-<pictures/indoor_loc.png, id=148, 498.86375pt x 175.65625pt>
+<pictures/indoor_loc.png, id=151, 498.86375pt x 175.65625pt>
 File: pictures/indoor_loc.png Graphic file (type png)
 
 <use pictures/indoor_loc.png>
@@ -1037,7 +1037,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--28
 
  []
 
-<pictures/rfid.png, id=169, 294.09875pt x 330.23375pt>
+<pictures/rfid.png, id=172, 294.09875pt x 330.23375pt>
 File: pictures/rfid.png Graphic file (type png)
  <use pictures/rfid.png>
 Package pdftex.def Info: pictures/rfid.png used on input line 31.
@@ -1058,14 +1058,14 @@ LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 
 [3 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitun
 g-Seminar-TI/ausarbeitung/pictures/rfid.png>]
-<pictures/experiment.png, id=197, 353.32pt x 261.97874pt>
+<pictures/experiment.png, id=200, 353.32pt x 261.97874pt>
 File: pictures/experiment.png Graphic file (type png)
 
 <use pictures/experiment.png>
 Package pdftex.def Info: pictures/experiment.png used on input line 53.
 (pdftex.def)             Requested size: 211.99364pt x 157.18845pt.
 
-<pictures/versuch.png, id=198, 567.11874pt x 346.29375pt>
+<pictures/versuch.png, id=201, 567.11874pt x 346.29375pt>
 File: pictures/versuch.png Graphic file (type png)
 
 <use pictures/versuch.png>
@@ -1076,14 +1076,14 @@ Overfull \hbox (41.80539pt too wide) in paragraph at lines 58--59
  [][] 
  []
 
-<pictures/false_pos.png, id=200, 340.27126pt x 228.855pt>
+<pictures/false_pos.png, id=203, 340.27126pt x 228.855pt>
 File: pictures/false_pos.png Graphic file (type png)
 
 <use pictures/false_pos.png>
 Package pdftex.def Info: pictures/false_pos.png used on input line 73.
 (pdftex.def)             Requested size: 204.16432pt x 137.31404pt.
 
-<pictures/detection.png, id=201, 335.2525pt x 224.84pt>
+<pictures/detection.png, id=204, 335.2525pt x 224.84pt>
 File: pictures/detection.png Graphic file (type png)
 
 <use pictures/detection.png>
@@ -1100,14 +1100,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 [5 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitun
 g-Seminar-TI/ausarbeitung/pictures/false_pos.png> <C:/Benny/Uni/Master/2. Semes
 ter/Seminar - Technische Informatik/Ausarbeitung-Seminar-TI/ausarbeitung/pictur
-es/detection.png>] <pictures/multi.jpg, id=230, 472.76625pt x 234.8775pt>
+es/detection.png>] <pictures/multi.jpg, id=233, 472.76625pt x 234.8775pt>
 File: pictures/multi.jpg Graphic file (type jpg)
 
 <use pictures/multi.jpg>
 Package pdftex.def Info: pictures/multi.jpg used on input line 100.
 (pdftex.def)             Requested size: 256.07741pt x 127.22618pt.
 
-<pictures/pil1.jpg, id=233, 257.46187pt x 152.82094pt>
+<pictures/pil1.jpg, id=236, 257.46187pt x 152.82094pt>
 File: pictures/pil1.jpg Graphic file (type jpg)
  <use pictures/pil1.jpg>
 Package pdftex.def Info: pictures/pil1.jpg used on input line 113.
@@ -1115,7 +1115,7 @@ Package pdftex.def Info: pictures/pil1.jpg used on input line 113.
 
 [6 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitun
 g-Seminar-TI/ausarbeitung/pictures/multi.jpg>]
-<pictures/triangulation.jpg, id=246, 200.24812pt x 134.75343pt>
+<pictures/triangulation.jpg, id=249, 200.24812pt x 134.75343pt>
 File: pictures/triangulation.jpg Graphic file (type jpg)
 
 <use pictures/triangulation.jpg>
@@ -1125,14 +1125,14 @@ Package pdftex.def Info: pictures/triangulation.jpg used on input line 121.
 ng-Seminar-TI/ausarbeitung/pictures/pil1.jpg> <C:/Benny/Uni/Master/2. Semester/
 Seminar - Technische Informatik/Ausarbeitung-Seminar-TI/ausarbeitung/pictures/t
 riangulation.jpg>]
-<pictures/dap_diagramm.png, id=262, 518.6878pt x 188.20313pt>
+<pictures/dap_diagramm.png, id=265, 518.6878pt x 188.20313pt>
 File: pictures/dap_diagramm.png Graphic file (type png)
 
 <use pictures/dap_diagramm.png>
 Package pdftex.def Info: pictures/dap_diagramm.png used on input line 132.
 (pdftex.def)             Requested size: 426.79135pt x 154.86743pt.
 
-<pictures/dap_klima.png, id=264, 439.6425pt x 248.42813pt>
+<pictures/dap_klima.png, id=267, 439.6425pt x 248.42813pt>
 File: pictures/dap_klima.png Graphic file (type png)
 
 <use pictures/dap_klima.png>
@@ -1151,7 +1151,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--150
 
  []
 
-<pictures/piezo.jpg, id=274, 638.385pt x 438.63875pt>
+<pictures/piezo.jpg, id=277, 638.385pt x 438.63875pt>
 File: pictures/piezo.jpg Graphic file (type jpg)
  <use pictures/piezo.jpg>
 Package pdftex.def Info: pictures/piezo.jpg used on input line 153.
@@ -1169,47 +1169,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--159
 
 [9 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitun
 g-Seminar-TI/ausarbeitung/pictures/piezo.jpg>]
-<pictures/hpi1.png, id=285, 422.32782pt x 290.58563pt>
+<pictures/hpi1.png, id=288, 422.32782pt x 290.58563pt>
 File: pictures/hpi1.png Graphic file (type png)
  <use pictures/hpi1.png>
-Package pdftex.def Info: pictures/hpi1.png used on input line 166.
+Package pdftex.def Info: pictures/hpi1.png used on input line 165.
 (pdftex.def)             Requested size: 256.07741pt x 176.20168pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--181
+<pictures/hpi2.png, id=289, 768.62157pt x 253.69781pt>
+File: pictures/hpi2.png Graphic file (type png)
+ <use pictures/hpi2.png>
+Package pdftex.def Info: pictures/hpi2.png used on input line 173.
+(pdftex.def)             Requested size: 341.43437pt x 112.69968pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 178--181
+Underfull \hbox (badness 10000) in paragraph at lines 177--179
 
  []
 
 [10 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitu
-ng-Seminar-TI/ausarbeitung/pictures/hpi1.png>] [11]
-Overfull \hbox (4.37799pt too wide) in paragraph at lines 191--192
+ng-Seminar-TI/ausarbeitung/pictures/hpi1.png> <C:/Benny/Uni/Master/2. Semester/
+Seminar - Technische Informatik/Ausarbeitung-Seminar-TI/ausarbeitung/pictures/h
+pi2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
+
+ []
+
+[11] [12]
+Overfull \hbox (4.37799pt too wide) in paragraph at lines 208--209
 $\T1/aett/m/n/12 e a d m i n / u s e r _ u p l o a d / f a c h g e b i e t e / 
 b a u d i s c h / p u b l i c a t i o n s / G r a v i t y S p a c e _ C H$
  []
 
 
-Overfull \hbox (4.37799pt too wide) in paragraph at lines 197--198
+Overfull \hbox (4.37799pt too wide) in paragraph at lines 214--215
 $\T1/aett/m/n/12 w w w . c s . u m d . e d u / s i t e s / d e f a u l t / f i 
 l e s / s c h o l a r l y _ p a p e r s / M a t t h e w M a h _1 . p d f$[] 
  []
 
 
-Overfull \hbox (55.86998pt too wide) in paragraph at lines 198--199
+Overfull \hbox (55.86998pt too wide) in paragraph at lines 215--216
 \T1/aer/m/n/12 ne un-ter URL: []$\T1/aett/m/n/12 h t tp : / / a c . e l s -[] c
  d n . c o m / S 187704281402878 X /1-[] s 2 . 0-[] S 187704281402878 X$
  []
 
 
-Overfull \hbox (19.2139pt too wide) in paragraph at lines 198--199
+Overfull \hbox (19.2139pt too wide) in paragraph at lines 215--216
 $\T1/aett/m/n/12 -[] m a i n . p d f ? _ t i d =7 b c6 a d0 e -[]12 a 4-[]11 e 
 5-[]95 f 4-[]00000 a a b 0 f 02 & a c d n a t =1434293516 _$
  []
 
-[12]) [13]
+[13]) [14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
 
@@ -1238,13 +1251,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 11955 strings out of 493921
- 177800 string characters out of 3147282
+ 11965 strings out of 493921
+ 177940 string characters out of 3147282
  309745 words of memory out of 3000000
- 14866 multiletter control sequences out of 15000+200000
+ 14871 multiletter control sequences out of 15000+200000
  40120 words of font info for 84 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 68i,9n,98p,989b,608s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,9n,98p,984b,608s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\benny\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
@@ -1256,9 +1269,9 @@ public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.
 pfb>
-Output written on seminararbeit.pdf (18 pages, 941300 bytes).
+Output written on seminararbeit.pdf (19 pages, 999705 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 399 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -9,7 +9,7 @@ Solche Systeme sind weit verbreitet, jedoch können Teilnehmer in manchen Situat
 Darüber hinaus können Personen selbst kleinste sichtbare Sensoren als unkomfortabel empfinden, sodass in solchen Situationen zu \textit{passiven Lokalisierungsmethoden} gegriffen werden muss.\footnote{Vgl. Kivimäki T., Vuorela T., Peltola P. \& Vanhala J., S.1}
 \subsection{Passive Lokalisierung}
 Im Gegensatz zur \textit{aktiven Lokalisierungsmethoden} wird bei einer \textit{passiven Lokalisierung} (auch \textit{sensorlose Lokalisierung}) keine aktive Mitwirkung der Teilnehmer verlangt.\footnote{Vgl. ebd.} Ein großer Vorteil solcher Systeme ist die Benutzerfreundlichkeit, da keinerlei Gerätschaften sich am Teilnehmer selbst befinden müssen. Ebenfalls bieten \textit{sensorlose Lokaliserungsmethoden} neue Anwendungsbereiche wie zum Beispiel Alarmanlagen in Gebäuden. So können Einbrecher lokalisiert werden, was bei \textit{aktiver Lokalisierung} nur schwer vorstellbar ist.\\
-Die folgende Abbildung zeigt nochmals die Unterkategorien von \textit{Indoor-Lokalisierung} auf:
+Die Abbildung 1 zeigt nochmals die Unterkategorien von \textit{Indoor-Lokalisierung} auf:
 
 \begin{figure}[H]
 	\centering
@@ -24,7 +24,7 @@ Im weiteren Verlauf wird jedes \textit{passive System} näher untersucht. Es wir
 \subsection{Radio Frequency Identification}
 Unter \textit{Radio Frequence Identification} (\textbf{RFID}) versteht man eine kontaktlose Identifikation mittels Funkübertragung. Oftmals kann man hierfür bereits vorhandene Wi-Fi-Netzwerke verwenden.\footnote{Vgl. Kivimäki T., Vuorela T., Peltola P. \& Vanhala J., S.  16} \\
 Ein solches DfL-System (\textbf{Device-free Localization}) nutzt die Tatsache aus, dass die Präsenz eines menschlichen Körpers die Radiosignale beeinflusst.\footnote{Vgl. ebd.} Die verwendete Frequenz der Knotenpunkte liegt hierbei bei $2.4$Ghz, weil dies die Resonanzfrequenz von Wasser ist und der Mensch bekanntermaßen aus $70\%$ aus Wasser besteht.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 11}. Ein weiterer Pluspunkt ist auch, dass die Frequenz von $2.4$ Ghz bei \textit{IEEE Standards} wie $802.11b$ und $802.11g$ verwendet wird.\footnote{Vgl. Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M., S. 3}\\
-Das \textit{DfP-System} (\textit{Device-free Passive}) auf Grundlage von \textit{RFID}, welches im Folgenden vorgestellt wird, misst die Änderungen von der erhaltenen \textit{Received Signal Strength Indication} (\textbf{RSSI}). Systeme, die von der \textit{RSSI} Gebrauch machen, haben meist eine Genauigkeit von bis zu $18$cm.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 14}. Das in folgendenen Abschnitten vorgestellte System soll als Alarmanlage agieren und Eindringlinge lokalisieren bzw. detektieren können.\footnote{Vgl. Mah M., S. 2} Ein solches System besteht aus zwei Komponenten, den \textit{Access Points} (\textbf{AP})\footnote{Z. Dt. Zugriffsknoten} und den \textit{Monitoring Points} (\textbf{MP})\footnote{(Z. Dt. Kontrollknoten)}. Einen guten Überblick bietet die folgende Abbildung:\\
+Das \textit{DfP-System} (\textit{Device-free Passive}) auf Grundlage von \textit{RFID}, welches im Folgenden vorgestellt wird, misst die Änderungen von der erhaltenen \textit{Received Signal Strength Indication} (\textbf{RSSI}). Systeme, die von der \textit{RSSI} Gebrauch machen, haben meist eine Genauigkeit von bis zu $18$cm.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 14}. Das in folgendenen Abschnitten vorgestellte System soll als Alarmanlage agieren und Eindringlinge lokalisieren bzw. detektieren können.\footnote{Vgl. Mah M., S. 2} Ein solches System besteht aus zwei Komponenten, den \textit{Access Points} (\textbf{AP})\footnote{Z. Dt. Zugriffsknoten} und den \textit{Monitoring Points} (\textbf{MP})\footnote{(Z. Dt. Kontrollknoten)}. Einen guten Überblick bietet die Abbildung 2:\\
 
 \begin{figure}[H]
 	\centering
@@ -44,7 +44,7 @@ Sobald ein Eindringling von einem \textbf{MP} detektiert wird, werden zusätzlic
 
 \subsection{Experimenteller Aufbau}
 Es wurden vier Experimente in kontrollierter Umgebung durchgeführt. Die eigentliche Leistung des Systems konnte somit besser untersucht werden, da die äußeren Einflüsse dadurch minimiert wurden. Bei jedem einzelnen Experiment wurde eine bestimmte Anordnung von zwei \textbf{AP} und zwei \textbf{MP} verwendet. Jeder \textbf{MP} zeichnete dabei die \textit{RSSI} von jedem \textbf{AP} auf, die alle $100$ ms sendeten.\\
-Ein beispielhafter Aufbau ist in der folgenden Abbildung (links) zu sehen:
+Ein beispielhafter Aufbau ist in der Abbildung 3 (links) zu sehen:
 
 \begin{figure}[H]
 \centering
@@ -64,7 +64,7 @@ Ein beispielhafter Aufbau ist in der folgenden Abbildung (links) zu sehen:
 Jeder \textbf{MP} zeichnete dabei 1800 Sekunden auf. Eine Person durchlief während dieses Zeitraumes den Raum und hielt an vier Positionen für jeweils 60 Sekunden an. Nach Durchqueren verließ die Person den Raum und das Experiment wurde danach wiederholt. Diese vier Positionen sind in der obigen linken Abbildung mittig zu sehen. Auf der rechten Abbildung sind die Detektionen der jeweiligen \textbf{AP} dargestellt. Dabei wurden alle möglichen Paare von \textbf{AP} und \textbf{MP} untersucht.
 
 \subsection{Testergebnisse}
- Tests in kontrollierten Umgebungen ergaben zufriedenstellende Ergebnisse mit einer niedrigen Rate von \textit{False Positives}\footnote{Z. Dt. Falschpositiv} und einer hohen \textit{Detektionsrate}. Hierbei bedeuten \textit{False Positives} die Detektionen, die fälschlicherweise enstanden sind, es also eigentlich keinerlei Bewegung zu verzeichnen gab. Die \textit{Detektionsrate} gibt die relative Häufigkeit von korrekten Detektionen an. Die beiden beiden folgenden Abbildungen zeigen dies nochmals graphisch auf.
+ Tests in kontrollierten Umgebungen ergaben zufriedenstellende Ergebnisse mit einer niedrigen Rate von \textit{False Positives}\footnote{Z. Dt. Falschpositiv} und einer hohen \textit{Detektionsrate}. Hierbei bedeuten \textit{False Positives} die Detektionen, die fälschlicherweise enstanden sind, es also eigentlich keinerlei Bewegung zu verzeichnen gab. Die \textit{Detektionsrate} gibt die relative Häufigkeit von korrekten Detektionen an. Die beiden folgenden Abbildungen (Abbildung 4)zeigen dies nochmals graphisch auf.
 
 \begin{figure}[H]
 \centering
@@ -93,7 +93,7 @@ Dieses \textit{DfP-System} schnitt in den Tests zufriedenstellend ab, jedoch mus
  	\item \textbf{Medical Imaging}: Verwendung für medizinische Zwecke
  \end{itemize} 
 
-Das erste System, was eine Überwachung durch Wände ermöglichte, verwendete Signale mit einer Frequenz zwischen $902$ und $928$ MHz. Dieses System war in der Lage sich bewegende Objekte mit bis zu $1.5$ $m/s$ zu detektieren. Wurde eine Bewegung detektiert, so wurde vom Empfänger ein akkustisches Signal ausgelöst. Der Nachteil dieses Systems war jedoch, dass das Signal Wände mit Spiegeln oder allgemein nasse Wände nur schlecht penetrieren konnte. Systeme, die hingegen auf \textbf{UWB} basieren, verwenden Frequenzen von $3.1$ bis $10.6$ GHz, die eine Penetration von Wänden ermöglichen. Darüber hinaus sind diese Systeme resistenter gegenüber Interferenz sowie Multipath-Fading,\footnote{Z. Dt. Mehrwegempfang}\footnote{Vgl. ebd.} also gegenüber einem Empfang eines gleichen Signals auf unterschiedlichen Wegen. Dies kann beispielsweise aufgrund von Brechung oder Reflektion entstehen, wie die untere Abbildung zeigt.\\
+Das erste System, was eine Überwachung durch Wände ermöglichte, verwendete Signale mit einer Frequenz zwischen $902$ und $928$ MHz. Dieses System war in der Lage sich bewegende Objekte mit bis zu $1.5$ $m/s$ zu detektieren. Wurde eine Bewegung detektiert, so wurde vom Empfänger ein akkustisches Signal ausgelöst. Der Nachteil dieses Systems war jedoch, dass das Signal Wände mit Spiegeln oder allgemein nasse Wände nur schlecht penetrieren konnte. Systeme, die hingegen auf \textbf{UWB} basieren, verwenden Frequenzen von $3.1$ bis $10.6$ GHz, die eine Penetration von Wänden ermöglichen. Darüber hinaus sind diese Systeme resistenter gegenüber Interferenz sowie Multipath-Fading,\footnote{Z. Dt. Mehrwegempfang}\footnote{Vgl. ebd.} also gegenüber einem Empfang eines gleichen Signals auf unterschiedlichen Wegen. Dies kann beispielsweise aufgrund von Brechung oder Reflektion entstehen, wie die Abbildung 5 zeigt.\\
 
 \begin{figure}[H]
 	\centering
@@ -106,7 +106,7 @@ Abschließend kann man sagen, dass Systeme, die auf Radiosignalen basieren ihren
 
 
 \subsection{Passive Infrarot-Lokalisierung}
-Die passive Infrarot-Lokalisierung (\textbf{PIL}) basiert auf der Körperwärmestrahlung einer Person bzw. eines Objektes. Der thermische Unterschied eines Objektes im Vergleich zu seiner Umgebung kann dabei zur Lokalisierung und Bewegungsverfolgung (Tracking) ausgenutzt werden. Die untere Abbildung zeigt die unterschiedliche Wärmestrahlung einer Person und gegenüber seiner Umgebung.
+Die passive Infrarot-Lokalisierung (\textbf{PIL}) basiert auf der Körperwärmestrahlung einer Person bzw. eines Objektes. Der thermische Unterschied eines Objektes im Vergleich zu seiner Umgebung kann dabei zur Lokalisierung und Bewegungsverfolgung (Tracking) ausgenutzt werden. Die Abbildung 6 zeigt die unterschiedliche Wärmestrahlung einer Person und gegenüber seiner Umgebung.
 
 \begin{figure}[H]
 	\centering
@@ -114,7 +114,7 @@ Die passive Infrarot-Lokalisierung (\textbf{PIL}) basiert auf der Körperwärmes
 	\caption{Wärmestrahlung einer Person (Technische Universität Dortmund (2015))}
 \end{figure}
 
-Die Detektion der Wärmestrahlung wird durch sogenannte Thermopiles\footnote{Z. Dt. Thermosäulen}  realisiert.\footnote{Vgl. Technische Universität Dortmund 2015} Dabei handelt es sich um elektronische Bauelemente, welche thermische Energie in elektrische Energie umwandeln.\footnote{Vgl. Kemper 2010, S. 33} Um eine Person zu lokalisieren bzw. zu tracken, werden mehrere dieser Sensoren im Raum positioniert, um die thermischen Unterschiede zu messen. Auf Grundlage der so ermittelten Daten können anschließend mit Hilfe spezieller Algorithmen die Sichtwinkel auf die entsprechende Person berechnet werden. Durch Triangulation kann durch diese Winkel die Position eines Objektes bestimmt werden.\footnote{Vgl. Technische Universität Dortmund 2015} Die untere Abbildung skizziert dieses Verfahren.
+Die Detektion der Wärmestrahlung wird durch sogenannte Thermopiles\footnote{Z. Dt. Thermosäulen}  realisiert.\footnote{Vgl. Technische Universität Dortmund 2015} Dabei handelt es sich um elektronische Bauelemente, welche thermische Energie in elektrische Energie umwandeln.\footnote{Vgl. Kemper 2010, S. 33} Um eine Person zu lokalisieren bzw. zu tracken, werden mehrere dieser Sensoren im Raum positioniert, um die thermischen Unterschiede zu messen. Auf Grundlage der so ermittelten Daten können anschließend mit Hilfe spezieller Algorithmen die Sichtwinkel auf die entsprechende Person berechnet werden. Durch Triangulation kann durch diese Winkel die Position eines Objektes bestimmt werden.\footnote{Vgl. Technische Universität Dortmund 2015} Die Abbildung 7 skizziert dieses Verfahren.
 
 \begin{figure}[H]
 	\centering
@@ -125,7 +125,7 @@ Die Detektion der Wärmestrahlung wird durch sogenannte Thermopiles\footnote{Z. 
 Der Vorteil dieser Methode liegt nicht nur in der Tatsache, dass ein zu lokalisierendes Objekt keine zusätzliche Hardware mitführen muss. Durch den Verzicht bildgebender Sensoren wird zusätzlich ein Schutz der Privatsphäre gewährleistet.\footnote{Vgl. Kemper 2010, S. 149} Weiterhin ist diese Art der Lokalisierung gegenüber anderen Methoden vergleichsweise kostengünstig.\footnote{Vgl. Kemper 2010, S. 149}\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 7}Da sich die Kosten für Bauteile und Sensoren rasant verändern, ist diese Aussage keinesfalls allgemeingültig. 
 
 \subsection{Differential Air Pressure}
-Eine weitere Möglichkeit der Lokalisierung bietet die Messung der Luftdruckschwankungen, die durch ein sich bewegendes Objekt ausgelöst werden. Wenn eine Person eine Tür öffnet, hat dies eine, durch entsprechende Sensoren messbare, kurzzeitige Veränderung des Luftdrucks innerhalb eines Systems zur Folge.\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13} Dieser Effekt tritt, in abgeschwächter Form, auch beim Passieren eines Engpasses, z.B. eines Türrahmens, auf. Die folgende Abbildung zeigt die Veränderung der Messwerte beim Öffnen/Schließen einer Tür (links) und beim Durchschreiten des Türrahmens (rechts).
+Eine weitere Möglichkeit der Lokalisierung bietet die Messung der Luftdruckschwankungen, die durch ein sich bewegendes Objekt ausgelöst werden. Wenn eine Person eine Tür öffnet, hat dies eine, durch entsprechende Sensoren messbare, kurzzeitige Veränderung des Luftdrucks innerhalb eines Systems zur Folge.\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13} Dieser Effekt tritt, in abgeschwächter Form, auch beim Passieren eines Engpasses, z.B. eines Türrahmens, auf. Die Abbildung 8 zeigt die Veränderung der Messwerte beim Öffnen/Schließen einer Tür (links) und beim Durchschreiten des Türrahmens (rechts).
 
 \begin{figure}[H]
 	\centering
@@ -133,7 +133,7 @@ Eine weitere Möglichkeit der Lokalisierung bietet die Messung der Luftdruckschw
 	\caption{Detektion von Bewegungen durch Luftdruckänderungen( Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D., S. 7)}
 \end{figure} 
 
-Im Gegensatz zu vielen anderen Lokalisierungsmethoden müssen die Sensoren zur Datenerfassung nicht an vielen Stellen des Raumes angebracht werden. Die meisten modernen Häuser verfügen über eine Klimaanlage, welche die Bewohner des Hauses einerseits mit Frischluft versorgt und andererseits die verbrauchte Luft aus dem Haus leitet.\footnote{Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D., S. 2} Dieses Lüftungssystem wird bei der Differential Air Pressure-Methode genutzt, um die Veränderungen des Luftdrucks an einer zentralen Stelle zu erfassen. In der folgenden Abbildung ist ein Klimaanlagensystem eines Hauses abgebildet. 
+Im Gegensatz zu vielen anderen Lokalisierungsmethoden müssen die Sensoren zur Datenerfassung nicht an vielen Stellen des Raumes angebracht werden. Die meisten modernen Häuser verfügen über eine Klimaanlage, welche die Bewohner des Hauses einerseits mit Frischluft versorgt und andererseits die verbrauchte Luft aus dem Haus leitet.\footnote{Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D., S. 2} Dieses Lüftungssystem wird bei der Differential Air Pressure-Methode genutzt, um die Veränderungen des Luftdrucks an einer zentralen Stelle zu erfassen. In der Abbildung 9 ist ein Klimaanlagensystem eines Hauses abgebildet. 
 
 \begin{figure}[H]
 	\centering
@@ -146,7 +146,7 @@ Da die Sensoren in der zentralen Stelle angebracht werden können, kann auf die 
 \subsection{Physical Contact}
 Eine vergleichsweise unauffällige Methode zur Lokalisierung bilden Verfahren, die auf dem physischen Kontakt einer Person zu seiner Umgebung bzw. zu seinem Untergrund beruhen. \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 12} Bei den meisten Verfahren, die auf dem physischen Kontakt basieren, werden sogenannte Piezoelemente zur Detektion eingesetzt. Bei Piezoelementen handelt es sich um ein elektrisches Bauteil, welches die elektrische Polarisation und somit auftretende elektrische Spannung an einem Festkörper messen kann, welche auftritt, wenn das Bauteil elastisch verformt wird. \footnote{Vgl. Peelamedu, Saravanan M., S. 2093} \newline\newline
 Diese Piezoelemente werden häufig in Form von Matten in den Boden integriert. Da sich diese unter gebräuchlichen Bodenbelägen, wie Teppichen o.Ä., verlegen lassen, kann dieses System sehr unauffällig in die Umgebung des Hauses integriert werden. Die Möglichkeiten, die dieses System bietet, geht weit über die reine Lokalisierung und Bewegungserkennung hinaus.
-Abhängig von der Anzahl der verwendeten Piezoelemente bzw. deren Abstand zueinander, kann ein recht hoher Genauigkeitsgrad erreicht werden, der es erlaubt bestimmte Druckmuster zu erkennen, durch die nicht nur die Position einer Person ermittelt werden kann, sondern darüber hinaus auch die Haltung dieser Person. Die untere Abbildung zeigt ein Druckmuster, wie es bei einem Sturz einer Personen entstehen kann.\\
+Abhängig von der Anzahl der verwendeten Piezoelemente bzw. deren Abstand zueinander, kann ein recht hoher Genauigkeitsgrad erreicht werden, der es erlaubt bestimmte Druckmuster zu erkennen, durch die nicht nur die Position einer Person ermittelt werden kann, sondern darüber hinaus auch die Haltung dieser Person. Die Abbildung 10 zeigt ein Druckmuster, wie es bei einem Sturz einer Personen entstehen kann.\\
 
 \begin{figure}[H]
 	\centering
@@ -158,8 +158,7 @@ Sollte ein Sturz erkannt werden, so könnte automatisch ein Notruf abgesetzt wer
 Eine weitere Möglichkeit den physischen Kontakt ein Person zu zur Lokalisierung zu Nutzen, ist die Tatsache, dass ein eine Person bei dem Kontakt mit dem Untergrund einen Abdruck erzeugt.
  
 \subsubsection{Projekt: GravitySpace}
-Am Hasso-Plattner-Institut in Potsdam wurde ein Verfahren entwickelt, welches sich diesen Effekt zu Nutze macht. 
-Für den Versuchsaufbau dieses Verfahrens wurde als Bodenplatte eines Zimmers eine Glasscheibe verwendet, welche von unter mit einer Kamera gefilmt wird. Die Abbildung ... zeigt diesen Versuchsaufbau.
+Am Hasso-Plattner-Institut (\textbf{HPI}) in Potsdam wurde ein Verfahren entwickelt, welches sich diesen Effekt zu Nutze macht. Für den Versuchsaufbau dieses Verfahrens wurde als Bodenplatte eines Zimmers eine Glasscheibe verwendet, welche von unten mit einer Kamera gefilmt wird. Weiterhin wurde ein Projektor installiert, welcher Bildmaterial von unten auf diese Scheibe projizieren kann. Die Abbildung 11 zeigt diesen Versuchsaufbau.
 
 \begin{figure}[H]
 	\centering
@@ -167,7 +166,25 @@ Für den Versuchsaufbau dieses Verfahrens wurde als Bodenplatte eines Zimmers ei
 	\caption{Versuchsaufbau GravitySpace(Bränzel et al., S. 2)}
 \end{figure}
 
-Bränzel et al.
+Wenn ein Objekt die Glasscheibe berührt erzeugt dieses einen Abdruck auf der Fläche. Genau wie bei einem Fingerabdruck kann man bestimmten Abdrücken ein bestimmtes Objekt zuordnen. Die Abbildung 12 zeigt die Abdrücke verschiedener Objekte.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{pictures/hpi2}
+	\caption{Abdrücke von Objekten(Bränzel et al., S. 2)}
+\end{figure}
+
+Dies ermöglicht über die Lokalisierung und Bewegungsverfolgung hinaus eine Identifikation von Personen innerhalb eines kleinen Personenkreises. Weiterhin ermöglicht der angebrachte Projektor eine Interaktion mit der Umgebung. So könnte beispielsweise ein Ball projiziert werden, den sich die Personen hin und her spielen könnten.\newline\newline
+Dieses Verfahrens bietet gegenüber konventionellen Kameraverfahren einige Vorteile\footnote{Bränzel et al., S. 3}
+
+\begin{itemize}
+\item \textbf{Abdeckung}: Der Blickwinkel einer gewöhnlichen Kamera ist pyramidenförmig. Um jeden Winkel eines Raumes betrachten zu können, reicht eine Kamera allein nicht aus. 
+\item \textbf{Verdeckung}: Da die Lokalisierung einer Person von unten realisiert wird, kann diese nicht so leicht durch andere Personen oder Objekte verdeckt werden.
+\item \textbf{Einfache Algorithmen}: Normalerweise müssen aufwändige Algorithmen verwendet werden, um 3D-Objekte zu erkennen. Bei diesem Verfahren wird das Problem auf zwei Dimensionen reduziert, wodurch einfachere und robustere Algorithmen verwendet werden können.
+\item \textbf{Privatsphäre}: Auch, wenn eine Unterscheidung von Individuen einer kleinen Gruppe möglich ist, so ist die Druck-basierte Lokalisierung von Personen unter dem Aspekt der Privatsphäre weit weniger kritisch.
+\end{itemize} 
+
+Der Nachteil dieses Verfahrens liegt in der Tatsache, dass ein solcher Aufbau bei weitem aufwändiger ist, als bei der Verwendung gewöhnlicher Kamerasysteme. Dies relativiert den oben genannten Abdeckungs-Vorteil.
 
 \subsection{Computer-Vision}
 Auch Computer-Vision kann als \textbf{DfP}-System betrachtet werden, da ein potentieller Nutzer keine zusätzliche Hardware am Körper tragen muss. Das Ziel dieses Systems ist, eine Umgebung zu schaffen, die auf die Position und das Verhalten einer Person reagiert (intelligente Umgebung). \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13}\newline Es ist beispielsweise vorstellbar, dass 
