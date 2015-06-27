@@ -137,15 +137,38 @@ Im Gegensatz zu vielen anderen Lokalisierungsmethoden müssen die Sensoren zur D
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{pictures/dap_klima}
+	\includegraphics[width=0.6\textwidth]{pictures/dap_klima}
 	\caption{Detektion von Bewegungen durch Luftdruckänderungen( Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D., S. 7)}
 \end{figure} 
 
 Da die Sensoren in der zentralen Stelle angebracht werden können, kann auf die Installation zusätzlicher Hardware innerhalb des Wohnbereichs verzichtet werden. Der Nachteil diese Methoden liegt in der relativ geringen Genauigkeit bei der Positionsbestimmung. Man kann zwar sagen, in welchem Raum sich eine Person befindet, nicht jedoch an welcher Stelle des Raumes.
 
 \subsection{Physical Contact}
-Die naheliegendste Lösung zur Lokalisierung einer Personen stellt der physische Kontakt einer solchen zu seiner Umgebung dar. 
-\subsection{Projekt: GravitySpace}
+Eine vergleichsweise unauffällige Methode zur Lokalisierung bilden Verfahren, die auf dem physischen Kontakt einer Person zu seiner Umgebung bzw. zu seinem Untergrund beruhen. \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 12} Bei den meisten Verfahren, die auf dem physischen Kontakt basieren, werden sogenannte Piezoelemente zur Detektion eingesetzt. Bei Piezoelementen handelt es sich um ein elektrisches Bauteil, welches die elektrische Polarisation und somit auftretende elektrische Spannung an einem Festkörper messen kann, welche auftritt, wenn das Bauteil elastisch verformt wird. \footnote{Vgl. Peelamedu, Saravanan M., S. 2093} \newline\newline
+Diese Piezoelemente werden häufig in Form von Matten in den Boden integriert. Da sich diese unter gebräuchlichen Bodenbelägen, wie Teppichen o.Ä., verlegen lassen, kann dieses System sehr unauffällig in die Umgebung des Hauses integriert werden. Die Möglichkeiten, die dieses System bietet, geht weit über die reine Lokalisierung und Bewegungserkennung hinaus.
+Abhängig von der Anzahl der verwendeten Piezoelemente bzw. deren Abstand zueinander, kann ein recht hoher Genauigkeitsgrad erreicht werden, der es erlaubt bestimmte Druckmuster zu erkennen, durch die nicht nur die Position einer Person ermittelt werden kann, sondern darüber hinaus auch die Haltung dieser Person. Die untere Abbildung zeigt ein Druckmuster, wie es bei einem Sturz einer Personen entstehen kann.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{pictures/piezo}
+	\caption{Detektionen eines Sturzes( \url{http://i.kinja-img.com/gawker-media/image/upload/s--WB7wQYq6--/c_fit,fl_progressive,q_80,w_636/19gzk7od0artwjpg.jpg})}
+\end{figure} 
+
+Sollte ein Sturz erkannt werden, so könnte automatisch ein Notruf abgesetzt werden, durch den Hilfe angefordert wird. Diese Funktionalität könnte in Haushalten eingesetzt werden, in denen alte oder körperlich beeinträchtigte Personen leben.\newline\newline
+Eine weitere Möglichkeit den physischen Kontakt ein Person zu zur Lokalisierung zu Nutzen, ist die Tatsache, dass ein eine Person bei dem Kontakt mit dem Untergrund einen Abdruck erzeugt.
+ 
+\subsubsection{Projekt: GravitySpace}
+Am Hasso-Plattner-Institut in Potsdam wurde ein Verfahren entwickelt, welches sich diesen Effekt zu Nutze macht. 
+Für den Versuchsaufbau dieses Verfahrens wurde als Bodenplatte eines Zimmers eine Glasscheibe verwendet, welche von unter mit einer Kamera gefilmt wird. Die Abbildung ... zeigt diesen Versuchsaufbau.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{pictures/hpi1}
+	\caption{Versuchsaufbau GravitySpace(Bränzel et al., S. 2)}
+\end{figure}
+
+Bränzel et al.
+
 \subsection{Computer-Vision}
 Auch Computer-Vision kann als \textbf{DfP}-System betrachtet werden, da ein potentieller Nutzer keine zusätzliche Hardware am Körper tragen muss. Das Ziel dieses Systems ist, eine Umgebung zu schaffen, die auf die Position und das Verhalten einer Person reagiert (intelligente Umgebung). \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13}\newline Es ist beispielsweise vorstellbar, dass 
 
@@ -165,6 +188,7 @@ Im Laufe der Zeit werden die Bauteile für solche Systeme voraussichtlich immer 
 \end{itemize}
 \subsection*{Sonstige Quellen}
 \begin{itemize}[leftmargin=*]
+\item[] \textbf{Bränzel et al.}: GravitySpace: Tracking Users and Their Poses in a Smart Room Using a Pressure-Sensing Floor (2013), Online unter URL: \url{https://hpi.de/fileadmin/user_upload/fachgebiete/baudisch/publications/GravitySpace_CHI2013.pdf}
 \item[] \textbf{Deak G., Curran K. \& Condell J.} A survey of active and passive indoor localisation systems (2012), Online unter URL : \url{http://scisweb.ulster.ac.uk/~kevin/comcomsurvey.pdf}
 \item[] \textbf{Ehrlich, I.}: Indoor Localization (2006), Online unter URL: \url{http://ifgi.uni-muenster.de/~muellerj/lbs06/proceedings/3-IndoorLocalization.pdf}
 \item[] \textbf{Kemper J.}: Passive Infrarot-Lokalisierung (2010), Fakultät für Elektrotechnik und Informationstechnik, Technischen Universität Dortmund, Dortmund, Online unter URL: \url{https://eldorado.tu-dortmund.de/bitstream/2003/27428/1/PIL.pdf}
@@ -173,8 +197,9 @@ Im Laufe der Zeit werden die Bauteile für solche Systeme voraussichtlich immer 
 \item[] \textbf{M. Mah}: Device-Free Passive Localization (2007), Online unter URL: \url{https://www.cs.umd.edu/sites/default/files/scholarly_papers/MatthewMah_1.pdf}
 \item[] \textbf{Pirzada N., Nayan Y., Subhan F., Hassan F., Khan M.}: Device-Free Localization Technique for Indoor Detection and Tracking of Human Body (2013), Online unter URL: \url{http://ac.els-cdn.com/S187704281402878X/1-s2.0-S187704281402878X-main.pdf?_tid=7bc6ad0e-12a4-11e5-95f4-00000aab0f02&acdnat=1434293516_4a2274a0ebfb932cf57c3f4f652c668f}
 \item[] \textbf{Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D.}: Detecting Human Movement by Differential Air
-Pressure Sensing in HVAC System Ductwork: An Exploration in Infrastructure Mediated Sensing (2008), College of Computing, School of Interactive Computing, \& GVU Center Georgia Institute of Technology, Online unter URL: \url{https://dub.washington.edu/djangosite/media/papers/tmpqiqC-3.pdf}
+Pressure Sensing in HVAC System Ductwork: An Exploration in Infrastructure Mediated Sensing (2008), College of Computing, School of Interactive Computing, \& GVU Center Georgia Institute of Technology, Online unter URL: 
+\url{https://dub.washington.edu/djangosite/media/papers/tmpqiqC-3.pdf}
+\item[] \textbf{Peelamedu, Saravanan M.}: Piezoelectric Effect and Its Application, in Encyclopedia of Optical Engineering, hrsg. v. Ronald G. Driggers, 2003
 \item[] \textbf{Technische Universität Dortmund}: TU Dortmund, Fakultät ETIT, IRF, IT, Forschung, Embedded Systems,  Projekte, PIL, DFG-Projekt: Passive Infrarot-Lokalisierung, Online unter URL: \url{http://www.irf.tu-dortmund.de/cms/de/IT/Forschung/Embedded_Systems/Projekte/PIL/index.html}, Abruf: 2015-06-15
-\item[] \textbf{Teletopix: Multipath-Fading, Online unter URL: \url{http://www.teletopix.org/wp-content/uploads/2013/01/MUltipath-effect.jpg}, Abruf: 2015-06-26
-
+\item[] \textbf{Teletopix: Multipath-Fading}: Online unter URL: \url{http://www.teletopix.org/wp-content/uploads/2013/01/MUltipath-effect.jpg}, Abruf: 2015-06-26
 \end{itemize}

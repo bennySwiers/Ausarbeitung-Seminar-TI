@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.5}Passive Infrarot-Lokalisierung}{6}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Differential Air Pressure}{8}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Physical Contact}{9}{subsection.2.7}
-\contentsline {subsection}{\numberline {2.8}Projekt: GravitySpace}{9}{subsection.2.8}
-\contentsline {subsection}{\numberline {2.9}Computer-Vision}{9}{subsection.2.9}
-\contentsline {subsection}{\numberline {2.10}Fazit und Ausblick}{9}{subsection.2.10}
-\contentsline {section}{\numberline {3}Quellenverzeichnis}{11}{section.3}
+\contentsline {subsubsection}{\numberline {2.7.1}Projekt: GravitySpace}{10}{subsubsection.2.7.1}
+\contentsline {subsection}{\numberline {2.8}Computer-Vision}{10}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Fazit und Ausblick}{10}{subsection.2.9}
+\contentsline {section}{\numberline {3}Quellenverzeichnis}{12}{section.3}
