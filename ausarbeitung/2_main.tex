@@ -32,7 +32,7 @@ Das \textit{DfP-System} (\textit{Device-free Passive}) auf Grundlage von \textit
 	\caption{RFID Indoor-Lokalisierung (Mah M., S. 2)}
 \end{figure}
 
-In der obigen Abbildung erkennt man zwei \textbf{AP}, sowie einen \textbf{MP} und einen \textbf{DfP Server}, der die Berechnungen auf Grundlage der erhaltenen Signale durchführt. Als \textbf{MP} können dabei beliebige Computer verwendet werden.\footnote{Vgl. ebd.} Neben der eigentlichen Detektion (\textit{Monitoring Mode}) unterstützt das System noch zwei weitere Modi, welche nun näher beschrieben werden.\\
+In der obigen Abbildung erkennt man zwei \textbf{AP}, sowie einen \textbf{MP} und einen \textbf{DfP Server}, der die Berechnungen auf Grundlage der erhaltenen Signale durchführt. Als \textbf{MP} können dabei beliebige Computer verwendet werden.\footnote{Vgl. Mah M., S. 2} Neben der eigentlichen Detektion (\textit{Monitoring Mode}) unterstützt das System noch zwei weitere Modi, welche nun näher beschrieben werden.\\
 
 \begin{itemize}
 \item \textbf{Monitoring Mode}: Dieser Modus nimmt jegliche Aktivität wahr, eignet sich somit für eine nächtliche Überwachung.
@@ -40,7 +40,7 @@ In der obigen Abbildung erkennt man zwei \textbf{AP}, sowie einen \textbf{MP} un
 \item \textbf{DfP Mode}: Der \textit{DfP-Modus} kann mehrere Eindringlinge gleichzeitig orten und verfolgen.
 \end{itemize}
 
-Sobald ein Eindringling von einem \textbf{MP} detektiert wird, werden zusätzlich noch weitere \textit{Monitoring Points} kontaktiert und auf mögliche Detektionen überprüft. Erst danach kommt es zu einem Alarm des Gesamtsystems.\footnote{Vgl. ebd., S. 2 f.} Der zentrale Alarm kann hierbei auf disjunkten Paaren von \textbf{AP} und \textbf{MP} basieren. Aus diesem Grund ist es notwendig die Detektionen möglichst simultan zu verzeichnen.\footnote{Vgl. ebd.}
+Sobald ein Eindringling von einem \textbf{MP} detektiert wird, werden zusätzlich noch weitere \textit{Monitoring Points} kontaktiert und auf mögliche Detektionen überprüft. Erst danach kommt es zu einem Alarm des Gesamtsystems.\footnote{Vgl. ebd., S. 2 f.} Der zentrale Alarm kann hierbei auf disjunkten Paaren von \textbf{AP} und \textbf{MP} basieren. Aus diesem Grund ist es notwendig die Detektionen möglichst simultan zu verzeichnen.\footnote{Vgl. ebd., S. 2}
 
 \subsection{Experimenteller Aufbau}
 Es wurden vier Experimente in kontrollierter Umgebung durchgeführt. Die eigentliche Leistung des Systems konnte somit besser untersucht werden, da die äußeren Einflüsse dadurch minimiert wurden. Bei jedem einzelnen Experiment wurde eine bestimmte Anordnung von zwei \textbf{AP} und zwei \textbf{MP} verwendet. Jeder \textbf{MP} zeichnete dabei die \textit{RSSI} von jedem \textbf{AP} auf, die alle $100$ ms sendeten.\\
@@ -122,7 +122,7 @@ Die Detektion der Wärmestrahlung wird durch sogenannte \textit{Thermopiles}\foo
 	\caption{Lokalisierung durch Triangulation (Technische Universität Dortmund)}
 \end{figure}
 
-Der Vorteil dieser Methode liegt nicht nur in der Tatsache, dass ein zu lokalisierendes Objekt keine zusätzliche Hardware mitführen muss. Durch den Verzicht bildgebender Sensoren wird zusätzlich ein Schutz der Privatsphäre gewährleistet.\footnote{Vgl. Kemper 2010, S. 149} Weiterhin ist diese Art der Lokalisierung gegenüber anderen Methoden vergleichsweise kostengünstig.\footnote{Vgl. Kemper 2010, S. 149}\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 7}Da sich die Kosten für Bauteile und Sensoren rasant verändern, ist diese Aussage keinesfalls allgemeingültig. 
+Der Vorteil dieser Methode liegt nicht nur in der Tatsache, dass ein zu lokalisierendes Objekt keine zusätzliche Hardware mitführen muss. Durch den Verzicht bildgebender Sensoren wird zusätzlich ein Schutz der Privatsphäre gewährleistet.\footnote{Vgl. Kemper 2010, S. 149} Weiterhin ist diese Art der Lokalisierung gegenüber anderen Methoden vergleichsweise kostengünstig.\footnote{Vgl. ebd., S. 149}\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 7}Da sich die Kosten für Bauteile und Sensoren rasant verändern, ist diese Aussage keinesfalls allgemeingültig. 
 
 \subsection{Differential Air Pressure}
 Eine weitere Möglichkeit der Lokalisierung bietet die Messung der Luftdruckschwankungen, die durch ein sich bewegendes Objekt ausgelöst werden. Wenn eine Person eine Tür öffnet, hat dies eine, durch entsprechende Sensoren messbare, kurzzeitige Veränderung des Luftdrucks innerhalb eines Systems zur Folge.\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13} Dieser Effekt tritt, in abgeschwächter Form, auch beim Passieren eines Engpasses, z.B. eines Türrahmens, auf. Die Abbildung 8 zeigt die Veränderung der Messwerte beim Öffnen/Schließen einer Tür (links) und beim Durchschreiten des Türrahmens (rechts).
@@ -158,7 +158,7 @@ Auf diese Weise können beispielsweise Stürze einer Person erkannt werden. In F
 
 \subsection{Computer-Vision}
 Computer-Vision stellt ein \textbf{DfP}-System dar, welches das Ziel hat, eine Umgebung zu schaffen, die auf die Position und das Verhalten einer Person reagiert (intelligente Umgebung). \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13}\\
-Um die Position einer Person zu ermitteln werden \textit{Triclops-Stereo-Kameras} verwendet, mit deren Hilfe sowohl eine bis auf 10 cm genaue Lokalisierung als auch die Bewegungsverfolgung realisiert werden kann. Für den im Paper\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13} beschriebenen Versuchsaufbau werden drei Kameras verwendet, von denen jede an einem PC angeschlossen ist. Ein weiterer PC wird für das \textit{Tracking} der Personen benötigt.\newline\newline
+Um die Position einer Person zu ermitteln werden \textit{Triclops-Stereo-Kameras} verwendet, mit deren Hilfe sowohl eine bis auf 10 cm genaue Lokalisierung als auch die Bewegungsverfolgung realisiert werden kann. Für den im Paper\footnote{Vgl.ebd., S. 13} beschriebenen Versuchsaufbau werden drei Kameras verwendet, von denen jede an einem PC angeschlossen ist. Ein weiterer PC wird für das \textit{Tracking} der Personen benötigt.\newline\newline
 Dieses Verfahrens ermöglicht die Erkennung von Gesichtern und die Interaktion mit der Umgebung. Wenn beispielsweise eine Person den Raum betritt, erkennt das System, um welche Person es sich handelt und kann dementsprechend auf die Person reagieren. So könnten die Lichtverhältnisse des Raumes oder die Musik einer Musikanlage automatisch an die Bedürfnisse der jeweiligen Person angepasst werden. Die Möglichkeit der Identifikation ist hinsichtlich des Datenschutzes und der Privatsphäre jedoch kritisch zu betrachten.\newline\newline
 Das letzte in dieser Ausarbeitung vorgestellte Verfahren stellt eine Hybridlösung zwischen dem physischen Kontakt und Computer Vision dar und ist hinsichtlich der Privatsphäre unbedenklicher.
 
@@ -215,6 +215,6 @@ Pressure Sensing in HVAC System Ductwork: An Exploration in Infrastructure Media
 \url{https://dub.washington.edu/djangosite/media/papers/tmpqiqC-3.pdf}
 \item[] \textbf{Peelamedu, Saravanan M.}: Piezoelectric Effect and Its Application, in Encyclopedia of Optical Engineering, hrsg. v. Ronald G. Driggers, 2003
 \item[] \textbf{Technische Universität Dortmund}: TU Dortmund, Fakultät ETIT, IRF, IT, Forschung, Embedded Systems,  Projekte, PIL, DFG-Projekt: Passive Infrarot-Lokalisierung, Online unter URL: \url{http://www.irf.tu-dortmund.de/cms/de/IT/Forschung/Embedded_Systems/Projekte/PIL/index.html}, Abruf: 2015-06-15
-\item[] \textbf{Teletopix: Multipath-Fading}: Online unter URL: \url{http://www.teletopix.org/wp-content/uploads/2013/01/MUltipath-effect.jpg}, Abruf: 2015-06-26
 \item[] \textbf{Sturzdetektion Drucksensoren}: Online unter URL: \url{http://i.kinja-img.com/gawker-media/image/upload/s--WB7wQYq6--/c_fit,fl_progressive,q_80,w_636/19gzk7od0artwjpg.jpg}
+\item[] \textbf{Teletopix: Multipath-Fading}: Online unter URL: \url{http://www.teletopix.org/wp-content/uploads/2013/01/MUltipath-effect.jpg}, Abruf: 2015-06-26
 \end{itemize}
