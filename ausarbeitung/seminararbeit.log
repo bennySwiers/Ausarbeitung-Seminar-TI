@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.19)  27 JUN 2015 14:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.19)  27 JUN 2015 16:15
 entering extended mode
 **seminararbeit.tex
 
@@ -975,12 +975,8 @@ Seminar-TI\ausarbeitung\abkuerzungsverzeichnis.tex") [1
 Seminar-TI\ausarbeitung\abbildungsverzeichnis.tex"
 ("C:\Benny\Uni\Master\2. Semester\Seminar - Technische Informatik\Ausarbeitung-
 Seminar-TI\ausarbeitung\seminararbeit.lof"
-Overfull \hbox (3.71362pt too wide) in paragraph at lines 7--7
- [][] []\T1/aer/m/n/12 Wärmestrahlung ei-ner Per-son (Tech-ni-sche Uni-ver-si-t
-ät Dort-mund (2015)) [][]  
- []
-
 LaTeX Font Info:    Try loading font information for T1+aett on input line 11.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
@@ -1162,62 +1158,67 @@ $\T1/aett/m/n/12 i a / i m a g e / u p l o a d / s-[]-[] W B7 w Q Y q6-[]-[] /
 c _ f i t ,[] f l _ p r o g r e s s i v e ,[] q _80 ,[] w _ 636 / 19 g z k$
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
-
- []
-
 [9 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitun
 g-Seminar-TI/ausarbeitung/pictures/piezo.jpg>]
-<pictures/hpi1.png, id=288, 422.32782pt x 290.58563pt>
-File: pictures/hpi1.png Graphic file (type png)
- <use pictures/hpi1.png>
-Package pdftex.def Info: pictures/hpi1.png used on input line 165.
-(pdftex.def)             Requested size: 256.07741pt x 176.20168pt.
-
-<pictures/hpi2.png, id=289, 768.62157pt x 253.69781pt>
-File: pictures/hpi2.png Graphic file (type png)
- <use pictures/hpi2.png>
-Package pdftex.def Info: pictures/hpi2.png used on input line 173.
-(pdftex.def)             Requested size: 341.43437pt x 112.69968pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
+Underfull \hbox (badness 10000) in paragraph at lines 160--164
 
  []
 
-[10 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitu
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--164
+
+ []
+
+<pictures/hpi1.png, id=290, 422.32782pt x 290.58563pt>
+File: pictures/hpi1.png Graphic file (type png)
+ <use pictures/hpi1.png>
+Package pdftex.def Info: pictures/hpi1.png used on input line 171.
+(pdftex.def)             Requested size: 256.07741pt x 176.20168pt.
+
+[10] <pictures/hpi2.png, id=297, 768.62157pt x 253.69781pt>
+File: pictures/hpi2.png Graphic file (type png)
+
+<use pictures/hpi2.png>
+Package pdftex.def Info: pictures/hpi2.png used on input line 179.
+(pdftex.def)             Requested size: 341.43437pt x 112.69968pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+[11 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitu
 ng-Seminar-TI/ausarbeitung/pictures/hpi1.png> <C:/Benny/Uni/Master/2. Semester/
 Seminar - Technische Informatik/Ausarbeitung-Seminar-TI/ausarbeitung/pictures/h
 pi2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 195--198
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--198
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
 
  []
 
-[11] [12]
-Overfull \hbox (4.37799pt too wide) in paragraph at lines 208--209
+[12]
+Overfull \hbox (4.37799pt too wide) in paragraph at lines 209--210
 $\T1/aett/m/n/12 e a d m i n / u s e r _ u p l o a d / f a c h g e b i e t e / 
 b a u d i s c h / p u b l i c a t i o n s / G r a v i t y S p a c e _ C H$
  []
 
 
-Overfull \hbox (4.37799pt too wide) in paragraph at lines 214--215
+Overfull \hbox (4.37799pt too wide) in paragraph at lines 215--216
 $\T1/aett/m/n/12 w w w . c s . u m d . e d u / s i t e s / d e f a u l t / f i 
 l e s / s c h o l a r l y _ p a p e r s / M a t t h e w M a h _1 . p d f$[] 
  []
 
 
-Overfull \hbox (55.86998pt too wide) in paragraph at lines 215--216
+Overfull \hbox (55.86998pt too wide) in paragraph at lines 216--217
 \T1/aer/m/n/12 ne un-ter URL: []$\T1/aett/m/n/12 h t tp : / / a c . e l s -[] c
  d n . c o m / S 187704281402878 X /1-[] s 2 . 0-[] S 187704281402878 X$
  []
 
 
-Overfull \hbox (19.2139pt too wide) in paragraph at lines 215--216
+Overfull \hbox (19.2139pt too wide) in paragraph at lines 216--217
 $\T1/aett/m/n/12 -[] m a i n . p d f ? _ t i d =7 b c6 a d0 e -[]12 a 4-[]11 e 
 5-[]95 f 4-[]00000 a a b 0 f 02 & a c d n a t =1434293516 _$
  []
@@ -1243,7 +1244,7 @@ Seminar-TI\ausarbeitung\2_main.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `seminararbeit.out' has not changed.
-(rerunfilecheck)             Checksum: D0E3A2DB8DBD64ACDA71083F65155420;1039.
+(rerunfilecheck)             Checksum: A099355DA0CF8CE499A1234A79F4D0DB;1021.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1252,9 +1253,9 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
  11965 strings out of 493921
- 177940 string characters out of 3147282
+ 177926 string characters out of 3147282
  309745 words of memory out of 3000000
- 14871 multiletter control sequences out of 15000+200000
+ 14870 multiletter control sequences out of 15000+200000
  40120 words of font info for 84 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  68i,9n,98p,984b,608s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1269,9 +1270,9 @@ public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.
 pfb>
-Output written on seminararbeit.pdf (19 pages, 999705 bytes).
+Output written on seminararbeit.pdf (19 pages, 1002535 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
  196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

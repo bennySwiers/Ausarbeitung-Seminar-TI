@@ -106,20 +106,20 @@ Abschließend kann man sagen, dass Systeme, die auf Radiosignalen basieren ihren
 
 
 \subsection{Passive Infrarot-Lokalisierung}
-Die passive Infrarot-Lokalisierung (\textbf{PIL}) basiert auf der Körperwärmestrahlung einer Person bzw. eines Objektes. Der thermische Unterschied eines Objektes im Vergleich zu seiner Umgebung kann dabei zur Lokalisierung und Bewegungsverfolgung (Tracking) ausgenutzt werden. Die Abbildung 6 zeigt die unterschiedliche Wärmestrahlung einer Person und gegenüber seiner Umgebung.
+Die \textit{passive Infrarot-Lokalisierung} (\textbf{PIL}) basiert auf der Körperwärmestrahlung einer Person bzw. eines Objektes. Der thermische Unterschied eines Objektes im Vergleich zu seiner Umgebung kann dabei zur Lokalisierung und Bewegungsverfolgung (\textit{Tracking}) ausgenutzt werden. Die Abbildung 6 zeigt die unterschiedliche Wärmestrahlung einer Person gegenüber seiner Umgebung.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{pictures/pil1}
-	\caption{Wärmestrahlung einer Person (Technische Universität Dortmund (2015))}
+	\caption{Wärmestrahlung einer Person (Technische Universität Dortmund)}
 \end{figure}
 
-Die Detektion der Wärmestrahlung wird durch sogenannte Thermopiles\footnote{Z. Dt. Thermosäulen}  realisiert.\footnote{Vgl. Technische Universität Dortmund 2015} Dabei handelt es sich um elektronische Bauelemente, welche thermische Energie in elektrische Energie umwandeln.\footnote{Vgl. Kemper 2010, S. 33} Um eine Person zu lokalisieren bzw. zu tracken, werden mehrere dieser Sensoren im Raum positioniert, um die thermischen Unterschiede zu messen. Auf Grundlage der so ermittelten Daten können anschließend mit Hilfe spezieller Algorithmen die Sichtwinkel auf die entsprechende Person berechnet werden. Durch Triangulation kann durch diese Winkel die Position eines Objektes bestimmt werden.\footnote{Vgl. Technische Universität Dortmund 2015} Die Abbildung 7 skizziert dieses Verfahren.
+Die Detektion der Wärmestrahlung wird durch sogenannte \textit{Thermopiles}\footnote{Z. Dt. Thermosäulen}  realisiert.\footnote{Vgl. Technische Universität Dortmund 2015} Dabei handelt es sich um elektronische Bauelemente, welche thermische Energie in elektrische Energie umwandeln.\footnote{Vgl. Kemper 2010, S. 33} Um eine Person zu lokalisieren bzw. zu tracken, werden zur Messung der thermischen Unterschiede mehrere dieser Sensoren im Raum positioniert. Auf Grundlage der so ermittelten Daten können anschließend mit Hilfe spezieller Algorithmen die Sichtwinkel auf die entsprechende Person berechnet werden. Durch \textit{Triangulation} kann durch diese Winkel die Position eines Objektes bestimmt werden.\footnote{Vgl. Technische Universität Dortmund 2015} Die Abbildung 7 skizziert dieses Verfahren.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{pictures/triangulation}
-	\caption{Lokalisierung durch Triangulation (Technische Universität Dortmund (2015))}
+	\caption{Lokalisierung durch Triangulation (Technische Universität Dortmund)}
 \end{figure}
 
 Der Vorteil dieser Methode liegt nicht nur in der Tatsache, dass ein zu lokalisierendes Objekt keine zusätzliche Hardware mitführen muss. Durch den Verzicht bildgebender Sensoren wird zusätzlich ein Schutz der Privatsphäre gewährleistet.\footnote{Vgl. Kemper 2010, S. 149} Weiterhin ist diese Art der Lokalisierung gegenüber anderen Methoden vergleichsweise kostengünstig.\footnote{Vgl. Kemper 2010, S. 149}\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 7}Da sich die Kosten für Bauteile und Sensoren rasant verändern, ist diese Aussage keinesfalls allgemeingültig. 
@@ -141,12 +141,12 @@ Im Gegensatz zu vielen anderen Lokalisierungsmethoden müssen die Sensoren zur D
 	\caption{Detektion von Bewegungen durch Luftdruckänderungen( Patel Shwetak N., Reynolds Matthew S., Abowd Gregory D., S. 7)}
 \end{figure} 
 
-Da die Sensoren in der zentralen Stelle angebracht werden können, kann auf die Installation zusätzlicher Hardware innerhalb des Wohnbereichs verzichtet werden. Der Nachteil diese Methoden liegt in der relativ geringen Genauigkeit bei der Positionsbestimmung. Man kann zwar sagen, in welchem Raum sich eine Person befindet, nicht jedoch an welcher Stelle des Raumes.
+Da die Sensoren in der zentralen Stelle angebracht werden können, kann auf die Installation zusätzlicher Hardware innerhalb des Wohnbereichs verzichtet werden. Der Nachteil diese Methoden liegt in der relativ geringen Genauigkeit bei der Positionsbestimmung. Man kann zwar sagen, in welchem Raum sich eine Person befindet, nicht jedoch an welcher Stelle innerhalb Raumes.
 
 \subsection{Physical Contact}
-Eine vergleichsweise unauffällige Methode zur Lokalisierung bilden Verfahren, die auf dem physischen Kontakt einer Person zu seiner Umgebung bzw. zu seinem Untergrund beruhen. \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 12} Bei den meisten Verfahren, die auf dem physischen Kontakt basieren, werden sogenannte Piezoelemente zur Detektion eingesetzt. Bei Piezoelementen handelt es sich um ein elektrisches Bauteil, welches die elektrische Polarisation und somit auftretende elektrische Spannung an einem Festkörper messen kann, welche auftritt, wenn das Bauteil elastisch verformt wird. \footnote{Vgl. Peelamedu, Saravanan M., S. 2093} \newline\newline
-Diese Piezoelemente werden häufig in Form von Matten in den Boden integriert. Da sich diese unter gebräuchlichen Bodenbelägen, wie Teppichen o.Ä., verlegen lassen, kann dieses System sehr unauffällig in die Umgebung des Hauses integriert werden. Die Möglichkeiten, die dieses System bietet, geht weit über die reine Lokalisierung und Bewegungserkennung hinaus.
-Abhängig von der Anzahl der verwendeten Piezoelemente bzw. deren Abstand zueinander, kann ein recht hoher Genauigkeitsgrad erreicht werden, der es erlaubt bestimmte Druckmuster zu erkennen, durch die nicht nur die Position einer Person ermittelt werden kann, sondern darüber hinaus auch die Haltung dieser Person. Die Abbildung 10 zeigt ein Druckmuster, wie es bei einem Sturz einer Personen entstehen kann.\\
+Eine vergleichsweise unauffällige Methode zur Lokalisierung bilden Verfahren, die auf dem physischen Kontakt einer Person zu seiner Umgebung bzw. zu seinem Untergrund beruhen. \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 12} Bei den meisten Verfahren, die auf dem physischen Kontakt basieren, werden sogenannte \textit{Piezoelemente} zur Detektion eingesetzt. Bei einem \textit{Piezoelement} handelt es sich um ein elektrisches Bauteil, welches die elektrische Polarisation und die somit auftretende elektrische Spannung an einem Festkörper messen kann, wenn das Bauteil elastisch verformt wird. \footnote{Vgl. Peelamedu, Saravanan M., S. 2093} \newline\newline
+Diese Piezoelemente werden häufig in Form von Matten in den Boden integriert. Da sich diese unter gebräuchlichen Bodenbelägen, wie Teppichen o.Ä., verlegen lassen, kann dieses System sehr unauffällig in die Umgebung des Hauses integriert werden. Die Möglichkeiten, die dieses System bietet, gehen über die reine Lokalisierung und Bewegungserkennung hinaus.
+Abhängig von der Anzahl der verwendeten \textit{Piezoelemente} bzw. deren Abstand zueinander, kann ein recht hoher Genauigkeitsgrad erreicht werden, der es erlaubt bestimmte Druckmuster zu erkennen, durch die nicht nur die Position einer Person ermittelt werden kann, sondern darüber hinaus auch deren Haltung. Die Abbildung 10 zeigt ein Druckmuster, wie es bei einem Sturz einer Personen entstehen kann.\\
 
 \begin{figure}[H]
 	\centering
@@ -154,11 +154,17 @@ Abhängig von der Anzahl der verwendeten Piezoelemente bzw. deren Abstand zueina
 	\caption{Detektionen eines Sturzes( \url{http://i.kinja-img.com/gawker-media/image/upload/s--WB7wQYq6--/c_fit,fl_progressive,q_80,w_636/19gzk7od0artwjpg.jpg})}
 \end{figure} 
 
-Sollte ein Sturz erkannt werden, so könnte automatisch ein Notruf abgesetzt werden, durch den Hilfe angefordert wird. Diese Funktionalität könnte in Haushalten eingesetzt werden, in denen alte oder körperlich beeinträchtigte Personen leben.\newline\newline
-Eine weitere Möglichkeit den physischen Kontakt ein Person zu zur Lokalisierung zu Nutzen, ist die Tatsache, dass ein eine Person bei dem Kontakt mit dem Untergrund einen Abdruck erzeugt.
- 
-\subsubsection{Projekt: GravitySpace}
-Am Hasso-Plattner-Institut (\textbf{HPI}) in Potsdam wurde ein Verfahren entwickelt, welches sich diesen Effekt zu Nutze macht. Für den Versuchsaufbau dieses Verfahrens wurde als Bodenplatte eines Zimmers eine Glasscheibe verwendet, welche von unten mit einer Kamera gefilmt wird. Weiterhin wurde ein Projektor installiert, welcher Bildmaterial von unten auf diese Scheibe projizieren kann. Die Abbildung 11 zeigt diesen Versuchsaufbau.
+Auf diese Weise können beispielsweise Stürze einer Person erkannt werden. In Folge dessen kann automatisch ein Notruf abgesetzt werden, durch den Hilfe angefordert wird. Diese Funktionalität könnte in Haushalten eingesetzt werden, in denen alte oder körperlich beeinträchtigte Personen leben.
+
+\subsection{Computer-Vision}
+Computer-Vision stellt ein \textbf{DfP}-System dar, welches das Ziel hat, eine Umgebung zu schaffen, die auf die Position und das Verhalten einer Person reagiert (intelligente Umgebung). \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13}\\
+Um die Position einer Person zu ermitteln werden \textit{Triclops-Stereo-Kameras} verwendet, mit deren Hilfe sowohl eine bis auf 10 cm genaue Lokalisierung als auch die Bewegungsverfolgung realisiert werden kann. Für den im Paper\footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13} beschriebenen Versuchsaufbau werden drei Kameras verwendet, von denen jede an einem PC angeschlossen ist. Ein weiterer PC wird für das \textit{Tracking} der Personen benötigt.\newline\newline
+Dieses Verfahrens ermöglicht die Erkennung von Gesichtern und die Interaktion mit der Umgebung. Wenn beispielsweise eine Person den Raum betritt, erkennt das System, um welche Person es sich handelt und kann dementsprechend auf die Person reagieren. So könnten die Lichtverhältnisse des Raumes oder die Musik einer Musikanlage automatisch an die Bedürfnisse der jeweiligen Person angepasst werden. Die Möglichkeit der Identifikation ist hinsichtlich des Datenschutzes und der Privatsphäre jedoch kritisch zu betrachten.\newline\newline
+Das letzte in dieser Ausarbeitung vorgestellte Verfahren stellt eine Hybridlösung zwischen dem physischen Kontakt und Computer Vision dar und ist hinsichtlich der Privatsphäre unbedenklicher.
+
+\subsection{GravitySpace}
+Wenn eine Person den Boden, auf dem er sich befindet berührt, erzeugt diese einen Abdruck auf dem Untergrund. Am Hasso-Plattner-Institut (\textbf{HPI}) wurde ein Verfahren namens GravitySpace entwickelt, welches sich diesen Effekt zu Nutze macht, in dem diese Abdrücke mit einer Kamera erfasst und ausgewertet werden.\\
+Bei dem Versuchsaufbau dieses Verfahrens wird als Bodenplatte eines Zimmers eine Glasscheibe verwendet, welche von unten mit einer Kamera gefilmt wird. Weiterhin wird ein Projektor installiert, welcher Bildmaterial von unten auf diese Scheibe projizieren kann. Die Abbildung 11 zeigt diesen Versuchsaufbau.
 
 \begin{figure}[H]
 	\centering
@@ -166,7 +172,7 @@ Am Hasso-Plattner-Institut (\textbf{HPI}) in Potsdam wurde ein Verfahren entwick
 	\caption{Versuchsaufbau GravitySpace(Bränzel et al., S. 2)}
 \end{figure}
 
-Wenn ein Objekt die Glasscheibe berührt erzeugt dieses einen Abdruck auf der Fläche. Genau wie bei einem Fingerabdruck kann man bestimmten Abdrücken ein bestimmtes Objekt zuordnen. Die Abbildung 12 zeigt die Abdrücke verschiedener Objekte.
+Wenn ein Objekt die Glasscheibe berührt erzeugt dieses einen Abdruck auf der Fläche. Genau wie bei einem Fingerabdruck, kann man bestimmten Abdrücken ein bestimmtes Objekt zuordnen. Die Abbildung 12 zeigt die Abdrücke verschiedener Objekte.
 
 \begin{figure}[H]
 	\centering
@@ -174,22 +180,17 @@ Wenn ein Objekt die Glasscheibe berührt erzeugt dieses einen Abdruck auf der Fl
 	\caption{Abdrücke von Objekten(Bränzel et al., S. 2)}
 \end{figure}
 
-Dies ermöglicht über die Lokalisierung und Bewegungsverfolgung hinaus eine Identifikation von Personen innerhalb eines kleinen Personenkreises. Weiterhin ermöglicht der angebrachte Projektor eine Interaktion mit der Umgebung. So könnte beispielsweise ein Ball projiziert werden, den sich die Personen hin und her spielen könnten.\newline\newline
-Dieses Verfahrens bietet gegenüber konventionellen Kameraverfahren einige Vorteile\footnote{Bränzel et al., S. 3}
+Dies ermöglicht über die Lokalisierung und Bewegungsverfolgung hinaus eine Identifikation von Personen innerhalb eines kleinen Personenkreises. Weiterhin ermöglicht der angebrachte Projektor eine Interaktion mit der Umgebung. So könnte beispielsweise ein Ball projiziert werden, den sich die Personen hin und her spielen können.\newline\newline
+Dieses Verfahrens bietet gegenüber konventionellen Kameraverfahren einige Vorteile\footnote{Bränzel et al., S. 3}:
 
 \begin{itemize}
-\item \textbf{Abdeckung}: Der Blickwinkel einer gewöhnlichen Kamera ist pyramidenförmig. Um jeden Winkel eines Raumes betrachten zu können, reicht eine Kamera allein nicht aus. 
+\item \textbf{Abdeckung}: Der Blickwinkel einer gewöhnlichen Kamera ist pyramidenförmig. Um jeden Winkel eines Raumes betrachten zu können, reicht eine Kamera allein nicht aus. Durch die Perspektive von unten wird jeder Bereich des Raumes erfasst.
 \item \textbf{Verdeckung}: Da die Lokalisierung einer Person von unten realisiert wird, kann diese nicht so leicht durch andere Personen oder Objekte verdeckt werden.
 \item \textbf{Einfache Algorithmen}: Normalerweise müssen aufwändige Algorithmen verwendet werden, um 3D-Objekte zu erkennen. Bei diesem Verfahren wird das Problem auf zwei Dimensionen reduziert, wodurch einfachere und robustere Algorithmen verwendet werden können.
 \item \textbf{Privatsphäre}: Auch, wenn eine Unterscheidung von Individuen einer kleinen Gruppe möglich ist, so ist die Druck-basierte Lokalisierung von Personen unter dem Aspekt der Privatsphäre weit weniger kritisch.
 \end{itemize} 
 
 Der Nachteil dieses Verfahrens liegt in der Tatsache, dass ein solcher Aufbau bei weitem aufwändiger ist, als bei der Verwendung gewöhnlicher Kamerasysteme. Dies relativiert den oben genannten Abdeckungs-Vorteil.
-
-\subsection{Computer-Vision}
-Auch Computer-Vision kann als \textbf{DfP}-System betrachtet werden, da ein potentieller Nutzer keine zusätzliche Hardware am Körper tragen muss. Das Ziel dieses Systems ist, eine Umgebung zu schaffen, die auf die Position und das Verhalten einer Person reagiert (intelligente Umgebung). \footnote{Vgl. Deak G., Curran K. \& Condell J., S. 13}\newline Es ist beispielsweise vorstellbar, dass 
-
-Test
 
 \subsection{Fazit und Ausblick}
 In dieser Ausarbeitung wurden verschiedene Methoden zur Lokalisierung und Bewegungsverfolgung von Person innerhalb von Gebäuden vorgestellt. Dabei wurden die Funktionsweisen der jeweiligen Methoden erläutert und deren Vor- und Nachteile aufgezeigt.\newline\newline 
