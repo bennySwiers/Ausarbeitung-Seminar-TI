@@ -23,8 +23,8 @@ Im weiteren Verlauf wird jedes \textit{passive System} näher untersucht. Es wir
 \section{Sensorlose Indoor-Lokalisierung}
 \subsection{Radio Frequency Identification}
 Unter \textit{Radio Frequence Identification} (\textbf{RFID}) versteht man eine kontaktlose Identifikation mittels Funkübertragung. Oftmals kann man hierfür bereits vorhandene Wi-Fi-Netzwerke verwenden.\footnote{Vgl. Kivimäki T., Vuorela T., Peltola P. \& Vanhala J., S.  16} \\
-Ein solches DfL-System (\textbf{Device-free Localization}) nutzt die Tatsache aus, dass die Präsenz eines menschlichen Körpers die Radiosignale beeinflusst.\footnote{Vgl. ebd.} Die verwendete Frequenz der Knotenpunkte liegt hierbei bei $2.4$Ghz, weil dies die Resonanzfrequenz von Wasser ist und der Mensch bekanntermaßen aus $70\%$ aus Wasser besteht.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 11}. Ein weiterer Pluspunkt ist auch, dass die Frequenz von $2.4$ Ghz bei \textit{IEEE Standards} wie $802.11b$ und $802.11g$ verwendet wird.\footnote{Vgl. Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M., S. 3}\\
-Das \textit{DfP-System} (\textit{Device-free Passive}) auf Grundlage von \textit{RFID}, welches im Folgenden vorgestellt wird, misst die Änderungen von der erhaltenen \textit{Received Signal Strength Indication} (\textbf{RSSI}). Systeme, die von der \textit{RSSI} Gebrauch machen, haben meist eine Genauigkeit von bis zu $18$cm.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 14}. Das in folgendenen Abschnitten vorgestellte System soll als Alarmanlage agieren und Eindringlinge lokalisieren bzw. detektieren können.\footnote{Vgl. Mah M., S. 2} Ein solches System besteht aus zwei Komponenten, den \textit{Access Points} (\textbf{AP})\footnote{Z. Dt. Zugriffsknoten} und den \textit{Monitoring Points} (\textbf{MP})\footnote{(Z. Dt. Kontrollknoten)}. Einen guten Überblick bietet die Abbildung 2:\\
+Ein solches DfL-System (\textbf{Device-free Localization}) nutzt die Tatsache aus, dass die Präsenz eines menschlichen Körpers die Radiosignale beeinflusst.\footnote{Vgl. ebd.} Die verwendete Frequenz der Knotenpunkte liegt hierbei bei $2.4$Ghz, weil dies die Resonanzfrequenz von Wasser ist und der Mensch bekanntermaßen aus $70\%$ aus Wasser besteht.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 11} Ein weiterer Pluspunkt ist auch, dass die Frequenz von $2.4$ Ghz bei \textit{IEEE Standards} wie $802.11b$ und $802.11g$ verwendet wird.\footnote{Vgl. Pirzada N.,Nayan Y., Subhan F., Hassan F., Khan M., S. 3}\\
+Das \textit{DfP-System} (\textit{Device-free Passive}) auf Grundlage von \textit{RFID}, welches im Folgenden vorgestellt wird, misst die Änderungen von der erhaltenen \textit{Received Signal Strength Indication} (\textbf{RSSI}). Systeme, die von der \textit{RSSI} Gebrauch machen, haben meist eine Genauigkeit von bis zu $18$cm.\footnote{Vgl. Deak G.,  Curran K. \& Condell J., S. 14}. Das in folgendenen Abschnitten vorgestellte System soll als Alarmanlage agieren und Eindringlinge lokalisieren bzw. detektieren können.\footnote{Vgl. Mah M., S. 2} Ein solches System besteht aus zwei Komponenten, den \textit{Access Points} (\textbf{AP})\footnote{Z. Dt. Zugriffsknoten} und den \textit{Monitoring Points} (\textbf{MP})\footnote{Z. Dt. Kontrollknoten}. Einen guten Überblick bietet die Abbildung 2:\\
 
 \begin{figure}[H]
 	\centering
@@ -151,7 +151,7 @@ Abhängig von der Anzahl der verwendeten \textit{Piezoelemente} bzw. deren Absta
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{pictures/piezo}
-	\caption{Detektionen eines Sturzes( \url{http://i.kinja-img.com/gawker-media/image/upload/s--WB7wQYq6--/c_fit,fl_progressive,q_80,w_636/19gzk7od0artwjpg.jpg})}
+	\caption{Detektionen eines Sturzes (Sturzdetektion Drucksensoren)}
 \end{figure} 
 
 Auf diese Weise können beispielsweise Stürze einer Person erkannt werden. In Folge dessen kann automatisch ein Notruf abgesetzt werden, durch den Hilfe angefordert wird. Diese Funktionalität könnte in Haushalten eingesetzt werden, in denen alte oder körperlich beeinträchtigte Personen leben.
@@ -200,10 +200,6 @@ Im Laufe der Zeit werden die Bauteile für solche Systeme voraussichtlich immer 
 \newpage
 
 \section{Quellenverzeichnis}
-\subsection*{Literaturquellen}
-\begin{itemize}[leftmargin=*]
-\item[] \textbf{Sample}
-\end{itemize}
 \subsection*{Sonstige Quellen}
 \begin{itemize}[leftmargin=*]
 \item[] \textbf{Bränzel et al.}: GravitySpace: Tracking Users and Their Poses in a Smart Room Using a Pressure-Sensing Floor (2013), Online unter URL: \url{https://hpi.de/fileadmin/user_upload/fachgebiete/baudisch/publications/GravitySpace_CHI2013.pdf}
@@ -220,4 +216,5 @@ Pressure Sensing in HVAC System Ductwork: An Exploration in Infrastructure Media
 \item[] \textbf{Peelamedu, Saravanan M.}: Piezoelectric Effect and Its Application, in Encyclopedia of Optical Engineering, hrsg. v. Ronald G. Driggers, 2003
 \item[] \textbf{Technische Universität Dortmund}: TU Dortmund, Fakultät ETIT, IRF, IT, Forschung, Embedded Systems,  Projekte, PIL, DFG-Projekt: Passive Infrarot-Lokalisierung, Online unter URL: \url{http://www.irf.tu-dortmund.de/cms/de/IT/Forschung/Embedded_Systems/Projekte/PIL/index.html}, Abruf: 2015-06-15
 \item[] \textbf{Teletopix: Multipath-Fading}: Online unter URL: \url{http://www.teletopix.org/wp-content/uploads/2013/01/MUltipath-effect.jpg}, Abruf: 2015-06-26
+\item[] \textbf{Sturzdetektion Drucksensoren}: Online unter URL: \url{http://i.kinja-img.com/gawker-media/image/upload/s--WB7wQYq6--/c_fit,fl_progressive,q_80,w_636/19gzk7od0artwjpg.jpg}
 \end{itemize}
