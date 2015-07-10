@@ -1,0 +1,251 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100.01%;
+	background-color: #fff;
+	color: #000;
+}
+/* ----------- Anfang Definition DIV-Struktur der Seiten ---------- */
+/* Sprungmarken fuer Screenreader und Tastaturnavigation */
+div#sprungmarken, div#sprungmarken a {
+  display: none;
+}
+/* ------------- Navigationspfad, Suche, A-Z und Hilfe ------------- */
+div#serviceZeile {
+  display: none;
+}
+/* ------------- Kopfbereich mit UniDo-Logo und eventuellen weiteren Grafiken (Hintergrundbild, Institutslogos etc. ------------------ */
+div#kopfgrafikbereich {
+  display: none;
+}
+/* ------------------ horizontale Hauptnavigation ---------------- */
+div#hauptnavi {
+  display: none;
+}
+/* ------------- linke Unternavigation --------------- */
+div#bereichsnavi {
+  display: none;
+}
+
+/* ------------- Werbung unter der Bereichsnavi ------ */
+div#werbung, div#werbung_horizontal {
+	display: none;
+}
+div#werbung a {
+	background-color: White;
+}
+/* ------------- Hauptinhaltsbereich ------------- */
+div#inhalt {
+	
+}
+/* ------------ Linke Spalte im Inhaltsbereich ------------ */
+div#inhalt_spalte_links {
+  display: block;
+}
+/* ------------ Rechte Spalte im Inhaltsbereich ------------ */
+div#inhalt_spalte_rechts {
+  display: block;
+}
+/* Nebeninhaltsbereich rechte Spalte */
+div#nebeninhalt {
+	
+}
+div#zusatzinhalt {
+
+}
+/* Fusszeile mit Datum der letzten Aenderung, Ansprechpartner, Feedbacklink, Impressum */
+div#fusszeile {
+  display: none;
+}
+/* ------------------ Einstellen der Schriftgroesse ---------------- */
+div#bereichsnavi {
+
+}
+div#inhalt p, div#nebeninhalt p, div#zusatzinhalt p {
+
+}
+h1#seitenueberschrift, h1#nebenueberschrift, h1.navigationsueberschrift {
+	display: none;
+}
+/* Anfang Bildausrichtung mit Bildunterschrift */
+img.bild_rechts {
+}
+img.bild_links {
+}
+div.bild_mit_text {
+	margin-bottom: 15px;
+}
+div.bild_mit_text p {
+	margin-bottom: 0;
+}
+div.bild_rechts_mit_unterschrift {
+	font-size: 10px;
+	margin: 0;
+	margin-left: 15px;
+	width: auto;
+	margin-top: 0.5em;
+	text-align: left;
+	overflow: inherit;
+}
+div.bild_rechts_mit_unterschrift p {
+	padding-left: 0.5em !important;
+	padding-right: 0.5em !important;
+	border: 1px solid Black;
+	font-size: 1.3em;
+}
+div.bild_links_mit_unterschrift {
+	font-size: 10px;
+	padding: 0;
+	margin: 0;
+	margin-right: 15px;
+	width: auto;
+	margin-top: 0.5em;
+	text-align: left;
+	overflow: inherit;
+}
+div.bild_links_mit_unterschrift p {
+	padding-left: 0.5em !important;
+	padding-right: 0.5em !important;
+	border: 1px solid Black;
+	font-size: 1.3em;
+}
+div.bild_links_mit_unterschrift img, div.bild_rechts_mit_unterschrift img {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+div.bild_links_mit_unterschrift p, div.bild_rechts_mit_unterschrift p {
+	margin-top: 0 !important;
+	padding-top: 0.5em;
+	max-width: 100%;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-bottom: 0.5em;
+}
+div#teaserbild_mit_beschriftung {
+	float: left;
+	font-size: 0.8em;
+	padding: 0;
+	margin: 0;
+	font-style: oblique;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #fff;
+}
+div#teaserbild_ohne_beschriftung {
+	float: left;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+/* Ende Bildausrichtung mit Bildunterschrift */
+p.fliesstext {
+	text-align: justify;
+	padding: 0;
+	line-height: 1.2em;
+}
+.linksbuendig {
+	text-align: left;
+}
+.rechtsbuendig {
+	text-align: right;
+}
+.zentriert {
+	text-align: center;
+}
+.blocksatz {
+	text-align: justify;
+}
+.unterstrichen {
+	text-decoration: underline;
+}
+.durchgestrichen {
+	text-decoration: line-through;
+}
+.ueberstrichen {
+	text-decoration: overline;
+}
+.blinkend {
+	text-decoration: blink;
+}
+.kleine-schrift {
+	font-size: 0.76em;
+}
+.kapitaelchen {
+	font-variant: small-caps;
+}
+.kleinbuchstaben {
+	text-transform: lowercase;
+}
+.grossbuchstaben {
+	text-transform: uppercase;
+}
+quote, cite {
+	font-style: oblique;
+}
+p.teaser {
+	font-weight: bold;
+}
+code.greybox {
+	background-color: #ddd;
+	border: 1px dotted #333;
+	padding: 1em;
+	margin: 2em;
+	color: #000;
+}
+code.bluebox {
+	background-color: #7192A8;
+	border: 1px dotted #069;
+	padding: 1em;
+	margin: 2em;
+	color: #fff;
+}
+div.infobox {
+	padding: 10px;
+	border: 5px dotted #f0f0f0;
+	background-color: #fff;
+	color: #333;
+	font-size: 1em;
+}
+div.infobox:hover {
+	border: 5px solid #999;
+	background-color: #f0f0f0;
+}
+.smallfont, .kleine_schrift {
+	font-size: 0.67em;
+}
+.rot {
+	color: #000;
+}
+.blau {
+	color: #00c;
+}
+.gruen {
+	color: #0c0;
+}
+.hg_weiss {
+	background-color: #fff;
+	padding: 0.5em 0 0.5em 0;
+}
+.hg_schwarz {
+	background-color: #000;
+}
+.hg_hellgrau {
+	background-color: #eee;
+}
+.hg_dunkelgrau {
+	background-color: #888;
+}
+.clear {
+  clear: both;
+}
+br.clear {
+	clear: both;
+	font-size: 0;
+}
+span.abstandshalter {
+	margin-left: 1em;
+	margin-right: 1em;
+}

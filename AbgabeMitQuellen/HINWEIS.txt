@@ -1,0 +1,3 @@
+Die Quellen für Vortrag und Ausarbeitung befinden sich im Ordner quellen.
+Die Bilder für den Vortrag befinden sich unter vortrag/pictures und die Bilder für
+die Ausarbeitung unter ausarbeitung\pictures.

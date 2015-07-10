@@ -1,0 +1,317 @@
+/* responsive.css fix2
+  2014-10-29 SHueser responsive Design, Media-queries fuer kleine Viewports
+  2014-11-04 SHueser Bereichsnavi jetzt in mehreren Ebenen bedienbar
+  2014-11-24 SHueser line-height-angabe (2.2em) im body entfernt, damit Text inner- und ausserhalb von Paragraphs gleichhoch angezeigt wird.
+
+*/
+
+/* ************************************************************************** */
+/* Verhalten von Bereichsgrafik und Wortmarken in lay_css, wg config ******** */
+/* Button-Beschriftung (mehr/weniger) in lay_css wg sprachabh. ************** */
+/* ************************************************************************** */
+
+/* ************************************************************************** */
+/* Tablet Querformat 1024px, kleines Tablet Querformat 962px **************** */
+/* Viewports sind fast breit genug fuer die volle Sicht. ******************** */
+/* ************************************************************************** */
+@media all and (max-width: 1000px) {
+  /* Bereich Kopfgrafik ***************************************************** */
+  /* Wortmarken ruecken nach links */
+  span#ebene-logos {
+    padding-left:2em;
+  }
+  /* Panoramaview ausblenden */
+  div#panoramabilder {
+    display: none;
+  }
+}
+
+/* ************************************************************************** */
+/* Tablet Hochformat ******************************************************** */
+/* Navigationen zusammenklappen, Inhalt dafuer breiter ********************** */
+/* ************************************************************************** */
+@media all and (max-width: 640px) {
+  /* Bereich Navi *********************************************************** */
+  /* Brotkrumennavigation Spracheintrag wird ausgeblendet */
+  div#brotkrumenNavi span {
+    display:none;
+  }
+  /* Direkteinstieg ausblenden */
+  div#direkteinstieg {
+    display:none;
+  }
+
+  /* Hauptnavi klappt zusammen und aendert Farben */
+  .jsEnabled div#hauptnavi {
+    display:none;
+  }  
+  div#hauptnavi ul.hauptNavi li {
+    padding:0;
+    line-height:2.2em;
+  }
+  div#hauptnavi ul.hauptNavi {
+    padding-bottom:0;
+  }
+  div#hauptnavi ul li {
+    display:inline-block !important;
+    background:none;
+    width:100%;
+    margin-bottom:.4em;
+  }
+  div#hauptnavi ul li:last-child {
+    margin-bottom:0;
+  }
+  div#hauptnavi ul.hauptNavi li a {
+    width:100%;
+    padding:0;
+  }
+  
+  div#hauptnavi ul li a {
+    display:inline-block !important;
+    width:100%;
+    font-size:1em;
+  }
+  #toggle-navigation {
+    background-color:#B2B3B6;
+    background-image:url(css-icons/menu-small.png);
+    background-position:right bottom;
+    background-repeat:no-repeat;
+    width:42px;
+    height:36px;
+    display:inline-block;
+    float:left;
+    cursor:pointer;
+    position:absolute;
+    left:0;
+    bottom:0;
+  }
+
+  /* Bereichsnavigation ***************************************************** */
+  /* div#bereichsnavi -> ul -> li.toplevel -> span#notclickable -> Seitenname (gleich dem Hauptnavi-Punkt) */
+  .jsEnabled div#bereichsnavi ul li.toplevel ul {
+    display:none;
+  }  
+  div#bereichsnavi ul li.toplevel ul li.aktiv ul {
+    display:block;
+  }
+  div#bereichsnavi ul li.toplevel ul li.aktivKinder ul {
+    display:block;
+  }  
+  span#notclickable {
+    color: white !important;
+    line-height: 2.2em !important;
+    margin: 0;
+    padding-left:0.4em;
+    background-color: #b2b3b6 !important;
+    cursor:pointer;
+  }
+  span#notclickable span {
+    display: inline !important;
+    float:right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8em;
+  }
+
+  /* "Zacken bauen" */
+  span#notclickable:first-child {
+    background-color:#B2B3B6; 
+    display:block; 
+    border:2px solid #649600;
+    position:relative; 
+  }
+  span#notclickable:first-child:after,span#notclickable:first-child:before {
+    top:100%;
+    left:50%;
+    border:solid transparent;
+    content:" ";
+    height:0;
+    width:0;
+    position:absolute;
+  }
+  span#notclickable:first-child:after {
+    margin-left:-8px;
+    border-color:#B2B3B6 transparent transparent;
+    border-width:8px;
+  }
+  span#notclickable:first-child:before {
+    margin-left:-11px;
+    border-color:#649600 transparent transparent;
+    border-width:11px;
+  }
+
+  div#bereichsnavi ul li.toplevel ul li {
+    line-height:2.2em;
+    margin-top:.2em;
+  }
+  div#bereichsnavi ul > li.toplevel > ul > li:not(.aktiv) {
+    background-color:#ddd;
+  }
+  div#bereichsnavi ul a {
+    padding-left:.5em;
+  }
+  /* Werbung u.ae. ausblenden */
+  div#partner, div.werbung, div.werbung_horizontal_portal {
+    display: none;
+  }
+  /* Bereich Inhalt ********************************************************* */
+  /* Inhalt nimmt ganze Breite ein */
+  div#wrapper_neu > div {
+    width:auto;
+    display:block;
+    padding-bottom: .4em;
+  }
+  div#inhalt {
+    border-top:1px solid #B2B3B6;
+    border-bottom:1px solid #B2B3B6;
+    min-height:5em;
+  }
+  div#contentwrapper {
+    border-top:.4em solid #B2B3B6;
+  }
+  /* Text sollte links ausgerichtet sein. Kein Blocksatz oder justify */
+  .blocksatz {
+    text-align:left;
+  }
+  [align=justify]  {
+    text-align:left;
+  }
+  a:focus, div#hauptnavi ul.hauptNavi li a:focus, a:hover, div#hauptnavi ul.hauptNavi li a:hover, a:link:hover, a:visited:hover, a:focus, a:active {
+    background-color: #649600;
+    color: #fff !important;
+  }
+  div#bereichsnavi, div#inhalt, div#nebeninhalt {
+    border-left: 0.4em solid #b2b3b6;
+    border-right: 0.4em solid #b2b3b6;
+  }
+  div#brotkrumenNavi {
+    border:none;
+    padding:0.2em 0 0 0;
+  }
+  div#brotkrumenNavi ul li a {
+    line-height:1.8em;
+    display:inline-block;
+  }
+
+  div#nebeninhalt {
+      padding-top: .4em;
+  }
+  /* kleineren margin fuer Bilder */
+  img.bild_links, img.bild_links_ohne_umfluss, img.mitarbeiter_foto {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  img.bild_rechts {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+}
+
+/* ************************************************************************** */
+/* Mobile Querformat ******************************************************** */
+/* Texte aublenden, Icons bevorzugen **************************************** */
+/* Uebersichten zusammenklappen, Fusszeile untereinander ******************** */
+/* ************************************************************************** */
+@media all and (max-width: 480px) {
+  /* Bereich Servicenavi **************************************************** */
+  /* text vor icons ausblenden */
+  div#serviceNavi ul li span {
+    display:none;
+  }
+  div#serviceNavi ul li label[for=suchfeld]  {
+    display:none;
+  }
+  div#serviceNavi ul li:last-child {
+    border: none;
+    margin-left:-0.4em;
+  }
+
+
+  /* Bereich Kopfgrafik ***************************************************** */
+  /* TU-Logo rueckt nach rechts */
+  img#unido-logo {
+    margin-left:5em;
+  }
+  div#kopfgrafikbereich {
+    height:55px;
+  }
+
+  /* Bereich Inhalt ********************************************************* */
+  div#inhalt_spalte_links,div#inhalt_spalte_rechts {
+    width:auto;
+    float:left;
+    margin-bottom:0;
+  }
+
+  /* Bereich Fusszeile ****************************************************** */
+  /* Eintraege in Fusszeile untereinander statt nebeneinander */
+  div#fusszeile ul {
+    margin:2px 0 4px;
+  }
+  div#fusszeile ul li {
+    display:block;
+    text-align:center;
+    border-bottom:1px solid #DDD;
+    padding:2px;
+  }
+  div#fusszeile ul li:after {
+    content:"";
+  }
+  div#fusszeile ul li, div#fusszeile ul li > a {
+    list-style:none;
+    display:block;
+    width:100%;
+    line-height: 2em;
+  }
+  div#fusszeile ul li > a.email_link {
+    padding:0;
+  }
+  div#fusszeile ul li.abstandshalter {
+    border-right:0;
+    margin-right:0;
+  }
+
+  /* Bereich Uebersichten *************************************************** */
+  div.aktuelles_meldung .item-titel, div.aktuelles_meldung .item-titel-mehr, div.aktuelles_meldung .item-titel-weniger {
+    cursor:pointer;
+  }
+  div.aktuelles_meldung .button {
+    display:inline;
+    color:black;
+    line-height: 2em;
+    font-size:0.75em;
+    font-weight:normal;
+  }
+  div.aktuelles_meldung:hover .button {
+    background-color: #649600;
+    color: #fff;
+  }
+  /* Ausblenden nur, wenn JS zum Einblenden aktiviert */
+  .jsEnabled div.aktuelles_meldung .item-uebersicht {
+    display:none;
+  }
+  .jsEnabled div.aktuelles_meldung .item-titel a, .jsEnabled div.aktuelles_meldung .item-titel-mehr a {
+    pointer-events:none;
+  }
+  /* FAQ's werden alle eingeklappt und die Uebersicht ausgeblendet */
+  .jsEnabled ol.faq-linkliste {
+    display:none !important;
+  }
+}
+
+
+/* ************************************************************************** */
+/* Mobile Hochformat, sehr schmale Geraete ********************************** */
+/* Logo verkleinern und body schmaler, damit kein horizonales Scrollen ****** */
+/* ************************************************************************** */
+@media all and (max-width: 320px) {
+  body {
+    min-width:190px;
+  }
+  /* Bereich Kopfgrafik  **************************************************** */
+  /* TU-Logo wird verkleinert */
+  img#unido-logo {
+    width:80% !important;
+    height:80% !important;
+  }
+}

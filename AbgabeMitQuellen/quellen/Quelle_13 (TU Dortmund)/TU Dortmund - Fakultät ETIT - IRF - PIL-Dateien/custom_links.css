@@ -1,0 +1,148 @@
+/* ---------------- Anfang Custom Linkklassen ---------------------- */
+/* 23.06.10 shue rss-icon hinzugefuegt*/
+/* 05.04.13 Sabine Hueser, Flaggenicons fuer Sprachauswahl hinzugefuegt */
+/* 16.07.14 shue Facebook-Link eingefuegt, kein Linkcallback erforderlich */
+/* 2015-02-20 rss_link: padding verkleinert wg kleinerem Bild */
+
+a.pdf_link { 
+	background-image: url(css-icons/icon_pdf.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 18px; 
+}
+
+/* 16.07.14 shue Facebook-Link eingefuegt, kein Linkcallback erforderlich */
+a.facebook_link { 
+	background-image: url(css-icons/icon_facebook.jpg); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 16px; 
+}
+
+/* 23.6.10 Test shue rss-icon per Linkcallback eingefuegt */
+a.rss_link { 
+	background-image: url(css-icons/icon_rss.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 18px; 
+}
+
+/* 05.04.13 shue Sprachlinks eingefuegt, kein Linkcallback erforderlich */
+a.deutsch_link { 
+	background-image: url(css-icons/icon_deutsch.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}
+a.english_link { 
+	background-image: url(css-icons/icon_english.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}
+
+a.ext_link { 
+	background-image: url(css-icons/icon_extern.png);
+	background-repeat: no-repeat; 
+	background-position: right bottom;
+	padding-right: 16px;
+}
+
+a.email_link { 
+	background-image: url(css-icons/icon_mail.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}
+
+a.ms_word_link { 
+	background-image: url(css-icons/icon_word.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 22px;
+}
+
+a.ms_excel_link { 
+	background-image: url(css-icons/icon_excel.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}
+
+a.ms_powerpoint_link { 
+	background-image: url(css-icons/icon_powerpoint.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}
+
+a.tex_link { 
+	background-image: url(css-icons/icon_tex.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 24px;
+}
+
+a.compressed_file_link { 
+	background-image: url(css-icons/icon_archiv.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+	line-height: 100%;
+}
+
+a.win_link { 
+	background-image: url(css-icons/icon_win.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}
+
+a.linux_link { 
+	background-image: url(css-icons/icon_tux.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}
+
+a.mac_link { 
+	background-image: url(css-icons/icon_apple.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}
+
+a.solaris_link { 
+	background-image: url(css-icons/icon_solaris.png); 
+	background-repeat:no-repeat; 
+	background-position:right; 
+	padding-right:22px; 
+}
+
+a.java_link { 
+	background-image: url(css-icons/icon_java.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px;
+}
+
+a.sound_link { 
+	background-image: url(css-icons/icon_sound.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 24px; 
+}
+
+a.img_link { 
+	background-image: url(css-icons/icon_bild.png); 
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}
+
+a.pgpkey_link { 
+	background-image: url(css-icons/icon_pgp.png);
+	background-repeat: no-repeat; 
+	background-position: right; 
+	padding-right: 22px; 
+}

@@ -1,0 +1,869 @@
+/* screen.css fix2
+  24.06.2014, SHue, Kommaseparierte inline-Liste von verlinkten Mitarbeitern hinzugefuegt 
+  02.07.2014, SHue, einige alte Anweisungen entfernt 
+  20.08.2014, SHue, In Vorbereitung auf Responsive Design: 
+                   Jetzt durchstrukturiert und umsortiert, alte Eigenschaften entfernt usw... 
+                   Alle Aenderungen bisher unter der Haube: In Layout und Design noch keine Aenderungen im Vergleich zur Produktivversion. 
+  20.08.2014, SHue, Umgestellt auf display:table, table-cell usw...
+  15.10.2014, SHue, Eigenschaften fuer Panoramaview eingefuegt
+  2014-10-29 SHueser responsive
+  2014-10-31 SHueser line-height fuer h3 gesetzt
+  2014-11-03 SHueser Defaulteinstellungen fuer udo_Uebersichtsordner in responsive Design hinzugefuegt
+  2014-11-24 SHueser fuer Nebeninhalt vertical-align:top. Damit auch korrekte Darstellung, wenn ausschliesslich ein Bild eingefuegt wird
+*/
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 75%;
+  background-color: #fff;
+  color: #000;
+  margin: 0 .5em .5em .5em;
+  padding: 0;
+  border: 0;
+  min-width:290px;
+}
+
+/* Barrierefreiheit ********************************************************* */
+div#sprungmarken {
+  position: absolute;
+  top: 3em;
+  left: -999em;
+  z-index: 500;
+}
+h1.navigationsueberschrift, h1#nebenueberschrift, h1#seitenueberschrift {
+  display: none;
+}
+/* Sichtbarmachung der Sprungmarken-Navigation durch Tab-Fokus */
+div#sprungmarken a:focus, div#sprungmarken a:active {
+  position: absolute;
+  left: 1000em;
+  top: 0;
+  white-space: nowrap;
+  z-index: 99;
+  background-color: #fff;
+  color: #000 !important;
+  font-weight: bold;
+  padding: 1em;
+}
+
+/* ************************************************************************** */
+/* Layout ******************************************************************* */
+/* ************************************************************************** */
+
+/* Servicezeile und -Navigation ********************************************* */
+div#serviceZeile {
+  color: #000;
+  text-align: right;
+  padding: 0.2em 0em 0.2em 0em;
+  margin: 0 0 0.3em 0;
+  height: 1.7em;
+}
+div#serviceNavi {
+  float: right;
+  font-size: 0.9em;
+  padding: 0.3em 0.3em 0em 1em;  
+}
+div#serviceZeile input[type=submit], div#direkteinstieg input[type=button] {
+  background-color: #fff;
+  border: 1px solid #7b7e7c;
+}
+/* Aenderung Suchformular in serviceNavi */
+  #serviceNavi ul li form input[type=image] {
+    vertical-align:middle;
+  }
+  #serviceNavi ul li form input[type=image]:hover {
+    background-color: #649600;
+    color: #fff !important;
+  }
+
+/* Kopfgrafikbereich ******************************************************** */
+div#kopfgrafikbereich {
+  background: no-repeat right;
+  height: 93px;
+  position: relative;
+}
+
+/* Panorama ***************************************************************** */
+/* Ohne JavaScript funktioniert die View nicht. Daher nur einblenden, wenn JS aktiviert und body die Klasse jsEnabled hat. */
+.jsEnabled div#panoramabilder {
+  width:100%;
+  height:200px;
+}
+
+/* Hauptnavigation ********************************************************** */
+
+div#hauptnavi {
+  background-color: #b2b3b6;
+  height: 1%;
+}
+div#direkteinstieg {
+  float: right;
+  margin-right: 0.4em;
+  margin-top: 0.4em;
+  color: #fff;
+}
+
+/* Contentwrapper *********************************************************** */
+
+div#contentwrapper {
+  width: 100%;
+  display:table;
+}
+
+/* Brotkrumennavigation ***************************************************** */
+
+div#brotkrumenNavi {
+  display:table-caption;
+  border-left:.4em solid #B2B3B6;
+  border-right:.4em solid #B2B3B6;
+  padding:.8em .5em .5em .8em
+}
+
+
+/* wrapper_neu fuer resp. *************************************************** */
+
+div#wrapper_neu
+{
+  display:table-row
+}
+
+
+/* Bereichsnavigation ******************************************************* */
+
+div#bereichsnavi {
+  color: #000;
+  width: 16em;
+  padding:.8em;
+  display:table-cell;
+  border-left: 0.4em solid #b2b3b6;
+}
+
+/* Inhalt ******************************************************************* */
+
+div#inhalt {
+  border-left:1px solid #B2B3B6;
+  border-right:1px solid #B2B3B6;
+  min-height:15em;
+  overflow:auto;
+  padding-left:.8em;
+  padding-right:.8em;
+  display:table-cell;
+}
+div#inhalt_spalte_links {
+  float: left;
+  width: 49%;
+  min-width: 15em;
+  margin-right: 1%;
+}
+div#inhalt_spalte_rechts {
+  float: right;
+  width: 49%;
+  min-width: 15em;
+}
+/* div, der um den Inhalt herumgelegt wird und einen Overflow hat, damit clearings im Inhaltsbereich noch funktionieren */
+div#inhalt div.wrapper {
+  overflow: auto;
+  height: 100%;
+  margin-bottom: 1em; 
+  padding: 0 1em 0 1em;
+  border-left: 1px solid #b2b3b6;
+  border-right: 1px solid #b2b3b6;
+  min-height: 15em;
+}
+/* Wenn keine rechte Spalte vorhanden ist, wird diese Klasse vergeben, damit der Inhaltsbereich ueber die ganze Breite geht */
+div#inhalt.inhalt_breit {
+  border-right: 0.4em solid #b2b3b6;
+}
+
+/* Nebeninhalt ************************************************************** */
+
+div#nebeninhalt {
+  width: 16em;
+  display:table-cell;
+  vertical-align:top;
+  padding-left:.8em;
+  padding-right:.8em;
+  border-right: 0.4em solid #b2b3b6;
+
+}
+
+/* Fusszeile **************************************************************** */
+
+div#fusszeile {
+  clear: both;
+  text-align: right;
+  border-top: 0.5em solid #b2b3b6;
+  color: #b2b3b6;
+  padding-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+/* ************************************************************************** */
+/* Styling in den Layoutbloecken ******************************************** */
+/* ************************************************************************** */
+
+/* Servicezeile und -Navigation ********************************************* */
+div#serviceNavi ul {
+  display: inline;
+}
+div#serviceNavi ul li {
+  display: inline;
+}
+div#serviceZeile a {
+  color: #000;
+  text-decoration: none;
+}
+div#serviceNavi form {
+  display: inline;
+}
+div#serviceNavi input[type=text], div#serviceNavi input[type=submit] {
+  font-size: 0.9em;
+}
+
+/* Kopfgrafikbereich ******************************************************** */
+img#unido-logo {
+  margin-left: 1em;
+}
+img#ebene2-logo {
+  position: absolute;
+  bottom: 0.8em;
+  padding-left: 6em;
+  font-size: inherit;
+}
+img#ebene2-fk-logo {
+  display: block;
+}
+img#ebene3-ls-logo {
+  display: block;
+  margin-top: 7px;
+}
+span#ebene-logos {
+  position: absolute;
+  bottom: 0.8em;
+  padding-left: 6em;
+  font-size: inherit;
+}
+/* Hauptnavigation ********************************************************** */
+
+div#direkteinstieg select {
+  font-size: 0.9em;
+  margin-left: 0.3em;
+}
+div#direkteinstieg input[type=button] {
+  font-size: 0.9em;
+}
+
+div#hauptnavi {    
+    font-weight: bold;
+    text-decoration: none;
+}
+div#hauptnavi a {
+    letter-spacing: 0.2em;
+    text-decoration: none;
+}
+div#hauptnavi ul.hauptNavi {
+    margin: 0;
+    padding: 0.3em 0.4em;
+    text-transform: uppercase;
+}
+div#hauptnavi ul.hauptNavi li {
+    background-color: #fff;
+    display: inline;
+    line-height: 1.6em;
+    margin-right: 2px;
+}
+div#hauptnavi ul.hauptNavi li a {
+    color: #7b7c7e;
+}
+div#hauptnavi ul.hauptNavi li span {
+    padding: 2px 4px 2px 5px;
+}
+div#hauptnavi ul.hauptNavi li#hauptnavi-aktiv, div#hauptnavi ul.hauptNavi li#hauptnavi-aktiv a {
+    color: #649600;
+    letter-spacing: 0.2em;
+}
+
+/* Contentwrapper *********************************************************** */
+/* Brotkrumennavigation ***************************************************** */
+div#brotkrumenNavi ul {
+  display: inline;
+}
+div#brotkrumenNavi ul li {
+  display: inline;
+}
+div#brotkrumenNavi a {
+  text-decoration: none;
+  color: #000;
+}
+/* Bereichsnavigation ******************************************************* */
+div#bereichsnavi a {
+  text-decoration: none;
+  color: #000;
+  height: 1%;
+  display: block;
+  padding-left: 0.3em;
+}
+div#bereichsnavi ul {
+  list-style-type: none;
+  height: 1%;
+}
+div#bereichsnavi ul li {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  line-height: 1.3em;
+  height: 1%;
+}
+div#bereichsnavi ul li span#clickable, div#bereichsnavi ul li span#notclickable {
+  line-height: 1em; /* Firstline */
+  height: 1%;
+}
+div#bereichsnavi ul li.aktiv {
+  background-color: #e0eacc;
+  height: 1%;
+}
+div#bereichsnavi ul li.aktiv ul {
+  background-color: #e0eacc; 
+}
+
+div#bereichsnavi li.aktivKinder {
+  background-color: #e0eacc;
+}
+div#bereichsnavi li.aktivKinder a, div#bereichsnavi span#aktivKinder {
+  display: block;
+  margin-bottom: 0.4em;
+}
+div#bereichsnavi li.aktivKinder ul li a {
+  margin-bottom: 0;
+}
+div#bereichsnavi ul li.aktivKinder ul, div#bereichsnavi ul li.aktiv ul {
+  padding-left: 1.3em;
+}
+div#bereichsnavi li.aktiv span.selected, div#bereichsnavi li.aktiv span.selected a, div#bereichsnavi li.aktiv span#aktivKinder {
+  display: block;
+  color: #fff;
+  background-color: #649600;
+  padding-left: 0.2em; 
+  height: 1%;
+}
+h2, div#bereichsnavi ul li.toplevel span#notclickable, div#bereichsnavi ul li.toplevel span#clickable {
+  background-color: #fff;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-size: 1em;
+  color: #7b7c7e;
+  margin-bottom: 1em;
+}
+h2, div#bereichsnavi ul li.toplevel span#notclickable, div#bereichsnavi ul li.toplevel span#clickable {
+  display: block;
+}
+/* Zeichen +/- zum Auf- und Zuklappen der Bereichsnavi. Nur sinnvoll bei responsive Design */
+div#bereichsnavi ul li.toplevel span#notclickable span {
+  display: none;
+}
+/* Inhalt ******************************************************************* */
+/* Aktuelle Meldungen ******************************************************* */
+div#inhalt div.aktuelles_meldung, div#nebeninhalt div.aktuelles_meldung {
+  margin-bottom: 1em;
+  clear: both;
+}
+/* Nebeninhalt ************************************************************** */
+/* Fusszeile **************************************************************** */
+div#fusszeile ul {
+  font-size: 0.9em;
+}
+div#fusszeile ul li.abstandshalter, div#serviceNavi ul li.abstandshalter {
+  border-right: 1px solid Gray;
+  margin-right: 0.3em;
+}
+div#fusszeile ul {
+  display: inline;
+  margin-right: 0.5em;
+}
+div#fusszeile ul li {
+  color: #000;
+  display: inline;
+}
+div#fusszeile a {
+  color: #000;
+}
+
+/* ************************************************************************** */
+/* HTML-Elemente ************************************************************ */
+/* ************************************************************************** */
+
+h2 {
+  margin-top: 1em;
+  clear: both;
+}
+h3 {
+  color: #649600;
+  font-size: 1.2em;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+h4 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+h5 {
+  color: #649600;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+h6 {
+  color: #649600;
+  font-size: 1.0em;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+
+div#inhalt p, div#inhalt ul, div#inhalt ol, div#nebeninhalt p, div#nebeninhalt ul, div#nebeninhalt ol, div#inhalt div, div#nebeninhalt div, hr {
+  margin-bottom: 0.5em;
+}
+div#inhalt ul ul, div#inhalt ol ol {
+  margin-bottom: 0;
+}
+div#inhalt p, div#nebeninhalt p {
+  line-height: 1.4em;
+}
+hr {
+  height: 1px;
+  background-color: #649600;
+  color: #649600;
+  border: 0; 
+}
+
+/* Tabellen ***************************************************************** */
+div#inhalt table {
+  border: 1px solid #999;
+}
+div#inhalt th {
+  background-color: #eee;
+  vertical-align: middle;
+  padding: 0.3em;
+}
+div#inhalt table caption { 
+  font-weight: bold;
+}
+div#inhalt tr {
+  border-bottom: 1px solid #7192a8;
+}
+div#inhalt td {
+  padding: 0.3em;
+}
+/* Tabelle Hintergrundfarben hell_ und dunkel_gruen */
+div#inhalt th.hell_gruen, td.hell_gruen {
+  background-color: #e0eacc;
+}
+div#inhalt th.dunkel_gruen, td.dunkel_gruen {
+  background-color: #649600;
+  color: #FFFFFF;
+}
+div#inhalt td p {
+  margin: 0 0 1em 0;
+}
+
+/* Listen im Inhaltsbereich */
+div#inhalt ul, div#inhalt ol, div#nebeninhalt ul, div#nebeninhalt ol {
+  display: table;
+  height: 1%;
+  padding-left: 1.3em;
+}
+
+div#inhalt ol, div#nebeninhalt ol {
+  padding-left: 2em;
+}
+div#inhalt ul, div#nebeninhalt ul li, div#inhalt ol, div#nebeninhalt ol li {
+  line-height: 1.4em;
+}
+/* Listen mit gruenen Punkt im Inhaltsbereich */
+div#inhalt ul, div#nebeninhalt ul li {
+  list-style-image: url(css-icons/tu-liste.png);
+}
+ul.linkliste {
+  list-style-image: url(css-icons/tu-liste.png);
+}
+ul.linkliste ol {
+  list-style-image: none;
+}
+
+/* Bilder-Styling *********************************************************** */
+img, input[type=image] {
+  font-size: 10px;
+}
+img.bild_links {
+  float: left;
+}
+a img {
+  border: none;
+}
+/* Linkdarstellung ********************************************************* */
+a {
+  color: #b2b3b6; 
+}
+div#inhalt a, div#nebeninhalt a {
+  color: #000;
+}
+/* Hover-Links und Focus-Cursor ********************************************* */ 
+a:focus, div#hauptnavi ul.hauptNavi li a:focus {
+  color: #fff !important;
+  background-color: #649600;
+}
+a:hover, div#hauptnavi ul.hauptNavi li a:hover {
+  color: #fff !important;
+  background-color: #649600;
+}
+a:link:hover, a:visited:hover, a:focus, a:active {
+  color: #fff !important;
+  background-color: #649600;
+}
+
+/* Inhalte Textfarblich hinterlegen */
+span.hellunterlegt {
+  background-color: #e0eacc 
+}
+span.dunkelunterlegt {
+  background-color: #649600 
+}
+
+/* Werbung und Partnerlogos ************************************************* */
+div#werbung, div#partner {
+  font-size: 0.9em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  margin-left: 0.4em;
+  padding-bottom: 15px;
+}
+div.werbung_horizontal, div.werbung_horizontal_portal {
+  border: 1px solid #649600;
+  font-size: 0.9em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  padding-bottom: 15px;
+}
+div.werbung_horizontal {
+  margin-top: 15px;
+}
+
+div#werbung a {
+  background-color: #fff;
+}
+div#partner {
+  padding-top: 15px;
+}
+
+/* ************************************************************************** */
+/* css-Klassen fuer den Inhaltsbereich ************************************** */
+/* ************************************************************************** */
+
+/* Allgemein verwendbar ***************************************************** */
+.blocksatz {
+  text-align: justify;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.clear {
+  clear: both;
+}
+br.clear, div.clear {
+  clear: both;
+  font-size: 1px;
+}
+br.clearleft {
+  clear: left;
+  font-size: 1px;
+}
+pre, code {
+  font-family: 'Lucida console', 'Courier new', Courier, mono;
+  font-size: 1em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  border: 1px solid #b2b3b6;
+  background-color: #fdfdfd;
+}
+code {
+  font-size: 1em;
+  padding-top: 0.1em;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 1.5em;
+}
+p code {
+  font-size: 1em;
+}
+p.teaser {
+  font-weight: bold;
+}
+
+/* Kindnavigation */
+ul li.kindNaviOrdner {
+  list-style: none; 
+  list-style-image: none;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+ul li.kindNaviOrdner {
+  list-style: none; 
+  list-style-image: none;
+  
+}
+ul li.kindNaviOrdner span.kindNaviOrdnerName {
+  margin-left: -1em;
+  font-weight: bold;
+}
+/* Listen im Inhalt Mitarbeiter Alphabetisch, nummerische Aufzaehlung in einer Liste */
+div#inhalt ul li.namefloat, ul ol {
+  list-style-image: none;
+}
+/* Personen-Listen ********************************************************** */
+ul.seitenlinks li {
+  display: inline;
+  margin-right: 1em;
+  list-style-type: none;
+}
+ul li.namefloat {
+  float: left;
+  list-style-type: none;
+  width: 20em;
+}
+/* Kommaseparierte inline-Liste von verlinkten Mitarbeitern */
+div#inhalt p.kommaliste {
+  float: left;
+}
+div#inhalt ul.kommaliste {
+  list-style: none;
+  padding-left: 0; 
+}
+div#inhalt ul.kommaliste li {
+  float: left;
+  padding-left: 0.3em;
+}
+div#inhalt ul.kommaliste li:after {
+  content: ",";
+  margin-right: 0.1em;
+}
+div#inhalt ul.kommaliste li:last-child:after {
+  content: none;
+}
+/* Anfang Bildausrichtung mit Bildunterschrift */
+img.bild_rechts {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+img.bild_links, img.bild_links_ohne_umfluss {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+div.bild_mit_text {
+  margin-bottom: 15px;
+}
+div.bild_mit_text p {
+  margin-bottom: 0;
+}
+div.bild_rechts_mit_unterschrift {
+  float: right;
+  font-size: 10px;
+  margin: 0;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 40em;
+  margin-top: 0.5em;
+  text-align: left;
+  overflow: inherit;
+}
+div.bild_rechts_mit_unterschrift p {
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
+  font-size: 1.1em !important;
+  border: 1px solid #7b7e7c;
+}
+div.video_links_mit_unterschrift {
+  float: left;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+
+  margin-bottom: 15px;
+  width: 40em;
+  margin-top: 0.5em;
+  text-align: left;
+  overflow: hidden;
+}
+div.bild_links_mit_unterschrift, div.bild_links_mit_unterschrift_ohne_umfluss {
+  float: left;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 40em;
+  margin-top: 0.5em;
+  text-align: left;
+  overflow: inherit;
+}
+div.bild_links_mit_unterschrift p, div.bild_links_mit_unterschrift_ohne_umfluss p {
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
+  font-size: 1.1em !important;
+  border: 1px solid #7b7e7c;
+}
+div.bild_links_mit_unterschrift img, div.bild_links_mit_unterschrift_ohne_umfluss img, div.bild_rechts_mit_unterschrift img {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+div.bild_links_mit_unterschrift p, div.bild_rechts_mit_unterschrift p, div.bild_links_mit_unterschrift_ohne_umfluss p {
+  margin-top: 0 !important;
+  padding-top: 0.5em;
+  max-width: 100%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+div.bild_links_mit_unterschrift_ohne_umfluss, img.bild_links_ohne_umfluss {
+  float: none;
+}
+
+div#teaserbild_mit_beschriftung {
+  float: left;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+  font-style: oblique;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+div#teaserbild_ohne_beschriftung {
+  float: left;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+img.mitarbeiter_foto {
+  float: right; 
+  margin-bottom: 0.5em; 
+  margin-right: 0.5em;
+}
+div.aktuelles_meldung img.bild_links {
+  margin-bottom: 0;
+}
+
+/* Darstellung von Listen in Tabellen mit korrekt eingerueckten Bullets ***/
+div#inhalt table.collapse {
+  border-collapse: collapse;
+}
+div#inhalt table.collapse ul, div#inhalt table.collapse ol {
+  display: block !important;
+}
+
+/* Mitarbeiter-Detailseiten ************************************************* */
+fieldset.kontaktdaten {
+  padding: 0.3em;
+}
+fieldset.kontaktdaten legend {
+  font-weight: bold;
+  color: #000000;
+}
+/* Mitarbeiter Uebersicht mehrzeilig mit Bild */
+div.mitarbeiter_uebersicht div.paragraph {
+  line-height: 1.4em;
+  margin-bottom: 0.5em;
+}
+
+/* FAQ-Darstellung ********************************************************** */
+div#inhalt ul.faq-details-liste {
+  list-style-type: none;
+  padding-left: 0;
+}
+div#inhalt ul.faq-details-liste li {
+  display: inline;
+}
+
+/* Tabellen mit gleichbreiten Spalten, u. a. fuer Lehrveranstaltungsvorlage ETIT *** */
+div#inhalt table.festeSpalten_hell_gruen {
+  border: 1px solid #999;
+  width:100%;
+  table-layout:fixed;
+  vertical-align: top;
+}
+div#inhalt table.festeSpalten_hell_gruen th {
+  background-color: #e0eacc;
+  vertical-align: top;
+  text-align:center;
+  padding: 0.3em;
+}
+div#inhalt table caption { 
+  font-weight: bold;
+}
+div#inhalt table.festeSpalten_hell_gruen tr {
+  border-bottom: 1px solid #7192a8;
+  vertical-align: top;
+}
+div#inhalt table.festeSpalten_hell_gruen td{
+  padding: 0.3em;
+  background-color: #ffffff;
+  width:20%;
+  vertical-align:top;
+  }
+/* ************************************************************************** */
+/* Defaulteinstellungen fuer udo_Uebersichtsordner in responsive Design ***** */
+/* z.B. Projektuebersichten ************************************************* */
+.item-titel .button, .item-titel-mehr .button, .item-titel-weniger .button {
+  display:none;
+  float:right;
+}
+.item-uebersicht {
+  display:block;
+}
+/* ************************************************************************** */
+/* Webform Layout *********************************************************** */
+div#inhalt form.webform label{
+  float:left;
+  width: 10em;
+}
+
+div#inhalt form.webform{
+  width:100%;
+}
+
+div#inhalt form.webform input[type=text], div#inhalt form.webform select, div#inhalt form.webform textarea{
+  background:#e0eacc;
+  border:1px solid #e0eacc;
+  margin:1px 0 2px;
+}
+
+div#inhalt form.webform input[type=submit], div#inhalt form.webform input[type=reset]{
+  float:left;
+  background:#649600;
+  width:100px;
+  color:#ffffff;
+  border: 1px solid #7b7e7c;
+  margin-top: 4px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 0;
+  padding-right: 2px;
+  padding-bottom: 0;
+  padding-left: 2px;
+}
