@@ -1,0 +1,22 @@
+# Fdb version 3
+["pdflatex"] 1437948939 "bare_conf.tex" "bare_conf.pdf" "bare_conf" 1437948940
+  "/usr/local/texlive/2014/texmf-dist/tex/generic/babel-german/ngerman.ldf" 1387148483 2191 7a0dfd37af0c5803abe716556a97f948 ""
+  "/usr/local/texlive/2014/texmf-dist/tex/generic/babel-german/ngermanb.ldf" 1387148483 6179 d26f0e0d9b7cc7e50044edce0949a26d ""
+  "/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.def" 1395780385 49536 e1475dd245ff2196764ba5b91ac63714 ""
+  "/usr/local/texlive/2014/texmf-dist/tex/generic/babel/babel.sty" 1395780385 13162 52453613e672419375f5bc44def13451 ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty" 1399675188 4360 ff7a73ddc57baaf1815161c4698e9fb4 ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty" 1399675188 5295 be5d5092b838cbeebda7de24a3ab9dd2 ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu" 1399675188 1793 7bb4e1cf8d618812dcf05cd85cccb71d ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu" 1399675188 2545 afa23f923cc3519eb0b895cbf3dadfb5 ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def" 1399675188 9097 3d740f5a942bdde0d974eb1398aae41c ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu" 1399675188 7405 c70c194719f79b7d070eeb68af109b09 ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/base/utf8.def" 1399675188 6275 ac89e3d1c95578574b0b11f34248899e ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1137110629 961 15056f4a61917ceed3a44e4ac11fcc52 ""
+  "/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1ptm.fd" 1137110629 774 61d7da1e9f9e74989b196d147e623736 ""
+  "IEEEtran.cls" 1173119476 201353 775b18b42342447aea341b76a89fcb61 ""
+  "bare_conf.aux" 1437948940 570 bbf145d449a3b195c4cdcd0200ec0f97 ""
+  "bare_conf.tex" 1437948938 22112 812c73a3e2520d80cf0de908019523bf ""
+  (generated)
+  "bare_conf.log"
+  "bare_conf.pdf"
+  "bare_conf.aux"
