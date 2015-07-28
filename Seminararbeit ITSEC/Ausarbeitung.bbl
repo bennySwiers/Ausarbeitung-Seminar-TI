@@ -21,15 +21,28 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{gohindex}
-{E.-J. Goh}, ``{Secure Indexes},'' \emph{{IACR Cryptology ePrint Archive
-  2003}}, 2003.
+\bibitem{eckert2015}
+{C. Eckert, N. Fallenbeck}, ``{Industrie 4.0 meets IT-Sicherheit: eine
+  Herausforderung!}'' {Heidelberg Berlin 2015}.
 
-\bibitem{sse}
-{R. Curtmola, J. Garay, S. Kamara, R. Ostrovsky}, ``{Searchable Symmetric
-  Encryption: Improved Definitions and Efficient Constructions},''
-  \emph{{Proceedings of the 13th ACM conference on Computer and communications
-  security, CCS '06, ACM}}, 2006.
+\bibitem{channel2015}
+\BIBentryALTinterwordspacing
+``{Security Services f{\"u}r Industrie 4.0},'' June 2015. [Online]. Available:
+  \url{http://www.channelpartner.de/a/security-services-fuer-industrie-4-0,3044992}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bitkom}
+\BIBentryALTinterwordspacing
+Cloud-monitor. [Online]. Available:
+  \url{https://www.bitkom.org/Presse/Anh%C3%A4nge-an-PIs/2015/M%C3%A4rz/Cloud-Monitor.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{windriver}
+{Wind River Systems}, ``{Security in the Internet of Things},'' 2015.
+
+\bibitem{anoopms}
+A.~MS, ``{Security needs in embedded systems},'' \emph{IACR Cryptology ePrint
+  Archive}, 2008.
 
 \bibitem{webpufs}
 \BIBentryALTinterwordspacing
@@ -46,24 +59,17 @@
 C.~Eckert, ``{IT-Sicherheit und Industrie 4.0},'' \emph{Fachzeitschrift f{\"u}r
   Innovation, Organisation und Management}, 2014.
 
-\bibitem{channel2015}
-\BIBentryALTinterwordspacing
-``{Security Services f{\"u}r Industrie 4.0},'' June 2015. [Online]. Available:
-  \url{http://www.channelpartner.de/a/security-services-fuer-industrie-4-0,3044992}
-\BIBentrySTDinterwordspacing
+\bibitem{gohindex}
+{E.-J. Goh}, ``{Secure Indexes},'' \emph{{IACR Cryptology ePrint Archive
+  2003}}, 2003.
 
-\bibitem{anoopms}
-A.~MS, ``{Security needs in embedded systems},'' \emph{IACR Cryptology ePrint
-  Archive}, 2008.
-
-\bibitem{windriver}
-{Wind River Systems}, ``{Security in the Internet of Things},'' 2015.
+\bibitem{sse}
+{R. Curtmola, J. Garay, S. Kamara, R. Ostrovsky}, ``{Searchable Symmetric
+  Encryption: Improved Definitions and Efficient Constructions},''
+  \emph{{Proceedings of the 13th ACM conference on Computer and communications
+  security, CCS '06, ACM}}, 2006.
 
 \bibitem{pufs2015}
 S.~Devadas, ``Physical unclonable functions and applications.''
-
-\bibitem{eckert2015}
-{C. Eckert, N. Fallenbeck}, ``{Industrie 4.0 meets IT-Sicherheit: eine
-  Herausforderung!}'' {Heidelberg Berlin 2015}.
 
 \end{thebibliography}

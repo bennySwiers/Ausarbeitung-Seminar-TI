@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.20)  28 JUL 2015 12:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.8.20)  28 JUL 2015 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,65 +350,552 @@ LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
-(./Ausarbeitung.aux)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count93
+))
+\Gin@req@height=\dimen118
+\Gin@req@width=\dimen119
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip44
+\subfigcapskip=\skip45
+\subfigcaptopadj=\dimen120
+\subfigbottomskip=\skip46
+\subfigcapmargin=\dimen121
+\subfiglabelskip=\skip47
+\c@subfigure=\count94
+\c@lofdepth=\count95
+\c@subtable=\count96
+\c@lotdepth=\count97
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip48
+\subfig@bottom=\skip49
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen122
+\Hy@linkcounter=\count98
+\Hy@pagecounter=\count99
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count100
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count101
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen123
+\Fld@menulength=\count102
+\Field@Width=\dimen124
+\Fld@charsize=\dimen125
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count103
+\c@Item=\count104
+\c@Hfootnote=\count105
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count106
+\c@bookmark@seq@number=\count107
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip50
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/hypcap.sty
+Package: hypcap 2011/02/16 v1.11 Adjusting the anchors of captions (HO)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count108
+\float@exts=\toks18
+\float@box=\box27
+\@float@everytoks=\toks19
+\@floatcapt=\box28
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@tempdima=\dimen129
+\caption@indent=\dimen130
+\caption@parindent=\dimen131
+\caption@hangindent=\dimen132
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \begin {center}{\normalfont \footnotesize #1}\\{\normal
+font \footnotesize \scshape #2}\end {center}\@IEEEtablecaptionsepspace \else \@
+IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {
+#1.}~~ #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \
+footnotesize {#1.}~~ }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent 
+\unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfon
+t \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont 
+\footnotesize \box \@tempboxa \hfil }\fi \fi \fi .
+\c@ContinuedFloat=\count109
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: hypcap package is loaded.
+Package caption Info: subfigure package is loaded.
+) (./Ausarbeitung.aux)
 \openout1 = `Ausarbeitung.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 355.
-LaTeX Font Info:    ... okay on input line 355.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 361.
+LaTeX Font Info:    ... okay on input line 361.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 361.
+LaTeX Font Info:    ... okay on input line 361.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 361.
+LaTeX Font Info:    ... okay on input line 361.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 361.
+LaTeX Font Info:    ... okay on input line 361.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 361.
+LaTeX Font Info:    ... okay on input line 361.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 361.
+LaTeX Font Info:    ... okay on input line 361.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 361.
+LaTeX Font Info:    ... okay on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 355.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 361.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 355.
- (./Ausarbeitung.bbl
-Underfull \hbox (badness 2582) in paragraph at lines 36--39
-[]\T1/ptm/m/n/8 ``Physical Un-clo-na-ble Func-ti-ons.'' [On-li-ne]. Availa-ble:
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 361.
 
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count110
+\scratchdimen=\dimen133
+\scratchbox=\box29
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen134
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks21
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box30
+Package hyperref Info: Link coloring OFF on input line 361.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count116
+)
+LaTeX Info: Redefining \ref on input line 361.
+LaTeX Info: Redefining \pageref on input line 361.
+LaTeX Info: Redefining \nameref on input line 361.
+
+(./Ausarbeitung.out) (./Ausarbeitung.out)
+\@outlinefile=\write3
+\openout3 = `Ausarbeitung.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 445.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 445.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 458.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 458.
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+\T1/ptm/m/n/10 und Kom-mu-ni-ka-ti-ons-tech-nik-be-rei-chen un-ter-schie-den.
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 460--461
+\T1/ptm/m/n/10 wel-che jeg-li-che Con-trol-ler von Pro-duk-ti-ons-an-la-gen ode
+r
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 460--461
+\T1/ptm/m/n/10 den Be-reich der \T1/ptm/m/it/10 Business-IT\T1/ptm/m/n/10 . Dar
+-un-ter fal-len jeg-li-che
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 460--461
+\T1/ptm/m/n/10 ste-hen. Ein Bei-spiel da-für wä-ren \T1/ptm/m/it/10 Content-Man
+agement-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--461
+
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 462.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 462.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 465.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 465.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 473.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 473.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 473.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 473.
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 474.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 474.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 477.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 477.
+
+<clouds.jpg, id=78, 598.235pt x 340.27126pt>
+File: clouds.jpg Graphic file (type jpg)
+ <use clouds.jpg>
+Package pdftex.def Info: clouds.jpg used on input line 481.
+(pdftex.def)             Requested size: 206.39685pt x 117.3989pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 489.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 489.
+
+<firmen.png, id=80, 636.3775pt x 333.245pt>
+File: firmen.png Graphic file (type png)
+ <use firmen.png>
+Package pdftex.def Info: firmen.png used on input line 492.
+(pdftex.def)             Requested size: 206.39685pt x 108.07959pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<bedenken.png, id=85, 636.3775pt x 345.29pt>
+File: bedenken.png Graphic file (type png)
+ <use bedenken.png>
+Package pdftex.def Info: bedenken.png used on input line 501.
+(pdftex.def)             Requested size: 206.39685pt x 111.98608pt.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 506.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 506.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 511.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 511.
+
+<attr.png, id=89, 764.8575pt x 261.22594pt>
+File: attr.png Graphic file (type png)
+ <use attr.png>
+Package pdftex.def Info: attr.png used on input line 517.
+(pdftex.def)             Requested size: 378.0pt x 129.10194pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--525
+
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 525.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 525.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 525.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 525.
+[2 <./clouds.jpg> <./firmen.png> <./bedenken.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 526.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 526.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 529.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 529.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 533.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 533.
+
+<soc.png, id=105, 399.4925pt x 237.88875pt>
+File: soc.png Graphic file (type png)
+ <use soc.png>
+Package pdftex.def Info: soc.png used on input line 540.
+(pdftex.def)             Requested size: 206.39685pt x 122.90427pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 545.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 545.
+
+Underfull \hbox (badness 2781) in paragraph at lines 545--546
+\T1/ptm/m/n/10 ge-rä-tein-ter-nen Schlüs-sel. Die-se wer-den ver-schlüs-selt im
+
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 545--546
+\T1/ptm/m/it/10 Se-cu-re Read-only-Memore \T1/ptm/m/n/10 (Se-cu-re ROM) ab-ge-s
+pei-chert.
+ []
+
+
+Underfull \hbox (badness 4779) in paragraph at lines 545--546
+\T1/ptm/m/n/10 wel-che für di-gi-ta-le Si-gna-tur-ver-fah-ren wie RSA, DSA
+ []
+
+
+Underfull \hbox (badness 2875) in paragraph at lines 545--546
+\T1/ptm/m/n/10 oder auch ECD-SA ver-wen-det wer-den. Die-se Schlüs-sel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 549.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 549.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 556.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 556.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 560.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 560.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 560.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 560.
+[3 <./attr.png> <./soc.png>] <puf.jpg, id=119, 607.26875pt x 135.50626pt>
+File: puf.jpg Graphic file (type jpg)
+
+<use puf.jpg>
+Package pdftex.def Info: puf.jpg used on input line 571.
+(pdftex.def)             Requested size: 252.0pt x 56.2299pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--579
+[]\T1/ptm/m/n/10 Die PUF kann wie folgt for-ma-li-siert wer-den:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 576--579
+
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 666.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 666.
+(./Ausarbeitung.bbl
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 31.
+
+Underfull \hbox (badness 6173) in paragraph at lines 30--33
+[]\T1/ptm/m/n/8 ``Security Ser-vices für In-dus-trie 4.0,'' Ju-ne
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 30--33
+\T1/ptm/m/n/8 2015. [On-li-ne]. Availa-ble: []$http : / / www . channelpartner 
+. de / a /
  []
 
 )
@@ -423,28 +910,46 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-(./Ausarbeitung.aux) ) 
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 709.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 709.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 709.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 709.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 709.
+[4 <./puf.jpg>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 709.
+ (./Ausarbeitung.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 709.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 709.
+Package rerunfilecheck Info: File `Ausarbeitung.out' has not changed.
+(rerunfilecheck)             Checksum: 0A845B33B97660BAD314C8FBE4A1E345;1078.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 709.
+ ) 
 Here is how much of TeX's memory you used:
- 2152 strings out of 493117
- 30188 string characters out of 6135433
- 179917 words of memory out of 5000000
- 5630 multiletter control sequences out of 15000+600000
- 103739 words of font info for 102 fonts, out of 8000000 for 9000
+ 8257 strings out of 493117
+ 125691 string characters out of 6135433
+ 309497 words of memory out of 5000000
+ 11577 multiletter control sequences out of 15000+600000
+ 106698 words of font info for 109 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 26i,8n,23p,236b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Ausarbeitung.pdf (1 page, 54021 bytes).
+ 36i,8n,38p,703b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on Ausarbeitung.pdf (4 pages, 414678 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 186 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

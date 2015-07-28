@@ -351,6 +351,12 @@
 \usepackage[ngerman]{babel}
 \usepackage{filecontents,lipsum}
 \usepackage[noadjust]{cite}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage[figure]{hypcap} 
+\usepackage{float}
+\usepackage{caption}
 
 \begin{document}
 %
@@ -449,8 +455,130 @@ Bennys Penis schmeckt nach Lakritz
 
 \newpage
 
+\section{Anwendung des IoT in der Industrie}
 
+In Unternehmen wird meist zwischen zwei Informations- und Kommunikationstechnikbereichen unterschieden. Zum einen existiert in Unternehmen die \textit{Produktions-IT}, welche jegliche Controller von Produktionsanlagen oder Logistikanbindungen umfasst. Zum anderen gibt es ebenfalls den Bereich der \textit{Business-IT}. Darunter fallen jegliche Anwendungen, die von den Angestellten verwendet werden und in keinem direkten Zusammenhang mit der Produktion stehen. Ein Beispiel dafür wären \textit{Content-Management-Systeme}.\\
 
+\section{Industrie 4.0}
+Die \textit{Industrie 4.0} vernetzt beide Bereiche miteinander und als Resultat entstehen sogenannte \textit{cyberphysikalische Systeme} (\textit{CPS}).\\
+Bei einem \textit{CPS} handelt es sich meist um ein Gerät mit beschränkten Ressourcen. Dies bedeutet, dass diese Systeme in der Rechenleistung und im Energieverbrauch beschränkt sind. Zusätzlich gibt es Anforderungen an solche Systeme, die unbedingt erfüllt werden müssen. So müssen \textit{CPS} ständig verfügbar und ausfallsicher sein, sodass es im schlimmsten Fall nicht zum Produktionsstillstand kommen kann.
+\subsection{Anforderungen an solche Systeme}
+Aufgrund der Vernetzung beider \textit{IKT-Bereiche}, werden Anforderungen des jeweiligen Subsystems übernommen. Dies bedeutet, dass Sicherheitslösungen im Office-Bereich nicht ohne weiteres angewendet werden können, da in einem \textit{CPS} auch Auswirkungen auf den anderen IKT-Bereich (in diesem Beispiel die \textit{Produktions-IT}) abgeschätzt werden müssen. Aus dieser Problematik resultieren somit neue Probleme und Schwachstellen, die möglicherweise bei den anfänglich separierten Systemen nicht existierten.\\
+Im Detail bedeutet das, dass sich insbesondere die Sicherheitsanforderungen unterscheiden und bekannte Sicherheitslösungen der \textit{Business-IT} wie VPN oder SSL/TLS-Verschlüsselung nicht auf die \textit{Produktions-IT} übertragen werden können.\\
+Der Hauptgrund dafür ist die Tatsache, dass Komponenten der \textit{Produktions-IT} zertifiziert sind und eine Verwendung von Verschlüsselungen einen Eingriff bedeuten würde, welcher im schlimmsten Fall zu Verlust der Zertifizierungen führen würde. Ebenfalls können Verschlüsselungen zu möglichen Latenzen führen, die im Office-Bereich verkraftbar sind, in einer Produktion aber eine Nichtfunktionalität bedeuten würden.\\
+Ein weiterer Aspekt, der in der \textit{Business-IT} nicht bedacht werden musste, sind physikalische Angriffe, die in der Produktion denkbar sind. So können Mitarbeiter Komponenten verändern oder gänzlich entfernen. \cite{eckert2015}    
+\vspace{0.3cm}
+\\
+In den folgenden Abschnitten werden mögliche Probleme der \textit{Industrie 4.0} aufgezeigt und es werden Lösungsansätze demonstriert, die aktuell im Einsatz sind.
+
+\subsection{Cloud-Computing}
+
+\subsubsection{Unterarten von Clouds}
+Cloud-Computing ist nicht gleich Cloud-Computing. Es gibt verschiedene Services, die auf verschiedene Anwendergruppen zugeschnitten sind. In der folgenden Abbildung sind die verschiedenen Cloud-Services abgebildet. 
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.4\textwidth]{clouds}
+  \caption{Unterarten von Clouds}
+  \label{fig:difclouds}
+\end{figure}
+
+Dabei wird zwischen drei verschiedenen Services unterschieden. Bei \textit{Software-as-a-Service} (SaaS) werden vollständige Systeme den Nutzern zur Verfügung gestellt. Der Zugriff auf diese erfolgt mittels Browser.\\
+\textit{Product-as-a-Service} (PaaS) ist in der Regel auf Anwendungsentwickler bzw. fortgeschrittene Nutzer zugeschnitten, welche möglicherweise eigene Applikationen auf den Systemen verwenden wollen. Die letzte Unterart \textit{Infrastructure-as-a-Service} (IaaS) bietet dem Anwender lediglich ein Grundgerüst \cite{channel2015}. Es können personalisierte Dienste oder Betriebssysteme installiert werden. Große Unternehmen wählen häufig IaaS als Cloud-Lösung, weil diese eine komplette Plattform bieten und ein Drittanbieter für die Wartung dieser zuständig ist. Darüber hinaus ist der Drittanbieter im Falle eines Angriffs auch verantwortlich.
+
+\subsection{Industrie und die Cloud}
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.4\textwidth]{firmen}
+  \caption{Clouds in der Industrie}
+  \label{fig:clouds}
+\end{figure}
+
+Aufgrund der Verwendung von beschränkten Ressourcen wird oftmals auf \textit{cloudbasierte Lösungen} industriellen im industriellen Bereich zurückgegriffen, wie die \autoref{fig:clouds} aufzeigt. Diese Verlagerung bedeutet, dass Rechenoperationen sowie die gesamte Datenspeicherung nicht auf dem limitierten Gerät selbst durchgeführt werden muss, es stattdessen vielmehr mit der Cloud in ständiger Kommunikation steht.\\
+Trotz der verbreiteten Verwendung, sind Cloudlösungen nicht durchgehend akzeptiert. Dies ist der Statistik in \autoref{fig:bedenken} zu entnehmen. Dabei handelt es sich um eine Statistik, die bei der \textit{Pressekonferenz Cloud Monitor 2015} präsentiert wurde \cite{bitkom}. Die größten Bedenken beziehen sich auf die Sicherheit der Cloud, insbesondere auf Schutz der sensiblen (personenbezogenen) Daten. Aus diesem Grund wird im Folgenden auf die Absicherung dieser eingegangen.
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.4\textwidth]{bedenken}
+  \caption{Sicherheitsbedenken der Nutzer}
+  \label{fig:bedenken}
+\end{figure}
+
+\subsection{Trusted Cloud}
+
+Bei der \textit{Trusted Cloud} handelt es sich um ein Programm des Bundesministeriums für Wirtschaft und Energie. Das Ziel dieses Projektes war es die Entwicklung einer sicheren Cloud-Infrastruktur, die böswilligen Administratoren den Zugriff auf sensible Daten verwehren soll. \cite{windriver}\\
+Das Grundkonzept sind speziell gesicherte Serverschränke, die bei unberechtigten Eingriffen sich herunterfahren. Zusätzlich werden jegliche Daten verschlüsselt auf den Festplatten gespeichert. Bei der Verarbeitung der Daten wird darüber hinaus zusätzlich nur flüchtiger Speicher verwendet, sodass nach Herunterfahren des Systems auf keinerlei Daten zugegriffen werden kann \cite{eckert2015}.
+
+\subsection{Zugriffskontrolle bei Cloud-Diensten}
+
+Aufgrund der Vielzahl von verschiedenen Nutzern bei einem Cloud-Dienst muss ebenfalls der Zugriff auf die Datensätze abgesichert werden. Dies könnte mittels einer \textit{rollenbasierten Zugriffskontrolle} geschehen, doch besteht hierbei der Nachteil, dass ein möglicher Fehler in der Implementierung zur Aufhebung der Rollen führen würde. Dies ist nur möglich, weil solche Systeme im Regelfall vollständig in Software umgesetzt werden.\\
+Eine bessere Möglichkeit bietet ein \textit{attributbasiertes Verschlüsselungsystem} (s. \autoref{fig:attrversch}).  
+\begin{figure*}
+\centering
+\includegraphics[width=1.5\columnwidth]{attr}
+\caption{Attributbasiertes Verschlüsselungssystem}
+\label{fig:attrversch}
+\end{figure*}
+
+Zugrunde liegt hier ein \textit{asymmetrisches Verschlüsselungsverfahren}. Die \textit{Public Keys} sowie \textit{Private Keys} werden dabei vom \textit{Private Key Generator} ausgestellt.\\
+In der Praxis würde also nur eine Person zugreifen können, die das nötige Attribut besitzt \cite{eckert2015}.\\
+Bei mehreren Anwendern könnte man eine gruppenbasierte Zugriffskontrolle einführen. Dafür kann beispielsweise der Verzeichnisdienst \textit{Active Directory} (AD) verwendet werden. Mit Hilfe von AD können nun Gruppen erstellt werden und digitale Zertifikate gruppenweit verteilt werden. Eine Zugriffskontrolle für mehrere Nutzer wäre damit gewährleistet.\\
+
+\subsection{Suchen auf verschlüsselten Daten}
+TODO
+
+\subsection{Schutz von limitierten Geräten}
+
+Limitierte Geräte müssen ebenfalls geschützt werden. Dabei unterscheidet man zum einen zwischen der Kommunikation zwischen den jeweiligen Gerätschaften und dem eigentlichen Geräteschutz. Im Folgenden konzentrieren wir uns auf den internen Schutz limitierter Geräte.
+
+\subsection{Sichere Komponenten}
+
+Bei der Entwicklung limitierter Geräte werden häufig sichere Bauteile verwendet, welche beispielsweise dafür sorgen, dass die interne Schlüsselspeicherung sicher ist und die Schlüssel auch nicht ohne weiteres gelesen werden können.
+Die \autoref{fig:soc} veranschaulicht einen beispielhaften Aufbau eines limitierten Gerätes.
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.4\textwidth]{soc}
+  \caption{Diagramm eines System-on-a-Chip}
+  \label{fig:soc}
+\end{figure}
+
+\subsubsection{Secure SoC} Das \textit{Secure SoC} bietet Schutz für die geräteinternen Schlüssel. Diese werden verschlüsselt im \textit{Secure Read-only-Memore} (Secure ROM) abgespeichert. Bei den Schlüsseln handelt es sich oftmals um Schlüssel, welche für digitale Signaturverfahren wie RSA, DSA oder auch ECDSA verwendet werden. Diese Schlüssel werden wie bereits gesagt verschlüsselt im ROM abgelegt. Dabei wird häufig auf Verschlüsselungsverfahren wie AES zurückgegriffen.\cite{anoopms}\\
+\newpage
+Ein SoC bietet im besten Fall folgende Eigenschaften: 
+\begin{itemize}
+  \item Auf Secure ROM kann nicht physikalisch zugegriffen werden 
+  \item Die Buse innerhalb des Systems können nicht abgehört werden
+  \item Das Ersetzen von Komponenten soll zu einer Nichtfunktionalität führen 
+\end{itemize} 
+
+Der letzte Punkt ist dabei besonders interessant, da das Gerät dadurch mögliche Angriffe verhindern kann. Der \textit{Secure Bootloader} sorgt dabei, dass das Gerät nur mit einer korrekten Firmware hochfährt. Zusätzlich können \textit{Physical Unclonable Functions} verwendet werden, deren Funktionsweise im Folgenden erläutert wird.
+
+\subsection{Physical Unclonable Functions}
+Keine zwei Stromkreise sind identisch. Diese Idee dient als Grundlage bei der Erstellung von \textit{Physical Unclonable Functions} (PUFs). Durch Anwendung von PUFs sind Bauteile oder gesamte Geräte eindeutig identifizierbar.\\
+In besten Fall sind PUFs eine Hardwareanalogon von Hashfunktionen. So gibt es im besten Fall sehr wenige Kollisionen und die Funktion selbst soll einfach durchführbar sein.\\
+Formalisiert bedeutet das, dass es eine Challge $c$ gibt und eine Funktion $f$, die diese Challenge als Eingabe nimmt. Die Ausgabe wäre dann $r = f(c)$. 
+\newpage
+Dabei ist zu erwähnen, dass zwei Bedingungen gelten sollen:
+\begin{itemize}
+  \item Für jede Challenge hat ein (integrierter) Stromkreis die gleiche Response
+  \item Für jede Challenge haben unterschiedliche (integrierte) Schaltkreise unterschiedliche Responses 
+\end{itemize}
+
+Die folgende Abbildung demonstriert eine beispielhafte PUF. 
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=\columnwidth]{puf}
+  \caption{Multiplexer-PUF}
+  \label{fig:puf}
+\end{figure}
+
+Die PUF kann wie folgt formalisiert werden: $MUX-PUF: \{0,1\}^{64} \rightarrow \{0,1\}^{64}$. \\
+Sie erwartet also eine 64bit-Folge als Eingabe und produziert eine dementsprechende 64-bit-Folge als Ausgabe.\\
+Diese PUF besitzt zwei verschiedene Pfade und je nachdem auf welchem Pfad das Signal schneller war, wird eine $1$ oder eine $0$ ausgegeben. Die Anzahl der Challenge-Response-Paare ist bei dem obigen beispiel $2^{64}$.\cite{webpufs}\\
+
+Dieses Verfahren ermöglicht eine Identifikation von Komponenten (Schaltkreisen). Als Folge daraus können limitierte Geräte in einem internen Speicher die Challenge-Response-Paare für die Komponenten speichern und sich selbstständig im Betrieb überprüfen. Falls nämlich für eine Komponente kein Challenge-Response-Paar, also keine eindeutige Identifikation vorliegt, kann sich das Gerät abschalten oder gar nicht erst hochfahren (\textit{Secure Boot}).\cite{suhdev}\\
+Darüber hinaus können PUFs auch zur sicheren Kommunikation zwischen Geräten verwendet werden. So können bestimmte Kommunikationspartner nur nach erfolgreicher Identifikation kommunizieren und werden andernfalls abgewiesen.\cite{itseciot} \cite{eckert2015} 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
