@@ -349,6 +349,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc} 
 \usepackage[ngerman]{babel}
+\usepackage{filecontents,lipsum}
+\usepackage[noadjust]{cite}
+
 \begin{document}
 %
 % paper title
@@ -407,8 +410,7 @@ Email: swiers.benjamin@googlemail.com}}
 
 
 \begin{abstract}
-%\boldmath
-The abstract goes here.
+\lipsum[1]
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -434,25 +436,19 @@ The abstract goes here.
 
 
 
-\section{Introduction}
+\section{Einleitung}
 % no \IEEEPARstart
-This demo file is intended to serve as a ``starter file''
-for IEEE conference papers produced under \LaTeX\ using
-IEEEtran.cls version 1.7 and later.
+Bennys Penis schmeckt nach Lakritz
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
-I wish you the best of success.
 
-\hfill mds
  
-\hfill January 11, 2007
+\hfill Juli, 2015
 
-\subsection{Subsection Heading Here}
-Subsection text here.
+% !TEX encoding = UTF-8 Unicode
 
+\newpage
 
-\subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
 
 
 % An example of a floating figure using the graphicx package.
@@ -539,7 +535,7 @@ Subsubsection text here.
 
 
 
-\section{Conclusion}
+\section{Fazit}
 The conclusion goes here.
 
 
@@ -549,13 +545,10 @@ The conclusion goes here.
 
 
 % use section* for acknowledgement
-\section*{Acknowledgment}
 
-
-The authors would like to thank Benjamin for bringing me my coffee.
-
-
-
+\bibliographystyle{IEEEtran}
+\nocite{*}
+\bibliography{references}
 
 
 % trigger a \newpage just before the given reference
