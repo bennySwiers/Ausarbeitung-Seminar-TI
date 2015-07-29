@@ -40,6 +40,24 @@ Cloud-monitor. [Online]. Available:
 \bibitem{windriver}
 {Wind River Systems}, ``{Security in the Internet of Things},'' 2015.
 
+\bibitem{sse}
+{R. Curtmola, J. Garay, S. Kamara, R. Ostrovsky}, ``{Searchable Symmetric
+  Encryption: Improved Definitions and Efficient Constructions},''
+  \emph{{Proceedings of the 13th ACM conference on Computer and communications
+  security, CCS '06, ACM}}, 2006.
+
+\bibitem{gohindex}
+{E.-J. Goh}, ``{Secure Indexes},'' \emph{{IACR Cryptology ePrint Archive
+  2003}}, 2003.
+
+\bibitem{bloom}
+{Broder A., Mitzenmacher M.}, ``{Network Applications of Bloom Filters: A
+  Survey},'' 2002.
+
+\bibitem{pubenc}
+{Boneh D., Di Crescenzo G., Ostrovsky R., Persiano G.}, ``{Public Key
+  Encryption with keyword Search},'' 2004.
+
 \bibitem{anoopms}
 A.~MS, ``{Security needs in embedded systems},'' \emph{IACR Cryptology ePrint
   Archive}, 2008.
@@ -58,16 +76,6 @@ A.~MS, ``{Security needs in embedded systems},'' \emph{IACR Cryptology ePrint
 \bibitem{itseciot}
 C.~Eckert, ``{IT-Sicherheit und Industrie 4.0},'' \emph{Fachzeitschrift f{\"u}r
   Innovation, Organisation und Management}, 2014.
-
-\bibitem{gohindex}
-{E.-J. Goh}, ``{Secure Indexes},'' \emph{{IACR Cryptology ePrint Archive
-  2003}}, 2003.
-
-\bibitem{sse}
-{R. Curtmola, J. Garay, S. Kamara, R. Ostrovsky}, ``{Searchable Symmetric
-  Encryption: Improved Definitions and Efficient Constructions},''
-  \emph{{Proceedings of the 13th ACM conference on Computer and communications
-  security, CCS '06, ACM}}, 2006.
 
 \bibitem{pufs2015}
 S.~Devadas, ``Physical unclonable functions and applications.''

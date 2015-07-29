@@ -466,7 +466,7 @@ Bei einem \textit{CPS} handelt es sich meist um ein Gerät mit beschränkten Res
 Aufgrund der Vernetzung beider \textit{IKT-Bereiche}, werden Anforderungen des jeweiligen Subsystems übernommen. Dies bedeutet, dass Sicherheitslösungen im Office-Bereich nicht ohne weiteres angewendet werden können, da in einem \textit{CPS} auch Auswirkungen auf den anderen IKT-Bereich (in diesem Beispiel die \textit{Produktions-IT}) abgeschätzt werden müssen. Aus dieser Problematik resultieren somit neue Probleme und Schwachstellen, die möglicherweise bei den anfänglich separierten Systemen nicht existierten.\\
 Im Detail bedeutet das, dass sich insbesondere die Sicherheitsanforderungen unterscheiden und bekannte Sicherheitslösungen der \textit{Business-IT} wie VPN oder SSL/TLS-Verschlüsselung nicht auf die \textit{Produktions-IT} übertragen werden können.\\
 Der Hauptgrund dafür ist die Tatsache, dass Komponenten der \textit{Produktions-IT} zertifiziert sind und eine Verwendung von Verschlüsselungen einen Eingriff bedeuten würde, welcher im schlimmsten Fall zu Verlust der Zertifizierungen führen würde. Ebenfalls können Verschlüsselungen zu möglichen Latenzen führen, die im Office-Bereich verkraftbar sind, in einer Produktion aber eine Nichtfunktionalität bedeuten würden.\\
-Ein weiterer Aspekt, der in der \textit{Business-IT} nicht bedacht werden musste, sind physikalische Angriffe, die in der Produktion denkbar sind. So können Mitarbeiter Komponenten verändern oder gänzlich entfernen. \cite{eckert2015}    
+Ein weiterer Aspekt, der in der \textit{Business-IT} nicht bedacht werden musste, sind physikalische Angriffe, die in der Produktion denkbar sind. So können Mitarbeiter Komponenten verändern oder gänzlich entfernen \cite{eckert2015}.     
 \vspace{0.3cm}
 \\
 In den folgenden Abschnitten werden mögliche Probleme der \textit{Industrie 4.0} aufgezeigt und es werden Lösungsansätze demonstriert, die aktuell im Einsatz sind.
@@ -474,15 +474,16 @@ In den folgenden Abschnitten werden mögliche Probleme der \textit{Industrie 4.0
 \subsection{Cloud-Computing}
 
 \subsubsection{Unterarten von Clouds}
-Cloud-Computing ist nicht gleich Cloud-Computing. Es gibt verschiedene Services, die auf verschiedene Anwendergruppen zugeschnitten sind. In der folgenden Abbildung sind die verschiedenen Cloud-Services abgebildet. 
+Cloud-Computing ist nicht gleich Cloud-Computing. Es gibt verschiedene Services, die auf verschiedene Anwendergruppen zugeschnitten sind, wie die nachfolgende Grafik demonstriert.\\
 
 \begin{figure}[h]
 \centering
-  \includegraphics[width=0.4\textwidth]{clouds}
+  \includegraphics[width=0.7\columnwidth]{clouds}
   \caption{Unterarten von Clouds}
-  \label{fig:difclouds}
+  \label{fig:soc}
 \end{figure}
 
+Die umgekehrte Pyramide verdeutlicht dabei den unterschiedlichen Umfang des jeweiligen Dienstes.
 Dabei wird zwischen drei verschiedenen Services unterschieden. Bei \textit{Software-as-a-Service} (SaaS) werden vollständige Systeme den Nutzern zur Verfügung gestellt. Der Zugriff auf diese erfolgt mittels Browser.\\
 \textit{Product-as-a-Service} (PaaS) ist in der Regel auf Anwendungsentwickler bzw. fortgeschrittene Nutzer zugeschnitten, welche möglicherweise eigene Applikationen auf den Systemen verwenden wollen. Die letzte Unterart \textit{Infrastructure-as-a-Service} (IaaS) bietet dem Anwender lediglich ein Grundgerüst \cite{channel2015}. Es können personalisierte Dienste oder Betriebssysteme installiert werden. Große Unternehmen wählen häufig IaaS als Cloud-Lösung, weil diese eine komplette Plattform bieten und ein Drittanbieter für die Wartung dieser zuständig ist. Darüber hinaus ist der Drittanbieter im Falle eines Angriffs auch verantwortlich.
 
@@ -524,7 +525,36 @@ In der Praxis würde also nur eine Person zugreifen können, die das nötige Att
 Bei mehreren Anwendern könnte man eine gruppenbasierte Zugriffskontrolle einführen. Dafür kann beispielsweise der Verzeichnisdienst \textit{Active Directory} (AD) verwendet werden. Mit Hilfe von AD können nun Gruppen erstellt werden und digitale Zertifikate gruppenweit verteilt werden. Eine Zugriffskontrolle für mehrere Nutzer wäre damit gewährleistet.\\
 
 \subsection{Suchen auf verschlüsselten Daten}
-TODO
+Aufgrund der Tatsache, dass die Daten verschlüsselt auf den Datenträgern vorliegen, müssen spezielle Algorithmen verwendet werden, die eine Suche auf verschlüsselten Datensätzen ermöglichen. Dies ist notwendig, da so die Daten zu jedem Zeitpunkt verschlüsselt auf dem Server vorliegen und nur clientseitig entschlüsselt werden. Böswillige Administratoren haben so im besten Fall keine Angriffsmöglichkeit (serverseitig).\\
+
+\subsection{Secure Indexes}
+In dieser Ausarbeitung beschränken wir uns auf \textit{Symmetric Searchable Encryption} (SSE), also auf Verschlüsselungsverfahren, die auf einem symmetrischen Schlüssel/Schema basieren. Ein Index ist dabei eine Datenstruktur, die bei Eingabe eines Teilwortes die Pointer zu den Dokumenten wiedergibt, in denen das Teilwort enthalten ist \cite{sse}. Zusätzlich kann man einen Index als sicher ansehen, wenn die Suche nach einem Teilwort $w$ nur mit Hilfe einer \textit{Trapdoor} durchgeführt werden kann und ein Index alleine keinerlei Auskunft über den Inhalt gibt. Die Generierung einer sogenannten \textit{Trapdoor} erfolgt dabei mittels des privaten Schlüssels des Nutzers. Im Folgenden wird eine beispielhafte \textit{SSE} nach Goh \cite{gohindex} erläutert:\\
+Zu Beginn muss der Begriff der \textit{Bloom-Filter} eingeführt werden, da diese existenziell für die Erstellung der sicheren Indizes sind. Bei einem \textit{Bloom-Filter} handelt es sich um eine Datenstruktur, welche eine Menge $S = \{s_1,...,s_n\}$ mit $n$ Elementen repräsentiert. Solch ein Filter besteht aus einem $m$-stelligen Bitarray, in welchem jede Stelle anfangs auf $0$ gesetzt wird. Anschließend werden $r$ unabhängige Hashfunktionen $h_1,...,h_r$ gewählt, wobei $h_i : \{0,1\}^* \rightarrow [1,m]$ für $i \in [1,r]$ gilt. Zusätzlich werden für jedes Element $s \in S$ im $m$-stelligen Array die Positionen $h_1(s),...,h_r(s)$ auf $1$ gesetzt.\\
+Die für die weitere Betrachtung relevante Operation ist nun das Prüfen, ob ein Element $a$ in der Menge $S$ ist. Hierfür werden die Positionen $h_1(a),...,h_r(a)$ geprüft und falls all diese Positionen eine $1$ sind, gehört $a$ zur Menge $S$ \cite{bloom}.\\
+In dem folgenden Abschnitt wird die Konstruktion von \textit{sicheren Indizes} nach \cite{gohindex} erklärt.
+
+\subsection{Konstruktion nach Goh \cite{gohindex}}
+
+\begin{itemize}
+  \item \texttt{Keygen(s)}: Ein Sicherheitsparameter $s$ wird gegeben. Eine pseudozufällige Funktion $f: \{0,1\}^n \times \{0,1\}^s \rightarrow \{0,1\}^s$ wird gewählt sowie ein privater Schlüssel $K_{priv} = (k_1,...,k_r) \leftarrow \{0,1\}^{sr}$ 
+  \item \texttt{Trapdoor($K_{priv}$, $w$)}: Eingabe für die \textit{Trapdoor} sind der private Schlüssel $K_{priv}$ und das Wort $w$, die Ausgabe für die beiden Parameter ist $T_w = (f(w,k_1),...,f(w,k_r)) \in \{0,1\}^{sr}$
+  \item \texttt{BuildIndex($D$, $K_{priv}$)}: Eingabe für die Funktion \texttt{BuildIndex} ist das Dokument $D$ mit einer einzigartigen ID $D_{id} \in \{0,1\}^n$ und einer Liste von Worten $(w_0,...,w_t) \in \{0,1\}^{nt}$ sowie dem privaten Schlüssel $K_{priv} = (k_1,...,k_n) \in \{0,1\}^{sr}$
+  Für jedes einzigartige Wort $w_i$, wobei $i \in [0,t]$ werden folgende drei Berechnungen angestellt
+  \begin{enumerate}
+    \item Berechnung der \textit{Trapdoor}: $(x_1=f(w_i,k_i),...,x_r=f(w_i,k_r)) \in \{0,1\}^{sr}$
+    \item Berechnung eines eindeutigen Codewortes für jedes $w_i$: $(y_1 = f(D_{id}, x1),...,y_r = f(D_{id},xr)) \in \{0,1\}^{sr}$
+    \item Abschließend wird das Codewort $y_1,...,y_r$ in den \textit{Bloom-Filter} des Dokumentes mit der $D_{id}$ eingefügt
+  \end{enumerate}
+  Der Output ist der Index $I_{D_{id}} = (D_{id}, BF)$ für das Dokument mit der ID $D_{id}$
+  \item \texttt{SearchIndex($T_w$, $I_D$)}: Der Input ist die \textit{Trapdoor} $T_w = (x_1,...,x_r) \in \{0,1\}^{sr}$ für das jeweilige Wort $w$ und ein Index $I_D$ mit $I_{D{id}} = (D_{id}, BF)$ für das jeweilige Dokument mit der ID $D_{id}$. Es müssen die folgenden Berechnungen durchgeführt werden:\\
+  \begin{enumerate}
+    \item Berechne das Codewort für das Wort $w$ in $D_{id}: (y_1 = f(D_{id}, x_1),...,y_r = f(D_{id},xr)) \in \{0,1\}^{s,r}$
+    \item Wenn der \textit{Bloom-Filter} nur Einsen an allen $r$ Stellen mit $y_1,...,y_r$ enthält
+    \item Falls dies der Fall ist, kam das Wort vor, gebe $1$ aus. Ansonsten 0  
+  \end{enumerate}
+\end{itemize}
+
+Das obige Verfahren soll lediglich als Beispiel dienen. Es sind weitere Möglichkeiten denkbar. So können auch \textit{asymmetrische Verfahren} angewendet werden (\cite{pubenc}).
 
 \subsection{Schutz von limitierten Geräten}
 
@@ -543,7 +573,6 @@ Die \autoref{fig:soc} veranschaulicht einen beispielhaften Aufbau eines limitier
 \end{figure}
 
 \subsubsection{Secure SoC} Das \textit{Secure SoC} bietet Schutz für die geräteinternen Schlüssel. Diese werden verschlüsselt im \textit{Secure Read-only-Memore} (Secure ROM) abgespeichert. Bei den Schlüsseln handelt es sich oftmals um Schlüssel, welche für digitale Signaturverfahren wie RSA, DSA oder auch ECDSA verwendet werden. Diese Schlüssel werden wie bereits gesagt verschlüsselt im ROM abgelegt. Dabei wird häufig auf Verschlüsselungsverfahren wie AES zurückgegriffen.\cite{anoopms}\\
-\newpage
 Ein SoC bietet im besten Fall folgende Eigenschaften: 
 \begin{itemize}
   \item Auf Secure ROM kann nicht physikalisch zugegriffen werden 
@@ -557,7 +586,6 @@ Der letzte Punkt ist dabei besonders interessant, da das Gerät dadurch möglich
 Keine zwei Stromkreise sind identisch. Diese Idee dient als Grundlage bei der Erstellung von \textit{Physical Unclonable Functions} (PUFs). Durch Anwendung von PUFs sind Bauteile oder gesamte Geräte eindeutig identifizierbar.\\
 In besten Fall sind PUFs eine Hardwareanalogon von Hashfunktionen. So gibt es im besten Fall sehr wenige Kollisionen und die Funktion selbst soll einfach durchführbar sein.\\
 Formalisiert bedeutet das, dass es eine Challge $c$ gibt und eine Funktion $f$, die diese Challenge als Eingabe nimmt. Die Ausgabe wäre dann $r = f(c)$. 
-\newpage
 Dabei ist zu erwähnen, dass zwei Bedingungen gelten sollen:
 \begin{itemize}
   \item Für jede Challenge hat ein (integrierter) Stromkreis die gleiche Response
@@ -575,10 +603,10 @@ Die folgende Abbildung demonstriert eine beispielhafte PUF.
 
 Die PUF kann wie folgt formalisiert werden: $MUX-PUF: \{0,1\}^{64} \rightarrow \{0,1\}^{64}$. \\
 Sie erwartet also eine 64bit-Folge als Eingabe und produziert eine dementsprechende 64-bit-Folge als Ausgabe.\\
-Diese PUF besitzt zwei verschiedene Pfade und je nachdem auf welchem Pfad das Signal schneller war, wird eine $1$ oder eine $0$ ausgegeben. Die Anzahl der Challenge-Response-Paare ist bei dem obigen beispiel $2^{64}$.\cite{webpufs}\\
+Diese PUF besitzt zwei verschiedene Pfade und je nachdem auf welchem Pfad das Signal schneller war, wird eine $1$ oder eine $0$ ausgegeben. Die Anzahl der Challenge-Response-Paare ist bei dem obigen beispiel $2^{64}$\cite{webpufs}.\\
 
-Dieses Verfahren ermöglicht eine Identifikation von Komponenten (Schaltkreisen). Als Folge daraus können limitierte Geräte in einem internen Speicher die Challenge-Response-Paare für die Komponenten speichern und sich selbstständig im Betrieb überprüfen. Falls nämlich für eine Komponente kein Challenge-Response-Paar, also keine eindeutige Identifikation vorliegt, kann sich das Gerät abschalten oder gar nicht erst hochfahren (\textit{Secure Boot}).\cite{suhdev}\\
-Darüber hinaus können PUFs auch zur sicheren Kommunikation zwischen Geräten verwendet werden. So können bestimmte Kommunikationspartner nur nach erfolgreicher Identifikation kommunizieren und werden andernfalls abgewiesen.\cite{itseciot} \cite{eckert2015} 
+Dieses Verfahren ermöglicht eine Identifikation von Komponenten (Schaltkreisen). Als Folge daraus können limitierte Geräte in einem internen Speicher die Challenge-Response-Paare für die Komponenten speichern und sich selbstständig im Betrieb überprüfen. Falls nämlich für eine Komponente kein Challenge-Response-Paar, also keine eindeutige Identifikation vorliegt, kann sich das Gerät abschalten oder gar nicht erst hochfahren (\textit{Secure Boot})\cite{suhdev}.\\
+Darüber hinaus können PUFs auch zur sicheren Kommunikation zwischen Geräten verwendet werden. So können bestimmte Kommunikationspartner nur nach erfolgreicher Identifikation kommunizieren und werden andernfalls abgewiesen \cite{itseciot, eckert2015}.
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
@@ -664,8 +692,8 @@ Darüber hinaus können PUFs auch zur sicheren Kommunikation zwischen Geräten v
 
 
 \section{Fazit}
-The conclusion goes here.
 
+In dieser Ausarbeitung wurden zwei Bereiche des \textit{Internet of Things} untersucht. Zu Beginn wurde auf die Sicherheitsmechanismen im Heimbereich eingegangen, es wurden mögliche Schwachstellen und Verbesserungen genannt. Im zweiten Teil wurde deutlich, dass die Kombination zweier IKT-Bereiche neue Herausforderungen mit sich bringt, die separat bei beiden System zuvor in dieser Form nicht existierten. 
 
 
 
