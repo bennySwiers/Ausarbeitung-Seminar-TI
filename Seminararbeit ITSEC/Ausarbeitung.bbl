@@ -62,6 +62,9 @@ Cloud-monitor. [Online]. Available:
 A.~MS, ``{Security needs in embedded systems},'' \emph{IACR Cryptology ePrint
   Archive}, 2008.
 
+\bibitem{pufs2015}
+S.~Devadas, ``Physical unclonable functions and applications.''
+
 \bibitem{webpufs}
 \BIBentryALTinterwordspacing
 ``{Physical Unclonable Functions}.'' [Online]. Available:
@@ -76,8 +79,5 @@ A.~MS, ``{Security needs in embedded systems},'' \emph{IACR Cryptology ePrint
 \bibitem{itseciot}
 C.~Eckert, ``{IT-Sicherheit und Industrie 4.0},'' \emph{Fachzeitschrift f{\"u}r
   Innovation, Organisation und Management}, 2014.
-
-\bibitem{pufs2015}
-S.~Devadas, ``Physical unclonable functions and applications.''
 
 \end{thebibliography}
