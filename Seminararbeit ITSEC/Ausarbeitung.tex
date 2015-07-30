@@ -416,7 +416,7 @@ Email: swiers.benjamin@googlemail.com}}
 
 
 \begin{abstract}
-\lipsum[1]
+Aktuellen Prognosen zufolge werden im Jahre 2020 rund 50 Milliarden "Dinge" mit dem Internet verbunden sein. Die Verknüpfung der virtuellen mit der dinglichen Welt stellt die Entwickler derartiger Systeme zukünftig vor diverse Herausforderungen, welche insbesondere die sichere technische Umsetzung von Datenübertragung und Datenspeicherung beinhaltet. In dieser Ausarbeitung wird das Konzept des Internet of Things (IoT, z.Dt. Internet der Dinge) erläutert und auf potentielle Risiken eingegangen, welche eine derart vernetze Welt mit sich bringt. Weiterhin werden Lösungsansätze für Sicherheitsmechanismen, sowohl im privaten als auch im industriellen Bereich, genannt. \hfill Juli, 2015 
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -444,16 +444,38 @@ Email: swiers.benjamin@googlemail.com}}
 
 \section{Einleitung}
 % no \IEEEPARstart
-Bennys Penis schmeckt nach Lakritz
+Die Gegenwart von Computern hat Einzug in unseren Alltag gehalten. Während noch vor einigen Jahren ein stationärer Computer für das gelegentliche Surfen im Internet ausreichte, begleiten uns heute Smartphones, Tablets uns Smart Watches auf all unseren Wegen. Das Mitführen solcher Geräte erfüllt dabei nicht nur den Zweck, jederzeit erreichbar zu sein, sondern ermöglicht dem Nutzer weiterhin jederzeit auf das Internet zuzugreifen. Durch diese permanente Anbindung an das Internet entstehen eine Vielzahl von Gefahren, welchen jeder Nutzer potentiell ausgesetzt ist. \\
+Unsere täglichen Begleiter beinhalten unzählige vertrauliche Daten, seien es Medien, Kontaktdaten oder die Inhalte eines Terminkalenders. All diese Informationen befinden sich oft nicht nur auf den Geräten selbst, sondern mitunter auf Cloud-Systemen, wie iCloud, Dropbox oder Google+. Dafür gibt es mehrere Gründe. Zum einen verfügen diese Geräte hinsichtlich Speicherkapazität, Rechenleistung und Energie über begrenzte Ressourcen. Darüber hinaus ermöglicht die Auslagerung der Daten auf die genannten Systeme, diese Daten mit anderen Geräten zu synchronisieren. \\
+Betrachtet man hinsichtlich der zur Verfügung stehenden Ressourcen die Leistungsfähigkeit von kleinen Chips, wie sie in Bereichen der Hausautomation und der Industrie verwendet werden, so wird klar, dass diese oft über weitaus weniger Speicherkapazität, Rechenleistung und Energie verfügen. \\
+Um ein möglichst hohes Maß an Sicherheit für Iot-Geräten zu gewährleisten, muss also ein Weg gefunden werden, der die permanente Verfügbarkeit von Information und die sichere Übertragung dieser Information auf Geräten mit begrenzten Ressourcen ermöglicht. Im Verlauf dieser Ausarbeitung werden Lösungsansätze aufgezeigt, welche zur Umsetzung dieser Anforderung im Internet der Dinge beitragen.
+
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
  
-\hfill Juli, 2015
+
 
 % !TEX encoding = UTF-8 Unicode
 
-\newpage
+\section{Das Internet der Dinge}
+Bevor auf Lösungen zur Optimierung der Sicherheit im IoT eingegangen wird, soll zunächst geklärt werden, was das Internet der Dinge genau ist und welche Eigenschaften sich hinter diesem Begriff verbergen. In \cite{fried} wird das Internet der Dinge wie folgt beschrieben: Das Internet der Dinge verfolgt "[...] das Ziel einer Unterstützung des Menschen sowie einer durchgängigen Optimierung wirtschaftlicher und sozialer Prozesse durch eine Vielzahl von in die Umgebung eingebrachten Mikroprozessoren und Sensoren.". Weiterhin ergeben sich daraus laut \cite{fried} folgende Eigenschaften:
+\begin{itemize}
+  \item \texttt{Dezentralität bzw. Modularität}: \\
+  IoT-Geräte sind modular aufgebaut und lassen sich miteinander kombinieren, sodass sie miteinander kommunizieren und interagieren. \newline
+  \item \texttt{Einbettung}: \\
+  Da die verwendeten Geräte zunehmend kleiner und portabler werden, können diese in Gegenstände des Alltags integriert werden, wodurch ein IoT-Gerät mitunter nicht mehr als solches Erkennbar ist (z.B. ein RFID-Chip in der Kleidung). \newline
+  \item \texttt{Mobilität}: \\
+  Iot-Geräte müssen in der Lage sein, sich den Umgebungen des Nutzers anzupassen, um zu jeder Zeit an jedem Ort den Funktionsumfang zu gewährleisten, für den das entsprechende Gerät konzipiert wurde. \newline
+  \item \texttt{(Spontane) Vernetzung}: \\
+  Ein wesentliches Merkmal des Internets der Dinge ist die Tatsache, dass die Geräte über das Internet oder anderen Netzwerktechnologien miteinander verbunden sind. Dabei ist es denkbar, dass die Geräte, je nach Einsatzgebiet, spontan (ad hoc) eine Verbinden zueinander aufnehmen können. Ein Beispielszenario wäre die in \cite{adhoc} beschrieben Kommunikation von Autos, die sich auf einer Straße entgegenkommen, um den Verkehrsstatus der kommenden Wegstrecke untereinander auszutauschen oder auf mögliche Gefahren hinzuweisen. \newline
+  \item \texttt{Kontextsensitivität}: \\
+  Iot-Systeme sammeln Informationen ihrer Umgebung und passen die angebotenen Dienste an die Bedürfnisse des Nutzers, je nach Kontext, an.  \newline
+  \item \texttt{Autonomie}: \\ 
+  Das System reagiert eigenständig (ohne den Zugriff des Nutzers) auf bestimmte Ereignisse. \newline
+  \item \texttt{Energieautarkie}:\\ 
+ Da sich das Einsatzgebiet eines IoT-Gerätes auf viele verschiedene Bereiche erstreckt, muss dieses über eine eigene Energiequelle verfügen und sollte nicht auf die stationäre Versorgung angewiesen sein.  
+\end{itemize}
+
 
 \section{Anwendung des IoT in der Industrie}
 

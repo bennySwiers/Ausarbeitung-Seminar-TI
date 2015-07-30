@@ -21,6 +21,14 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{fried}
+{M. Friedewald, O. Raabe, P. Georgieff et al.}, ``{Ubiquitäres Computing: Das
+  „Internet der Dinge“ – Grundlagen, Anwendungen, Folgen},'' Berlin 2010.
+
+\bibitem{adhoc}
+{Q. Sun, H. Garcia-Molina}, ``{Using Ad-hoc Inter-vehicle Networks For Regional
+  Alerts},'' 2004.
+
 \bibitem{eckert2015}
 {C. Eckert, N. Fallenbeck}, ``{Industrie 4.0 meets IT-Sicherheit: eine
   Herausforderung!}'' {Heidelberg Berlin 2015}.
@@ -79,5 +87,12 @@ S.~Devadas, ``Physical unclonable functions and applications.''
 \bibitem{itseciot}
 C.~Eckert, ``{IT-Sicherheit und Industrie 4.0},'' \emph{Fachzeitschrift f{\"u}r
   Innovation, Organisation und Management}, 2014.
+
+\bibitem{owasp}
+\BIBentryALTinterwordspacing
+{Open Web Application Security Project}, ``{Internet of Things Top Ten},''
+  2014. [Online]. Available:
+  \url{https://www.owasp.org/index.php/OWASP_Internet_of_Things_Top_Ten_Project}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
