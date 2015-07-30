@@ -516,19 +516,17 @@ Durch die Verwendung von entsprechend komplexen Anmeldedaten und die Verschlüss
 Da die Bestandteile einer \textit{IoT}-Infrastruktur alle miteinander vernetzt sind, bedeutet dies, dass ständig Daten miteinander ausgetauscht werden. Der Zugang zum System beinhaltet ein hohes Gefahrenpotential, denn gelingt es einem Angreifer sich über die Netzwerkservices einen Zugang zum System zu verschaffen, so kann dieser  die übermittelten Daten abfangen, das System manipulieren oder funktionsunfähig zu machen (z.B. durch einen \textit{Denial-of-Service}-Angriff). Die Schwachstelle bilden hier unnötig offene Ports oder angreifbare Services. \\
 Um diesen Gefahren vorzubeugen, sollten die zu übermittelten Daten stets verschlüsselt übertragen werden. Weiterhin sollten nur diejenigen Ports erreichbar sein, die für die Aufrechterhaltung der Funktionsweise des Systems notwendig sind. Bestimmte Ports und Services sollten nicht über das Internet, z.B. mittels \textit{Universal Plug and Play (UPnP)} erreichbar sein\cite{owasp}. Die Herstellern und Entwicklern müssen in diesem Punkt einen Kompromiss finden zwischen Erreichbarkeit und Angreifbarkeit. \\
 \subsubsection{Mangelnde Transportverschlüsselung}
-Auch die Verwendung einer mangelnden Transportverschlüsselung führt potentiell zur Verletzung aller Schutzziele (Vertraulichkeit, Integrität, Verfügbarkeit). Ein wesentlicher Aspekt bildet hier die Nutzung geeigneter Protokolle(\textit{Lightweight Kryptography}), welche die verschlüsselte Übertragung der Daten mit begrenzten Ressourcen ermöglichen. Beispiele für mögliche Protokolle und Verfahren sind das \textit{Constrained Application
-Protocol (CoAP)} und \textit{ZigBee}, aber auch Standards wie \textit{Bluetooth} oder \textit{Near Field Communication (NFC)}, welche durch ihre geringe Reichweite ein gewisses Maß an Sicherheit gewährleisten\cite{lowpow}\cite{zigbee}.\\
+Auch die Verwendung einer mangelnden Transportverschlüsselung führt potentiell zur Verletzung aller Schutzziele (Vertraulichkeit, Integrität, Verfügbarkeit). Ein wesentlicher Aspekt bildet hier die Nutzung geeigneter Protokolle(\textit{Lightweight Kryptography})\cite{owasp}, welche die verschlüsselte Übertragung der Daten mit begrenzten Ressourcen ermöglichen. Beispiele für mögliche Protokolle und Verfahren sind das \textit{Constrained Application Protocol (CoAP)} und \textit{ZigBee}, aber auch Standards wie \textit{Bluetooth} oder \textit{Near Field Communication (NFC)}, welche durch ihre geringe Reichweite ein gewisses Maß an Sicherheit gewährleisten\cite{lowpow}\cite{zigbee}.\\
 \subsubsection{Datenschutz/ Privatsphäre}
-Test\\
+Im Internet der Dinge werden unzählige Daten zwischen den Geräten ausgetauscht. Viele dieser Daten beinhalten personenbezogene und vertrauliche Information. Würden diese in die Hände eines Angreifers gelangen, so würde dies zur Verletzung der informationellen Selbstbestimmung führen. Aus diesem Grund sollte die Berücksichtigung von Datenschutz-Aspekten bereits bei der Entwicklung eines System bedacht werden und nicht erst im Nachhinein eingebaut werden(\textit{Privacy by Design})\cite{seciot}. Diese Systeme sollten unter dem Aspekt der Datensparsamkeit bzw. Datenvermeidung agieren und, wenn möglich, die Anonymisierung oder Pseudonymisierung de Daten in Betracht ziehen. Weiterhin sollte nicht mehr benötigte Daten gelöscht werden. 
 \subsubsection{Unzureichendes Maß an Sicherheitskonfiguration}
-Test\\
+Ein System wird oft von verschiedenen Nutzern verwendet und bedient. Aus diesem Grund sollte es ein feingranulare Trennung verschiedener Rollen geben, mit denen ein Benutzer dem System gegenübertritt. Nur so kann gewährleistet werden, dass ein einfacher Nutzer nicht Funktionalitäten nutzen kann, die eigentlich einem Systembetreuer oder Ähnlichem obliegen. \\
+Weiterhin sollte ein Monitoring und Logging von sicherheitsrelevanten Ereignissen durchgeführt werden, um mögliche Schwachstellen und Angriffe zu bemerken\cite{owasp}. 
 \subsubsection{Unsichere Software/ Firmware}
-Test\\
+Da jedes \textit{Iot}-Gerät durch entsprechende Software funktioniert, muss sichergestellt sein, dass diese möglichst aktuell gehalten wird. Dabei ist zu beachten, dass das einspielen von Updates wiederum ein Sicherheitsrisiko birgt. Sollten die Updates unverschlüsselt übertragen werden, so kann ein Angreifer die Daten verändern und so zu seinen Gunsten nutzen\cite{owasp}. \\
+Aus diesem Grund sollten auch Updates stets verschlüsselt übertragen werden. Darüber hinaus sollte dieses signiert und zertifiziert sein.
 \subsubsection{Mangelnde physische Sicherheit}
-
-\section{Anwendung des IoT in der Industrie}
-
-In Unternehmen wird meist zwischen zwei Informations- und Kommunikationstechnikbereichen unterschieden. Zum einen existiert in Unternehmen die \textit{Produktions-IT}, welche jegliche Controller von Produktionsanlagen oder Logistikanbindungen umfasst. Zum anderen gibt es ebenfalls den Bereich der \textit{Business-IT}. Darunter fallen jegliche Anwendungen, die von den Angestellten verwendet werden und in keinem direkten Zusammenhang mit der Produktion stehen. Ein Beispiel dafür wären \textit{Content-Management-Systeme}.\\
+Ein wichtiger und oft vernachlässigter Aspekt ist die physische Sicherheit der Komponenten. Wenn diese einfach zugänglich sind, kann eine Manipulation der Geräte nie ausgeschlossen werden. Ein Speichermedium sollte nicht leicht entfernbar sein und das Auseinanderbauen eines Gerätes sollten sollte sich möglichst schwierig gestalten\cite{owasp}.\\
 
 \section{Smart Home}
 Der Einsatz von \textit{IoT}-Geräten zur Vernetzung verschiedener Komponenten in Wohngebäuden wird als \textit{Smart Home} bezeichnet\cite{andelf}. 
@@ -545,6 +543,9 @@ Um ein möglichst sicheres Umfeld für den Heimgebrauch zu schaffen, sollten aus
 Weiterhin sollte die leitungsgebundene Übertragung dem WLAN oder anderen Funk-Übertragungswegen vorzuziehen sein. Dieses Vorgehen schließt den Zugriff eines Angreifers nicht gänzlich aus, jedoch muss ein solcher einen höheren Aufwand betreiben, um Zugang zum System zu erhalten. \\
 Auch im \textit{Smart Home}-Bereich sollte besonderes Augenmerk auf die Verwendung von entsprechend komplexen Passwörtern für den Zugang zum System und die Nutzung von Verschlüsselungstechniken nach dem Stand der Technik (z.B. \textit{AES}) gelegt werden. Weiterhin empfiehlt sich die Benutzung von Softwarekomponenten, welche laufende Angriffe erkennen (\textit{Intrusion Detektion}). Dies kann durch Firewalls mit Application Filtern realisiert werden.   
 
+\section{Anwendung des IoT in der Industrie}
+
+In Unternehmen wird meist zwischen zwei Informations- und Kommunikationstechnikbereichen unterschieden. Zum einen existiert in Unternehmen die \textit{Produktions-IT}, welche jegliche Controller von Produktionsanlagen oder Logistikanbindungen umfasst. Zum anderen gibt es ebenfalls den Bereich der \textit{Business-IT}. Darunter fallen jegliche Anwendungen, die von den Angestellten verwendet werden und in keinem direkten Zusammenhang mit der Produktion stehen. Ein Beispiel dafür wären \textit{Content-Management-Systeme}.\\
 
 \section{Industrie 4.0}
 Die \textit{Industrie 4.0} vernetzt beide Bereiche miteinander und als Resultat entstehen sogenannte \textit{cyberphysikalische Systeme} (\textit{CPS}).\\

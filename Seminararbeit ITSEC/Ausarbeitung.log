@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.19)  30 JUL 2015 21:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.4.19)  30 JUL 2015 21:48
 entering extended mode
 **Ausarbeitung.tex
 
@@ -890,199 +890,193 @@ Underfull \hbox (badness 10000) in paragraph at lines 516--518
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--521
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
  \T1/ptm/m/it/10 4) Man-geln-de Trans-port-ver-schlüs-se-lung: [][][] \T1/ptm/m
 /n/10 Auch die
  []
 
 
-Underfull \hbox (badness 5374) in paragraph at lines 519--521
-\T1/ptm/m/n/10 wel-che die ver-schlüs-sel-te Über-tra-gung der Da-ten mit
+Underfull \hbox (badness 1688) in paragraph at lines 519--520
+\T1/ptm/m/n/10 In-te-gri-tät, Ver-füg-bar-keit). Ein we-sent-li-cher Aspekt bil
+-det
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 519--521
-\T1/ptm/m/it/10 Pro-to-col (CoAP) \T1/ptm/m/n/10 und \T1/ptm/m/it/10 Zig-Bee\T1
-/ptm/m/n/10 , aber auch Stan-dards wie
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
+\T1/ptm/m/n/10 hier die Nut-zung ge-eig-ne-ter Pro-to-kol-le(\T1/ptm/m/it/10 Li
+ghtweight
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 519--521
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 522--523
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 531--532
-\T1/ptm/m/n/10 und Kom-mu-ni-ka-ti-ons-tech-nik-be-rei-chen un-ter-schie-den.
- []
-
-
-Underfull \hbox (badness 2368) in paragraph at lines 531--532
-\T1/ptm/m/n/10 wel-che jeg-li-che Con-trol-ler von Pro-duk-ti-ons-an-la-gen ode
-r
- []
-
-
-Underfull \hbox (badness 5036) in paragraph at lines 531--532
-\T1/ptm/m/n/10 den Be-reich der \T1/ptm/m/it/10 Business-IT\T1/ptm/m/n/10 . Dar
--un-ter fal-len jeg-li-che
- []
-
-
-Underfull \hbox (badness 3229) in paragraph at lines 531--532
-\T1/ptm/m/n/10 ste-hen. Ein Bei-spiel da-für wä-ren \T1/ptm/m/it/10 Content-Man
-agement-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 531--532
-
- []
-
-<smarthome.png, id=161, 473.51906pt x 512.66531pt>
+<smarthome.png, id=166, 473.51906pt x 512.66531pt>
 File: smarthome.png Graphic file (type png)
  <use smarthome.png>
-Package pdftex.def Info: smarthome.png used on input line 538.
+Package pdftex.def Info: smarthome.png used on input line 536.
 (pdftex.def)             Requested size: 176.39923pt x 190.98175pt.
 
-Underfull \hbox (badness 1590) in paragraph at lines 543--547
+Underfull \hbox (badness 1590) in paragraph at lines 541--545
 \T1/ptm/m/n/10 Weiterhin soll-te die lei-tungs-ge-bun-de-ne Über-tra-gung dem
  []
 
 [3 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitun
 g-Seminar-TI/Seminararbeit ITSEC/smarthome.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 564--565
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
+\T1/ptm/m/n/10 und Kom-mu-ni-ka-ti-ons-tech-nik-be-rei-chen un-ter-schie-den.
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 548--549
+\T1/ptm/m/n/10 wel-che jeg-li-che Con-trol-ler von Pro-duk-ti-ons-an-la-gen ode
+r
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 548--549
+\T1/ptm/m/n/10 den Be-reich der \T1/ptm/m/it/10 Business-IT\T1/ptm/m/n/10 . Dar
+-un-ter fal-len jeg-li-che
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 548--549
+\T1/ptm/m/n/10 ste-hen. Ein Bei-spiel da-für wä-ren \T1/ptm/m/it/10 Content-Man
+agement-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
-<clouds.jpg, id=174, 598.235pt x 340.27126pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+
+ []
+
+<clouds.jpg, id=180, 598.235pt x 340.27126pt>
 File: clouds.jpg Graphic file (type jpg)
  <use clouds.jpg>
-Package pdftex.def Info: clouds.jpg used on input line 568.
+Package pdftex.def Info: clouds.jpg used on input line 569.
 (pdftex.def)             Requested size: 176.39923pt x 100.33241pt.
 
-Underfull \hbox (badness 1590) in paragraph at lines 573--576
+Underfull \hbox (badness 1590) in paragraph at lines 574--577
 \T1/ptm/m/n/10 zwi-schen drei ver-schie-de-nen Ser-vices un-ter-schie-den. Bei
  []
 
-<firmen.png, id=176, 636.3775pt x 333.245pt>
+<firmen.png, id=182, 636.3775pt x 333.245pt>
 File: firmen.png Graphic file (type png)
  <use firmen.png>
-Package pdftex.def Info: firmen.png used on input line 580.
+Package pdftex.def Info: firmen.png used on input line 581.
 (pdftex.def)             Requested size: 206.39685pt x 108.07959pt.
 
-<bedenken.png, id=181, 636.3775pt x 345.29pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<bedenken.png, id=187, 636.3775pt x 345.29pt>
 File: bedenken.png Graphic file (type png)
  <use bedenken.png>
-Package pdftex.def Info: bedenken.png used on input line 589.
+Package pdftex.def Info: bedenken.png used on input line 590.
 (pdftex.def)             Requested size: 206.39685pt x 111.98608pt.
  [4 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitu
-ng-Seminar-TI/Seminararbeit ITSEC/clouds.jpg> <C:/Benny/Uni/Master/2. Semester/
-Seminar - Technische Informatik/Ausarbeitung-Seminar-TI/Seminararbeit ITSEC/fir
-men.png> <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausar
-beitung-Seminar-TI/Seminararbeit ITSEC/bedenken.png>]
-<attr.png, id=197, 764.8575pt x 261.22594pt>
+ng-Seminar-TI/Seminararbeit ITSEC/clouds.jpg>] <attr.png, id=199, 764.8575pt x 
+261.22594pt>
 File: attr.png Graphic file (type png)
- <use attr.png>
-Package pdftex.def Info: attr.png used on input line 605.
+
+<use attr.png>
+Package pdftex.def Info: attr.png used on input line 606.
 (pdftex.def)             Requested size: 378.0pt x 129.10194pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 610--613
+Underfull \hbox (badness 10000) in paragraph at lines 611--614
 
  []
 
 
-Underfull \hbox (badness 3895) in paragraph at lines 615--616
+Underfull \hbox (badness 3895) in paragraph at lines 616--617
 \T1/ptm/m/n/10 ver-wen-det wer-den, die ei-ne Su-che auf ver-schlüs-sel-ten
  []
 
 
-Underfull \hbox (badness 8000) in paragraph at lines 615--616
+Underfull \hbox (badness 8000) in paragraph at lines 616--617
 \T1/ptm/m/n/10 Da-ten-sät-zen er-mög-li-chen. Dies ist not-wen-dig, da so
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 615--616
+Underfull \hbox (badness 4416) in paragraph at lines 616--617
 \T1/ptm/m/n/10 die Da-ten zu je-dem Zeit-punkt ver-schlüs-selt auf dem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
+Underfull \hbox (badness 10000) in paragraph at lines 616--617
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 623.
+(hyperref)                removing `\@ifnextchar' on input line 624.
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 626.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 627.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Underfull \hbox (badness 2401) in paragraph at lines 627--628
+) [5 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeit
+ung-Seminar-TI/Seminararbeit ITSEC/firmen.png> <C:/Benny/Uni/Master/2. Semester
+/Seminar - Technische Informatik/Ausarbeitung-Seminar-TI/Seminararbeit ITSEC/be
+denken.png>]
+Underfull \hbox (badness 2401) in paragraph at lines 628--629
 []\T1/pcr/m/n/10 Trapdoor($\OML/cmm/m/it/10 K[]$\T1/pcr/m/n/10 , $\OML/cmm/m/it
 /10 w$\T1/pcr/m/n/10 )\T1/ptm/m/n/10 : Ein-ga-be für die \T1/ptm/m/it/10 Trap-d
 oor
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 627--628
+Underfull \hbox (badness 2158) in paragraph at lines 628--629
 \T1/ptm/m/n/10 die Aus-ga-be für die bei-den Pa-ra-me-ter ist $\OML/cmm/m/it/10
  T[] \OT1/cmr/m/n/10 =$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 631--632
+Underfull \hbox (badness 10000) in paragraph at lines 632--633
 []\T1/ptm/m/n/10 Berechnung der \T1/ptm/m/it/10 Trap-door\T1/ptm/m/n/10 : $\OT1
 /cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 =$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--638
+Underfull \hbox (badness 10000) in paragraph at lines 637--639
 
  []
 
-[5] <soc.png, id=226, 399.4925pt x 237.88875pt>
+<soc.png, id=226, 399.4925pt x 237.88875pt>
 File: soc.png Graphic file (type png)
  <use soc.png>
-Package pdftex.def Info: soc.png used on input line 657.
+Package pdftex.def Info: soc.png used on input line 658.
 (pdftex.def)             Requested size: 206.39685pt x 122.90427pt.
-
-<puf.jpg, id=229, 607.26875pt x 135.50626pt>
+ [6 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitu
+ng-Seminar-TI/Seminararbeit ITSEC/attr.png> <C:/Benny/Uni/Master/2. Semester/Se
+minar - Technische Informatik/Ausarbeitung-Seminar-TI/Seminararbeit ITSEC/soc.p
+ng>]
+<puf.jpg, id=246, 607.26875pt x 135.50626pt>
 File: puf.jpg Graphic file (type jpg)
  <use puf.jpg>
-Package pdftex.def Info: puf.jpg used on input line 686.
+Package pdftex.def Info: puf.jpg used on input line 687.
 (pdftex.def)             Requested size: 252.0pt x 56.2299pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--694
+Underfull \hbox (badness 10000) in paragraph at lines 692--695
 []\T1/ptm/m/n/10 Die PUF kann wie folgt for-ma-li-siert wer-den:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--694
+Underfull \hbox (badness 10000) in paragraph at lines 692--695
 
  []
 
-[6 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitun
-g-Seminar-TI/Seminararbeit ITSEC/attr.png> <C:/Benny/Uni/Master/2. Semester/Sem
-inar - Technische Informatik/Ausarbeitung-Seminar-TI/Seminararbeit ITSEC/soc.pn
-g> <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitun
-g-Seminar-TI/Seminararbeit ITSEC/puf.jpg>]
+
 ("C:\Benny\Uni\Master\2. Semester\Seminar - Technische Informatik\Ausarbeitung-
 Seminar-TI\Seminararbeit ITSEC\Ausarbeitung.bbl"
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1090,17 +1084,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 36.
 
-Underfull \hbox (badness 6173) in paragraph at lines 70--73
+Underfull \hbox (badness 6173) in paragraph at lines 74--77
 []\T1/ptm/m/n/8 ``Security Ser-vices für In-dus-trie 4.0,'' Ju-ne
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 70--73
+Underfull \hbox (badness 2671) in paragraph at lines 74--77
 \T1/ptm/m/n/8 2015. [On-li-ne]. Availa-ble: []$http : / / www . channelpartner 
 . de / a /$
  []
 
-)
+[7 <C:/Benny/Uni/Master/2. Semester/Seminar - Technische Informatik/Ausarbeitun
+g-Seminar-TI/Seminararbeit ITSEC/puf.jpg>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1112,30 +1107,32 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 825.
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 825.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 826.
+[8
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 826.
 
 ("C:\Benny\Uni\Master\2. Semester\Seminar - Technische Informatik\Ausarbeitung-
 Seminar-TI\Seminararbeit ITSEC\Ausarbeitung.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 825.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 825.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 826.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 826.
 Package rerunfilecheck Info: File `Ausarbeitung.out' has not changed.
-(rerunfilecheck)             Checksum: D1517C808F4BD15459606065689F2224;2350.
+(rerunfilecheck)             Checksum: ABD91FBA0DC15442D8B655CE8A7BBA58;2350.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 825.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 826.
  ) 
 Here is how much of TeX's memory you used:
- 8161 strings out of 493921
- 124350 string characters out of 3147282
- 312978 words of memory out of 3000000
- 11280 multiletter control sequences out of 15000+200000
+ 8164 strings out of 493921
+ 124375 string characters out of 3147282
+ 311978 words of memory out of 3000000
+ 11281 multiletter control sequences out of 15000+200000
  107319 words of font info for 111 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 36i,8n,38p,810b,512s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,8n,38p,810b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/font
@@ -1147,9 +1144,9 @@ msy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 les/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Ausarbeitung.pdf (7 pages, 628519 bytes).
+Output written on Ausarbeitung.pdf (8 pages, 632006 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
+ 333 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
  289 words of extra memory for PDF output out of 10000 (max. 10000000)
 
