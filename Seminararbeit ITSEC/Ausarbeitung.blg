@@ -2,20 +2,25 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: Ausarbeitung.aux
 The style file: IEEEtran.bst
 Database file #1: references.bib
 Warning--entry type for "webpufs" isn't style-file defined
---line 67 of file references.bib
+--line 97 of file references.bib
 Warning--entry type for "channel2015" isn't style-file defined
---line 91 of file references.bib
+--line 121 of file references.bib
 Warning--entry type for "pufs2015" isn't style-file defined
---line 116 of file references.bib
+--line 146 of file references.bib
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in fried
 Warning--empty journal in adhoc
+Warning--empty journal in hpack
+Warning--empty journal in owasp
+Warning--empty journal in lowpow
+Warning--empty journal in zigbee
+Warning--empty journal in andelf
+Warning--empty journal in landkrim
 Warning--empty journal in eckert2015
 Warning--empty journal in bloom
 Warning--empty journal in pubenc
-Warning--empty journal in owasp
 
 Done.
-(There were 9 warnings)
+(There were 14 warnings)

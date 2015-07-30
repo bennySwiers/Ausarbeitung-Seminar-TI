@@ -416,7 +416,7 @@ Email: swiers.benjamin@googlemail.com}}
 
 
 \begin{abstract}
-Aktuellen Prognosen zufolge werden im Jahre 2020 rund 50 Milliarden "Dinge" mit dem Internet verbunden sein. Die Verknüpfung der virtuellen mit der dinglichen Welt stellt die Entwickler derartiger Systeme zukünftig vor diverse Herausforderungen, welche insbesondere die sichere technische Umsetzung von Datenübertragung und Datenspeicherung beinhaltet. In dieser Ausarbeitung wird das Konzept des Internet of Things (IoT, z.Dt. Internet der Dinge) erläutert und auf potentielle Risiken eingegangen, welche eine derart vernetze Welt mit sich bringt. Weiterhin werden Lösungsansätze für Sicherheitsmechanismen, sowohl im privaten als auch im industriellen Bereich, genannt. \hfill Juli, 2015 
+Aktuellen Prognosen zufolge werden im Jahre 2020 rund 50 Milliarden "Dinge" mit dem Internet verbunden sein. Die Verknüpfung der virtuellen mit der dinglichen Welt stellt die Entwickler derartiger Systeme zukünftig vor diverse Herausforderungen, welche insbesondere die sichere technische Umsetzung von Datenübertragung und Datenspeicherung beinhaltet. In dieser Ausarbeitung wird das Konzept des \textit{Internet of Things} (\textit{IoT}, z.Dt. \textit{Internet der Dinge}) erläutert und auf potentielle Risiken eingegangen, welche eine derart vernetze Welt mit sich bringt. Weiterhin werden Lösungsansätze für Sicherheitsmechanismen, sowohl im privaten als auch im industriellen Bereich, genannt. \hfill Juli, 2015 
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -447,7 +447,7 @@ Aktuellen Prognosen zufolge werden im Jahre 2020 rund 50 Milliarden "Dinge" mit 
 Die Gegenwart von Computern hat Einzug in unseren Alltag gehalten. Während noch vor einigen Jahren ein stationärer Computer für das gelegentliche Surfen im Internet ausreichte, begleiten uns heute Smartphones, Tablets uns Smart Watches auf all unseren Wegen. Das Mitführen solcher Geräte erfüllt dabei nicht nur den Zweck, jederzeit erreichbar zu sein, sondern ermöglicht dem Nutzer weiterhin jederzeit auf das Internet zuzugreifen. Durch diese permanente Anbindung an das Internet entstehen eine Vielzahl von Gefahren, welchen jeder Nutzer potentiell ausgesetzt ist. \\
 Unsere täglichen Begleiter beinhalten unzählige vertrauliche Daten, seien es Medien, Kontaktdaten oder die Inhalte eines Terminkalenders. All diese Informationen befinden sich oft nicht nur auf den Geräten selbst, sondern mitunter auf Cloud-Systemen, wie iCloud, Dropbox oder Google+. Dafür gibt es mehrere Gründe. Zum einen verfügen diese Geräte hinsichtlich Speicherkapazität, Rechenleistung und Energie über begrenzte Ressourcen. Darüber hinaus ermöglicht die Auslagerung der Daten auf die genannten Systeme, diese Daten mit anderen Geräten zu synchronisieren. \\
 Betrachtet man hinsichtlich der zur Verfügung stehenden Ressourcen die Leistungsfähigkeit von kleinen Chips, wie sie in Bereichen der Hausautomation und der Industrie verwendet werden, so wird klar, dass diese oft über weitaus weniger Speicherkapazität, Rechenleistung und Energie verfügen. \\
-Um ein möglichst hohes Maß an Sicherheit für Iot-Geräten zu gewährleisten, muss also ein Weg gefunden werden, der die permanente Verfügbarkeit von Information und die sichere Übertragung dieser Information auf Geräten mit begrenzten Ressourcen ermöglicht. Im Verlauf dieser Ausarbeitung werden Lösungsansätze aufgezeigt, welche zur Umsetzung dieser Anforderung im Internet der Dinge beitragen.
+Um ein möglichst hohes Maß an Sicherheit für \textit{Iot}-Geräten zu gewährleisten, muss also ein Weg gefunden werden, der die permanente Verfügbarkeit von Information und die sichere Übertragung dieser Information auf Geräten mit begrenzten Ressourcen ermöglicht. Im Verlauf dieser Ausarbeitung werden Lösungsansätze aufgezeigt, welche zur Umsetzung dieser Anforderung im \textit{Internet der Dinge} beitragen.
 
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
@@ -458,33 +458,98 @@ Um ein möglichst hohes Maß an Sicherheit für Iot-Geräten zu gewährleisten, 
 % !TEX encoding = UTF-8 Unicode
 
 \section{Das Internet der Dinge}
-Bevor auf Lösungen zur Optimierung der Sicherheit im IoT eingegangen wird, soll zunächst geklärt werden, was das Internet der Dinge genau ist und welche Eigenschaften sich hinter diesem Begriff verbergen. In \cite{fried} wird das Internet der Dinge wie folgt beschrieben: Das Internet der Dinge verfolgt "[...] das Ziel einer Unterstützung des Menschen sowie einer durchgängigen Optimierung wirtschaftlicher und sozialer Prozesse durch eine Vielzahl von in die Umgebung eingebrachten Mikroprozessoren und Sensoren.". Weiterhin ergeben sich daraus laut \cite{fried} folgende Eigenschaften:
+Bevor auf Lösungen zur Optimierung der Sicherheit im \textit{IoT} eingegangen wird, soll zunächst geklärt werden, was das \textit{Internet der Dinge} genau ist und welche Eigenschaften sich hinter diesem Begriff verbergen. In \cite{fried} wird das \textit{Internet der Dinge} wie folgt beschrieben: Das \textit{Internet der Dinge} verfolgt "[...] das Ziel einer Unterstützung des Menschen sowie einer durchgängigen Optimierung wirtschaftlicher und sozialer Prozesse durch eine Vielzahl von in die Umgebung eingebrachten Mikroprozessoren und Sensoren." Weiterhin ergeben sich daraus laut \cite{fried} folgende Eigenschaften:
 \begin{itemize}
-  \item \texttt{Dezentralität bzw. Modularität}: \\
-  IoT-Geräte sind modular aufgebaut und lassen sich miteinander kombinieren, sodass sie miteinander kommunizieren und interagieren. \newline
-  \item \texttt{Einbettung}: \\
-  Da die verwendeten Geräte zunehmend kleiner und portabler werden, können diese in Gegenstände des Alltags integriert werden, wodurch ein IoT-Gerät mitunter nicht mehr als solches Erkennbar ist (z.B. ein RFID-Chip in der Kleidung). \newline
-  \item \texttt{Mobilität}: \\
-  Iot-Geräte müssen in der Lage sein, sich den Umgebungen des Nutzers anzupassen, um zu jeder Zeit an jedem Ort den Funktionsumfang zu gewährleisten, für den das entsprechende Gerät konzipiert wurde. \newline
-  \item \texttt{(Spontane) Vernetzung}: \\
+  \item \textit{Dezentralität bzw. Modularität}: \\
+  \textit{IoT}-Geräte sind modular aufgebaut und lassen sich miteinander kombinieren, sodass sie miteinander kommunizieren und interagieren. \newline
+  \item \textit{Einbettung}: \\
+  Da die verwendeten Geräte zunehmend kleiner und portabler werden, können diese in Gegenstände des Alltags integriert werden, wodurch ein \textit{IoT}-Gerät mitunter nicht mehr als solches Erkennbar ist (z.B. ein RFID-Chip in der Kleidung). \newline
+  \item \textit{Mobilität}: \\
+  \textit{IoT}-Geräte müssen in der Lage sein, sich den Umgebungen des Nutzers anzupassen, um zu jeder Zeit an jedem Ort den Funktionsumfang zu gewährleisten, für den das entsprechende Gerät konzipiert wurde. \newline
+  \item \textit{(Spontane) Vernetzung}: \\
   Ein wesentliches Merkmal des Internets der Dinge ist die Tatsache, dass die Geräte über das Internet oder anderen Netzwerktechnologien miteinander verbunden sind. Dabei ist es denkbar, dass die Geräte, je nach Einsatzgebiet, spontan (ad hoc) eine Verbinden zueinander aufnehmen können. Ein Beispielszenario wäre die in \cite{adhoc} beschrieben Kommunikation von Autos, die sich auf einer Straße entgegenkommen, um den Verkehrsstatus der kommenden Wegstrecke untereinander auszutauschen oder auf mögliche Gefahren hinzuweisen. \newline
-  \item \texttt{Kontextsensitivität}: \\
-  Iot-Systeme sammeln Informationen ihrer Umgebung und passen die angebotenen Dienste an die Bedürfnisse des Nutzers, je nach Kontext, an.  \newline
-  \item \texttt{Autonomie}: \\ 
+  \item \textit{Kontextsensitivität}: \\
+  \textit{IoT}-Systeme sammeln Informationen ihrer Umgebung und passen die angebotenen Dienste an die Bedürfnisse des Nutzersan den jeweiligen Kontext an.  \newline
+  \item \textit{Autonomie}: \\ 
   Das System reagiert eigenständig (ohne den Zugriff des Nutzers) auf bestimmte Ereignisse. \newline
-  \item \texttt{Energieautarkie}:\\ 
- Da sich das Einsatzgebiet eines IoT-Gerätes auf viele verschiedene Bereiche erstreckt, muss dieses über eine eigene Energiequelle verfügen und sollte nicht auf die stationäre Versorgung angewiesen sein.  
+  \item \textit{Energieautarkie}:\\ 
+ Da sich das Einsatzgebiet eines \textit{IoT}-Gerätes auf viele verschiedene Bereiche erstreckt, muss dieses über eine eigene Energiequelle verfügen und sollte nicht auf die stationäre Versorgung angewiesen sein.  
 \end{itemize}
+Die Einsatzgebiete von \textit{IoT}-Geräten Geräte sind vielfältig. Sie können in eine Infrastruktur (Gegenstände, Gebäude) und in andere mobile Geräte (Mobiltelefone, Wearables, Accessoires) eingebettet oder sogar dem Nutzer selbst implantiert werden (computerisierte Implantate)\cite{fried}. \\
 
+\section{Sicherheit im IoT}
+\subsection{Sicherheit von existierenden IoT-Geräten}
+Mit der wachsenden Zahl der \textit{IoT}-Geräte steigt ebenfalls die Angriffsfläche für potentielle Angreifer. Da das \textit{Internet der Dinge} noch vergleichsweise jung ist, sind viele Geräte, die bereits auf dem Markt erhältlich sind noch nicht bis ins Detail ausgereift. Viele Techniken und Methoden, die sich in der Informationstechnik bereits seit langem bewährt haben, können auf Grund der beschränkten Ressourcen in \textit{IoT}-Geräten nicht verwendet werden. Einen erschreckenden Einblick in den Sicherheitsstand von im Handel erhältliche Geräten gewährt \cite{hpack}. \\
+In dem Report wurden 10 führende \textit{IoT}-Geräte, darunter Fernseher, Webcams, Thermostate, fernsteuerbare Steckdosen, Löschanlagen, Türschlösser, Waagen und Garagenöffner auf sicherheitsrelevante Schwachstellen untersucht. Bei den 10 Geräten wurden insgesamt 250 Schwachstellen gefunden. Die \autoref{fig:hpfind} zeigt die prozentuale Verteilung verschiedener Sicherheitslücken in den Geräten.   
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=1.0\columnwidth]{hp}
+  \caption{Reseach findings}
+  \label{fig:hpfind}
+\end{figure}
+
+\subsection{Hauptgründe für Sicherheitsprobleme im IoT}
+Betrachtet man die Ergebnisse aus \cite{hpack}, so lassen sich einige Probleme kategorisieren und zu bestimmten Problemklassen zusammenführen. In \cite{owasp} werden folgende 10 Hauptgründe für Sicherheitsprobleme im \textit{IoT} genannt:
+\begin{itemize}
+  \item[a] \textit{Unsichere Web Interfaces} 
+  \item[b] \textit{Unzureichende Authentifikation} 
+  \item[c] \textit{Unsichere Netzwerk Services} 
+  \item[d] \textit{Mangelnde Transportverschlüsselung} 
+  \item[e] \textit{Datenschutz/ Privatsphäre} 
+  \item[f] \textit{Unsichere Cloud-Schnittstellen} 
+  \item[g] \textit{Unsichere Mobile-Interfaces} 
+  \item[h] \textit{Unzureichendes Maß an Sicherheitskonfiguration} 
+  \item[i] \textit{Unsichere Software/ Firmware} 
+  \item[j] \textit{Mangelnde physische Sicherheit} \\
+\end{itemize} 
+Im Folgenden werden diese Probleme erläutert, mögliche Angriffe aufgezeigt und Lösungen zur Reduzierung der Sicherheitsprobleme genannt. \\
+
+\subsubsection{Unsichere Benutzer-Schnittstellen} 
+Die Probleme \textit{a}, \textit{f} und \textit{g} betreffen die User-Interfaces, welche die Schnittstelle zwischen einem Nutzer und der Anwendung darstellen. Wenn Benutzer-Schnittstellen nicht ausreichend sicher implementiert werden, so sind Angriffe, wie \textit{Account Enumeration} (Herausfinden, ob ein bestimmter Benutzername existiert), \textit{Cross-site Scripting, XSS} (Ausführen von bösartigem Code in vertrauenswürdigem Context) oder \textit{SQL-Injections} (Eingabe bösartiger Nutzereingaben, welche die Manipulation der Daten in der Datenbank zur Folge haben) möglich. \\
+Weiterhin birgt die Verwendung von schwachen Anmeldedaten die Gefahr, dass ein Angreifer, mit einem zu geringen Aufwand Zugriff auf ein Benutzerkonto bekommt, für das dieser eigentlich nicht autorisiert ist.  \\ 
+Um diesen Angriffen zuvorzukommen sollten Entwickler die Eingaben der Schnittstellen validieren und einen robusten Passwort-Recovery-Mechanismus verwendet, durch den ein potentieller Angreifer keinen Hinweis auf einen gültigen Account bekommt\cite{owasp}. Wenn ein Benutzer (eventuell Angreifer) zu oft falsche Anmeldedaten eingibt, so sollte dies eine Sperrung des Benutzerkontos zur Folge haben. Darüber hinaus dürfen die Anmeldedaten nicht offen dargelegt werden (Netzwerkverkehr). \\
+\subsubsection{Unzureichende Authentifikation}
+Ein wesentlicher Bestandteil für den sicheren Zugang zu einem System stellt der verwendete Authentifikationsmechanismus dar. Eine unzureichende Passwortkomplexität ermöglicht Angreifern den Zugang zum System, wodurch er dieses direkt manipulieren oder Zugang zu schutzbedürftigen Daten erlangen kann. \\
+Durch die Verwendung von entsprechend komplexen Anmeldedaten und die Verschlüsselung dieser Daten kann ein weitaus höheres Maß an Sicherheit gewährleistet werden. Wenn möglich, sollte eine \textit{Zwei-Faktor-Zwei-Faktor-Authentifizierung} oder eine \textit{Public Key Infrastructur (PKI)} genutzt werden\cite{owasp}. \\
+\subsubsection{Unsichere Netzwerk Services}
+Da die Bestandteile einer \textit{IoT}-Infrastruktur alle miteinander vernetzt sind, bedeutet dies, dass ständig Daten miteinander ausgetauscht werden. Der Zugang zum System beinhaltet ein hohes Gefahrenpotential, denn gelingt es einem Angreifer sich über die Netzwerkservices einen Zugang zum System zu verschaffen, so kann dieser  die übermittelten Daten abfangen, das System manipulieren oder funktionsunfähig zu machen (z.B. durch einen \textit{Denial-of-Service}-Angriff). Die Schwachstelle bilden hier unnötig offene Ports oder angreifbare Services. \\
+Um diesen Gefahren vorzubeugen, sollten die zu übermittelten Daten stets verschlüsselt übertragen werden. Weiterhin sollten nur diejenigen Ports erreichbar sein, die für die Aufrechterhaltung der Funktionsweise des Systems notwendig sind. Bestimmte Ports und Services sollten nicht über das Internet, z.B. mittels \textit{Universal Plug and Play (UPnP)} erreichbar sein\cite{owasp}. Die Herstellern und Entwicklern müssen in diesem Punkt einen Kompromiss finden zwischen Erreichbarkeit und Angreifbarkeit. \\
+\subsubsection{Mangelnde Transportverschlüsselung}
+Auch die Verwendung einer mangelnden Transportverschlüsselung führt potentiell zur Verletzung aller Schutzziele (Vertraulichkeit, Integrität, Verfügbarkeit). Ein wesentlicher Aspekt bildet hier die Nutzung geeigneter Protokolle(\textit{Lightweight Kryptography}), welche die verschlüsselte Übertragung der Daten mit begrenzten Ressourcen ermöglichen. Beispiele für mögliche Protokolle und Verfahren sind das \textit{Constrained Application
+Protocol (CoAP)} und \textit{ZigBee}, aber auch Standards wie \textit{Bluetooth} oder \textit{Near Field Communication (NFC)}, welche durch ihre geringe Reichweite ein gewisses Maß an Sicherheit gewährleisten\cite{lowpow}\cite{zigbee}.\\
+\subsubsection{Datenschutz/ Privatsphäre}
+Test\\
+\subsubsection{Unzureichendes Maß an Sicherheitskonfiguration}
+Test\\
+\subsubsection{Unsichere Software/ Firmware}
+Test\\
+\subsubsection{Mangelnde physische Sicherheit}
 
 \section{Anwendung des IoT in der Industrie}
 
 In Unternehmen wird meist zwischen zwei Informations- und Kommunikationstechnikbereichen unterschieden. Zum einen existiert in Unternehmen die \textit{Produktions-IT}, welche jegliche Controller von Produktionsanlagen oder Logistikanbindungen umfasst. Zum anderen gibt es ebenfalls den Bereich der \textit{Business-IT}. Darunter fallen jegliche Anwendungen, die von den Angestellten verwendet werden und in keinem direkten Zusammenhang mit der Produktion stehen. Ein Beispiel dafür wären \textit{Content-Management-Systeme}.\\
 
+\section{Smart Home}
+Der Einsatz von \textit{IoT}-Geräten zur Vernetzung verschiedener Komponenten in Wohngebäuden wird als \textit{Smart Home} bezeichnet\cite{andelf}. 
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.7\columnwidth]{smarthome}
+  \caption{Anwendungsbereiche im Smart Home}
+  \label{fig:smarthome}
+\end{figure}
+
+Die \autoref{fig:smarthome} zeigt die Anwendungsbereiche für einen vernetzen Haushalt.
+Um ein möglichst sicheres Umfeld für den Heimgebrauch zu schaffen, sollten ausschließlich geeignete Hardware verwendet werden. Zum einen sind dies Bauteile, die sogenannte \textit{PUFS} (siehe Abschnitt Sichere Komponenten) verwenden und darüber hinaus Bauteile, welche auf äußere Einflüsse reagieren. Diese Bauteile erkennen Gefahren (unberechtigter Fremdzugang, Manipulation, Sabotage) und veranlassen beispielsweise die Trennung vom Internet\cite{landkrim}. \\
+Weiterhin sollte die leitungsgebundene Übertragung dem WLAN oder anderen Funk-Übertragungswegen vorzuziehen sein. Dieses Vorgehen schließt den Zugriff eines Angreifers nicht gänzlich aus, jedoch muss ein solcher einen höheren Aufwand betreiben, um Zugang zum System zu erhalten. \\
+Auch im \textit{Smart Home}-Bereich sollte besonderes Augenmerk auf die Verwendung von entsprechend komplexen Passwörtern für den Zugang zum System und die Nutzung von Verschlüsselungstechniken nach dem Stand der Technik (z.B. \textit{AES}) gelegt werden. Weiterhin empfiehlt sich die Benutzung von Softwarekomponenten, welche laufende Angriffe erkennen (\textit{Intrusion Detektion}). Dies kann durch Firewalls mit Application Filtern realisiert werden.   
+
+
 \section{Industrie 4.0}
 Die \textit{Industrie 4.0} vernetzt beide Bereiche miteinander und als Resultat entstehen sogenannte \textit{cyberphysikalische Systeme} (\textit{CPS}).\\
 Bei einem \textit{CPS} handelt es sich meist um ein Gerät mit beschränkten Ressourcen. Dies bedeutet, dass diese Systeme in der Rechenleistung und im Energieverbrauch beschränkt sind. Zusätzlich gibt es Anforderungen an solche Systeme, die unbedingt erfüllt werden müssen. So müssen \textit{CPS} ständig verfügbar und ausfallsicher sein, sodass es im schlimmsten Fall nicht zum Produktionsstillstand kommen kann.
-\subsection{Anforderungen an solche Systeme}
+\subsection{Anforderungen an derartige Systeme}
 Aufgrund der Vernetzung beider \textit{IKT-Bereiche}, werden Anforderungen des jeweiligen Subsystems übernommen. Dies bedeutet, dass Sicherheitslösungen im Office-Bereich nicht ohne weiteres angewendet werden können, da in einem \textit{CPS} auch Auswirkungen auf den anderen IKT-Bereich (in diesem Beispiel die \textit{Produktions-IT}) abgeschätzt werden müssen. Aus dieser Problematik resultieren somit neue Probleme und Schwachstellen, die möglicherweise bei den anfänglich separierten Systemen nicht existierten.\\
 Im Detail bedeutet das, dass sich insbesondere die Sicherheitsanforderungen unterscheiden und bekannte Sicherheitslösungen der \textit{Business-IT} wie VPN oder SSL/TLS-Verschlüsselung nicht auf die \textit{Produktions-IT} übertragen werden können.\\
 Der Hauptgrund dafür ist die Tatsache, dass Komponenten der \textit{Produktions-IT} zertifiziert sind und eine Verwendung von Verschlüsselungen einen Eingriff bedeuten würde, welcher im schlimmsten Fall zu Verlust der Zertifizierungen führen würde. Ebenfalls können Verschlüsselungen zu möglichen Latenzen führen, die im Office-Bereich verkraftbar sind, in einer Produktion aber eine Nichtfunktionalität bedeuten würden.\\
@@ -594,7 +659,7 @@ Die \autoref{fig:soc} veranschaulicht einen beispielhaften Aufbau eines limitier
   \label{fig:soc}
 \end{figure}
 
-\subsubsection{Secure SoC} Das \textit{Secure SoC} bietet Schutz für die geräteinternen Schlüssel. Diese werden verschlüsselt im \textit{Secure Read-only-Memore} (Secure ROM) abgespeichert. Bei den Schlüsseln handelt es sich oftmals um Schlüssel, welche für digitale Signaturverfahren wie RSA, DSA oder auch ECDSA verwendet werden. Diese Schlüssel werden wie bereits gesagt verschlüsselt im ROM abgelegt. Dabei wird häufig auf Verschlüsselungsverfahren wie AES zurückgegriffen.\cite{anoopms}\\
+\subsubsection{Secure SoC} Das \textit{Secure SoC} bietet Schutz für die geräteinternen Schlüssel. Diese werden verschlüsselt im \textit{Secure Read-only-Memory} (Secure ROM) abgespeichert. Bei den Schlüsseln handelt es sich oftmals um Schlüssel, welche für digitale Signaturverfahren wie RSA, DSA oder auch ECDSA verwendet werden. Diese Schlüssel werden wie bereits gesagt verschlüsselt im ROM abgelegt. Dabei wird häufig auf Verschlüsselungsverfahren wie AES zurückgegriffen.\cite{anoopms}\\
 Ein SoC bietet im besten Fall folgende Eigenschaften: 
 \begin{itemize}
   \item Auf Secure ROM kann nicht physikalisch zugegriffen werden 
@@ -715,8 +780,8 @@ Darüber hinaus können PUFs auch zur sicheren Kommunikation zwischen Geräten v
 
 \section{Fazit}
 
-In dieser Ausarbeitung wurden zwei Bereiche des \textit{Internet of Things} untersucht. Zu Beginn wurde auf die Sicherheitsmechanismen im Heimbereich eingegangen, es wurden mögliche Schwachstellen und Verbesserungen genannt. Im zweiten Teil wurde deutlich, dass die Kombination zweier IKT-Bereiche neue Herausforderungen mit sich bringt, die separat bei beiden System zuvor in dieser Form nicht existierten.\\
-Besonders bemerkenswert sind hierbei die unterschiedlichen Möglichkeiten Komponenten im industriellen Bereich abzusichern. Die Möglichkeiten reichen von hardwarebasierten Lösungen wie \textit{PUFs} oder sicheren Bauteilen bis hin zu Softwarelösungen oder allgemeinen Verschlüsselungen auf der Transportebene. 
+In dieser Ausarbeitung wurden verschiedene Sicherheitsaspekte im \textit{Internet of Things} untersucht. Zu Beginn wurde auf allgemeine Sicherheitsmechanismen eingegangen, es wurden mögliche Schwachstellen und Verbesserungen genannt. Im Anschluss folgte eine Sicherheitsbetrachtung im privaten und industriellen Bereich. Es wurde deutlich, dass die Kombination zweier IKT-Bereiche neue Herausforderungen mit sich bringt, die separat bei beiden System zuvor in dieser Form nicht existierten.\\
+Besonders bemerkenswert sind hierbei die unterschiedlichen Möglichkeiten, Komponenten im industriellen Bereich abzusichern. Die Möglichkeiten reichen von hardwarebasierten Lösungen wie \textit{PUFs} oder sicheren Bauteilen bis hin zu Softwarelösungen oder allgemeinen Verschlüsselungen auf der Transportebene. 
 
 
 

@@ -29,6 +29,38 @@
 {Q. Sun, H. Garcia-Molina}, ``{Using Ad-hoc Inter-vehicle Networks For Regional
   Alerts},'' 2004.
 
+\bibitem{hpack}
+\BIBentryALTinterwordspacing
+{Hewlett Packard Development Company}, ``{Report, Internet of Things Research
+  Study},'' September 2014. [Online]. Available:
+  \url{http://www8.hp.com/h20195/V2/GetPDF.aspx/4AA5-4759ENW.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{owasp}
+\BIBentryALTinterwordspacing
+{Open Web Application Security Project}, ``{Internet of Things Top Ten},''
+  2014. [Online]. Available:
+  \url{https://www.owasp.org/index.php/OWASP_Internet_of_Things_Top_Ten_Project}
+\BIBentrySTDinterwordspacing
+
+\bibitem{lowpow}
+{M. Kovatsch, S. Duquennoy, A. Dunkels}, ``{A Low-Power CoAP for Contiki},''
+  2011.
+
+\bibitem{zigbee}
+{G. Reiter}, ``{Wireless connectivity for the Internet of Things, One size does
+  not fi t all},'' Juni 2014.
+
+\bibitem{andelf}
+{V. P. Andelfinger, T. Hänisch}, ``{Internet der Dinge, Technik, Trends und
+  Geschäftsmodelle},'' Wiesbaden 2015.
+
+\bibitem{landkrim}
+{Landeskriminalamt Nordrhein-Westfalen, Sachgebiet 32.2 - Technische
+  Prävention, Prävention von Vermögens- u. Eigentumsdelikten}, ``{Smart Home
+  und Connected Home, Sicherheitsempfehlungen für Hersteller, Fachhändler und
+  Handwerker},'' September 2014.
+
 \bibitem{eckert2015}
 {C. Eckert, N. Fallenbeck}, ``{Industrie 4.0 meets IT-Sicherheit: eine
   Herausforderung!}'' {Heidelberg Berlin 2015}.
@@ -87,12 +119,5 @@ S.~Devadas, ``Physical unclonable functions and applications.''
 \bibitem{itseciot}
 C.~Eckert, ``{IT-Sicherheit und Industrie 4.0},'' \emph{Fachzeitschrift f{\"u}r
   Innovation, Organisation und Management}, 2014.
-
-\bibitem{owasp}
-\BIBentryALTinterwordspacing
-{Open Web Application Security Project}, ``{Internet of Things Top Ten},''
-  2014. [Online]. Available:
-  \url{https://www.owasp.org/index.php/OWASP_Internet_of_Things_Top_Ten_Project}
-\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
